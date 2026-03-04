@@ -1,0 +1,6 @@
+# Cloudflare Pages _redirects
+# MkDocs use_directory_urls:true generates page/index.html for each page,
+# so Cloudflare Pages handles clean URLs natively.
+# This file handles the 404 fallback for any unmatched paths.
+/404.html   /404.html   404
+

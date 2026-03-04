@@ -151,10 +151,19 @@ def write_root_nav(docs_dir, supergenius_rel="SuperGenius"):
     Merge docs/SUMMARY.md with the SuperGenius Code nav entry and write
     docs/SUMMARY_EXT.md for literate-nav to consume.
 
-    The SuperGenius entry uses README.md as the section index page so
-    section-index makes it a clickable header, with each category listed
-    as an indented child using a trailing-slash cross-link so literate-nav
-    resolves each category's own SUMMARY_EXT.md for its sub-navigation.
+    literate-nav only reads the **last** ``<ul>`` in the nav file, so the
+    entire nav must be one unbroken list — ``##`` headings must not be used
+    because they split the document into multiple ``<ul>`` blocks.
+
+    GitBook ``## Section`` headings are converted to plain unlinked list items
+    at indent 0.  Their children (originally 2-space indented) are shifted to
+    4-space indent so literate-nav recognises them as nested children of the
+    section label.  Deeper levels are shifted left by 2 spaces uniformly.
+
+    The ``# Table of contents`` title is dropped (not valid in a list).
+
+    The SuperGenius Code entry is appended as a matching plain unlinked list
+    item with each category as a 4-space-indented child.
     """
     summary_file     = os.path.join(docs_dir, "SUMMARY.md")
     summary_ext_file = os.path.join(docs_dir, "SUMMARY_EXT.md")
@@ -164,19 +173,47 @@ def write_root_nav(docs_dir, supergenius_rel="SuperGenius"):
         raise FileNotFoundError(f"SUMMARY.md not found at {summary_file}")
 
     with open(summary_file, 'r', encoding='utf-8') as f:
-        content = f.read()
+        raw_lines = f.readlines()
 
-    # Build the category children lines from whatever SUMMARY_EXT.md dirs exist.
+    # Drop the ``# Title`` line — not valid in a literate-nav list.
+    # Convert ``## Section`` headings to plain unlinked list items so the
+    # entire nav is one unbroken <ul> (literate-nav only reads the last <ul>
+    # in the document; multiple ## headings produce multiple <ul> blocks and
+    # only the final one is used).
+    # Strip the 2-space GitBook indent so items nest correctly under their
+    # section label.  Check longest patterns first to avoid partial matches.
+    converted_lines = []
+    for line in raw_lines:
+        stripped = line.rstrip('\n')
+        if re.match(r'^# ', stripped) and not re.match(r'^## ', stripped):
+            # Drop level-1 title only.
+            pass
+        elif re.match(r'^## ', stripped):
+            # Section divider → unlinked top-level list item.
+            label = stripped[3:].strip()
+            converted_lines.append(f"- {label}\n")
+        elif re.match(r'^\s*- ', stripped):
+            # All list items shift down one level (+4 spaces) because the
+            # ## section heading is now a level-0 list item and all content
+            # must be nested under it.
+            converted_lines.append("    " + line)
+        else:
+            converted_lines.append(line)
+
+    content = "".join(converted_lines)
+
+    # Build the category children lines (4-space indent = children of the section label).
     category_lines = []
     for entry in sorted(os.scandir(supergenius_dir), key=lambda e: e.name):
         if entry.is_dir() and os.path.exists(os.path.join(entry.path, "SUMMARY_EXT.md")):
             category_lines.append(f"    - [{entry.name}]({supergenius_rel}/{entry.name}/)")
 
-    sg_block = f"- [⌨️ SuperGenius Code]({supergenius_rel}/README.md)\n"
+    # Plain unlinked list item — same pattern as the other section labels.
+    sg_block = "\n- ⌨️ SuperGenius Code\n"
     if category_lines:
         sg_block += "\n".join(category_lines) + "\n"
 
-    extended = content.rstrip() + "\n" + sg_block
+    extended = content.rstrip() + sg_block
 
     with open(summary_ext_file, 'w', encoding='utf-8') as f:
         f.write(extended)
@@ -331,7 +368,6 @@ def generate_category_pages(supergenius_dir, force=False):
         root_summary = os.path.join(supergenius_dir, "SUMMARY_EXT.md")
         if force or any_updated or not os.path.exists(root_summary):
             _write_root_summary(supergenius_dir, categories)
-        write_readme(supergenius_dir, categories)
         write_root_nav(os.path.dirname(supergenius_dir))
 
     return generated

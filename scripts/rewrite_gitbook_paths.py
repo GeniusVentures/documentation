@@ -184,3 +184,30 @@ def on_page_markdown(markdown, page, config, files):
     markdown = _DOXYGEN_HEADING_TAG.sub('', markdown)
 
     return markdown
+
+
+def on_nav(nav, config, files):
+    """
+    Strip GitBook SUMMARY.md artifact nav items that point to the root
+    README.md but are listed as children of other sections.
+    Specifically removes:
+      * [README](README.md)          -- top-level artifact
+      * [GNUS.AI](README.md)         -- misplaced child artifact
+    Both are leaf items whose src_path is exactly 'README.md'.
+    """
+    def _filter(items):
+        result = []
+        for item in items:
+            if hasattr(item, 'children') and item.children:
+                item.children = _filter(item.children)
+                result.append(item)
+            else:
+                src = getattr(getattr(item, 'file', None), 'src_path', '') or ''
+                if src == 'README.md' and getattr(item, 'title', '') in ('README', 'GNUS.AI'):
+                    continue
+                result.append(item)
+        return result
+
+    nav.items = _filter(nav.items)
+    return nav
+

@@ -12,6 +12,8 @@ theme:
   # Features that make it feel more GitBook-like
   features:
     - navigation.indexes           # Let section index pages (README.md / index.md) work as section landing pages
+    - navigation.sections          # Render top-level nav sections as non-collapsible headers (GitBook-like)
+    #- navigation.expand            # Expand all nav sections by default (no dropdowns)
     - navigation.top               # Sticky top nav bar
     - navigation.footer            # Footer with prev/next
     - navigation.instant           # Faster page loads (SPA-like)
@@ -54,7 +56,6 @@ theme:
 # Extra goodies for GitBook feel
 plugins:
   - search
-  - section-index
   - literate-nav:
       nav_file: SUMMARY_EXT.md
   #- git-revision-date-localized:  # Shows last updated dates

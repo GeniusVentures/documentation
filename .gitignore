@@ -8,3 +8,12 @@ docs/SuperGenius/SUMMARY_EXT.md
 docs/SuperGenius/*/SUMMARY_EXT.md
 docs/SuperGenius/*/README.md
 
+# Node / Wrangler
+node_modules/
+.wrangler/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+docs/SuperGenius
