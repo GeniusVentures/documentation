@@ -1,31 +1,78 @@
-site_name: Gnus.ai Docs
+site_name: GNUS.ai Docs
 docs_dir: docs
 site_dir: site
 use_directory_urls: true
-exclude_docs: |
-  .*                      # Exclude ALL dot-files/directories by default
-  !.gitbook/assets        # Include .gitbook/assets and everything inside it
-  !.gitbook/assets/**
+
+hooks:
+  - scripts/rewrite_gitbook_paths.py
+
 
 theme:
   name: material
+  # Features that make it feel more GitBook-like
+  features:
+    - navigation.indexes           # Let section index pages (README.md / index.md) work as section landing pages
+    - navigation.top               # Sticky top nav bar
+    - navigation.footer            # Footer with prev/next
+    - navigation.instant           # Faster page loads (SPA-like)
+    - navigation.tracking          # Keep active nav item highlighted and URL in sync
+    - navigation.path              # Show breadcrumb path in nav
+    - search.suggest               # Autocomplete search
+    - search.highlight             # Highlight search results
+    - content.tabs                 # Tabbed content blocks
+    - content.code.copy            # Copy code buttons
+    - toc.integrate                # Table of contents integrated into sidebar
+
+  # Light/dark/auto switching
   palette:
+    # Light mode — custom scheme so CSS variables control all colors
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: teal
+      primary: custom
+      accent: custom
       toggle:
-        icon: material/weather-night
+        icon: material/brightness-7
         name: Switch to dark mode
+
+    # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: teal
+      primary: custom
+      accent: custom
       toggle:
-        icon: material/weather-sunny
+        icon: material/brightness-4
         name: Switch to light mode
 
+  # Optional: Add auto/system preference toggle (three-state: light / dark / auto)
+  # palette:
+  #   - media: "(prefers-color-scheme)"
+  #     toggle:
+  #       icon: material/brightness-auto
+  #       name: Switch to system preference
+  #   # Then the two above...
+
+# Extra goodies for GitBook feel
+plugins:
+  - search
+  - section-index
+  - literate-nav:
+      nav_file: SUMMARY_EXT.md
+  #- git-revision-date-localized:  # Shows last updated dates
+  - redirects:
+      redirect_maps:
+
+validation:
+  links:
+    absolute_links: ignore
+    unrecognized_links: ignore
+    not_found: ignore
+  nav:
+    omitted_files: ignore
+    not_found: ignore
+
 markdown_extensions:
+  - toc:
+      permalink: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -37,42 +84,20 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.details
   - pymdownx.emoji
+  - pymdownx.arithmatex:
+      generic: true
   - admonition
   - attr_list
   - md_in_html
+
+extra_css:
+  - stylesheets/extra.css
 
 extra_javascript:
   - https://unpkg.com/mermaid@10/dist/mermaid.min.js
   - javascripts/mermaid.js
   - javascripts/external-links.js
-
-plugins:
-  - search
-  - literate-nav:
-      nav_file: SUMMARY.md
-  - redirects:
-      redirect_maps:
-        technical-information/super-genius-blockchain-technicial-details/README.md: technical-information/super-genius-blockchain-technical-details/README.md
-        technical-information/super-genius-blockchain-technicial-details/bridging-flow/destination-chain-submission-validation.md: technical-information/super-genius-blockchain-technical-details/bridging-flow/destination-chain-submission-validation.md
-        technical-information/super-genius-blockchain-technicial-details/bridging-flow/message-creation-leader-election.md: technical-information/super-genius-blockchain-technical-details/bridging-flow/message-creation-leader-election.md
-        technical-information/super-genius-blockchain-technicial-details/bridging-flow/node-verification-voting.md: technical-information/super-genius-blockchain-technical-details/bridging-flow/node-verification-voting.md
-        technical-information/super-genius-blockchain-technicial-details/bridging-flow/overview.md: technical-information/super-genius-blockchain-technical-details/bridging-flow/overview.md
-        technical-information/super-genius-blockchain-technicial-details/bridging-flow/signature-collection-aggregation.md: technical-information/super-genius-blockchain-technical-details/bridging-flow/signature-collection-aggregation.md
-        technical-information/super-genius-blockchain-technicial-details/bridging-flow/verification-channel-creation.md: technical-information/super-genius-blockchain-technical-details/bridging-flow/verification-channel-creation.md
-        technical-information/super-genius-blockchain-technicial-details/supergenius-processing-component-information/README.md: technical-information/super-genius-blockchain-technical-details/supergenius-processing-component-information/README.md
-        technical-information/super-genius-blockchain-technicial-details/supergenius-processing-component-information/job-processing-flow.md: technical-information/super-genius-blockchain-technical-details/supergenius-processing-component-information/job-processing-flow.md
-        technical-information/super-genius-blockchain-technicial-details/supergenius-processing-component-information/processing-worker-app-workflow.md: technical-information/super-genius-blockchain-technical-details/supergenius-processing-component-information/processing-worker-app-workflow.md
-        technical-information/super-genius-blockchain-technicial-details/account-creation-with-ecsda-and-el-gamal.md: technical-information/super-genius-blockchain-technical-details/account-creation-with-ecsda-and-el-gamal.md
-        technical-information/super-genius-blockchain-technicial-details/ai-data-blocks.md: technical-information/super-genius-blockchain-technical-details/ai-data-blocks.md
-        technical-information/super-genius-blockchain-technicial-details/c++-coding-standards.md: technical-information/software-engineering-handbook/c++-coding-standards.md
-        technical-information/super-genius-blockchain-technicial-details/cross-chain-bridging-to-supergenius.md: technical-information/super-genius-blockchain-technical-details/cross-chain-bridging-to-supergenius.md
-        technical-information/super-genius-blockchain-technicial-details/diagram-of-the-internal-blockchain-blocks-and-processing-functionality.md: technical-information/super-genius-blockchain-technical-details/diagram-of-the-internal-blockchain-blocks-and-processing-functionality.md
-        technical-information/super-genius-blockchain-technicial-details/el-gamal-encryption.md: technical-information/super-genius-blockchain-technical-details/el-gamal-encryption.md
-        technical-information/super-genius-blockchain-technicial-details/ipfs-pub-sub.md: technical-information/super-genius-blockchain-technical-details/ipfs-pub-sub.md
-        technical-information/super-genius-blockchain-technicial-details/key-derivation-function.md: technical-information/super-genius-blockchain-technical-details/key-derivation-function.md
-        technical-information/super-genius-blockchain-technicial-details/minimal-proof-mountain.md: technical-information/super-genius-blockchain-technical-details/minimal-proof-mountain.md
-        technical-information/super-genius-blockchain-technical-details/prover-specification.md: technical-information/super-genius-blockchain-technical-details/prover-specification.md
-        technical-information/super-genius-blockchain-technicial-details/sg-consensus-algorithm-implementation.md: technical-information/super-genius-blockchain-technical-details/sg-consensus-algorithm-implementation.md
-        technical-information/super-genius-blockchain-technicial-details/slicing-data-for-macro-microjobs.md: technical-information/super-genius-blockchain-technical-details/slicing-data-for-macro-microjobs.md
-        technical-information/super-genius-blockchain-technicial-details/supergenius-db-layout.md: technical-information/super-genius-blockchain-technical-details/supergenius-db-layout.md
-        technical-information/super-genius-blockchain-technicial-details/verification-and-hash-results-from-processing.md: technical-information/super-genius-blockchain-technical-details/verification-and-hash-results-from-processing.md
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/nav-state.js
+  - javascripts/breadcrumbs.js

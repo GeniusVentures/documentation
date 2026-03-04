@@ -1,1 +1,1 @@
-/Volumes/SSDevelopment/Development/GeniusVentures/GeniusNetwork/documentation/gitbook/README.md
+../gitbook/README.md

@@ -79,3 +79,17 @@ Then use:
 ```bash
 pip install -r requirements.txt && mkdocs build
 ```
+
+### SuperGenius API reference generation
+
+The SuperGenius Doxygen XML lives in the `sg-docs` submodule under `sg-docs/doxygen/xml` and is committed into the repo after it is built in the main codebase. The Markdown under `docs/supergenius` is generated on demand and therefore must be created before you run MkDocs.
+
+The `scripts/cf-build.sh` script performs the conversion using the `doxybook2` CLI:
+
+```bash
+./scripts/cf-build.sh
+```
+
+`cf-build.sh` assumes the XML already exists, runs `doxybook2 --input sg-docs/doxygen/xml/ --output docs/supergenius --format markdown`, installs the Python requirements, and then runs `mkdocs build`. After the Markdown is regenerated you can serve or build the site as usual.
+
+Get `doxybook2` for macOS/ARM from https://github.com/GeniusVentures/doxybook2/releases or other platforms from https://github.com/Antonz0/doxybook2/releases/tag/v1.6.1 so the conversion step works on your machine. Once the API reference is refreshed you can continue with the remaining MkDocs workflow (`mkdocs serve` or `mkdocs build`).

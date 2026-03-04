@@ -1,6 +1,9 @@
 [submodule "gitbook"]
 	path = gitbook
 	url = ../gitbook
-[submodule "hdocs/sg-hdoc"]
-	path = hdocs/sg-hdoc
-	url = ../sg-hdocs
+[submodule "docs/sg-docs"]
+	path = sg-docs
+	url = ../sg-docs
+[submodule "sg-docs"]
+	path = sg-docs
+	url = ../sg-docs

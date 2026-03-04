@@ -1,1 +1,1 @@
-/Volumes/SSDevelopment/Development/GeniusVentures/GeniusNetwork/documentation/gitbook/SUMMARY.md
+../gitbook/SUMMARY.md
