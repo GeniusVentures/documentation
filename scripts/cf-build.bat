@@ -41,20 +41,20 @@ call pip install --upgrade pip setuptools wheel || goto :error
 call pip install -r requirements.txt || goto :error
 call mkdocs build || goto :error
 
-set "INDEX_FILE=site\search\search_index.json"
-if exist "%INDEX_FILE%" (
-  powershell -NoProfile -ExecutionPolicy Bypass -Command "$in='site\search\search_index.json';$out=$in+'.gz';$fi=[IO.File]::OpenRead($in);try{$fo=[IO.File]::Create($out);try{$gz=New-Object IO.Compression.GzipStream($fo,[IO.Compression.CompressionLevel]::Optimal);try{$fi.CopyTo($gz)}finally{$gz.Dispose()}}finally{$fo.Dispose()}}finally{$fi.Dispose()}" || goto :error
-  move /y "%INDEX_FILE%.gz" "%INDEX_FILE%" >nul || goto :error
-
-  set "HEADERS_FILE=site\_headers"
-  findstr /b /c:"/search/search_index.json" "%HEADERS_FILE%" >nul 2>nul
-  if errorlevel 1 (
-    >> "%HEADERS_FILE%" echo(
-    >> "%HEADERS_FILE%" echo /search/search_index.json
-    >> "%HEADERS_FILE%" echo   Content-Type: application/json; charset=utf-8
-    >> "%HEADERS_FILE%" echo   Content-Encoding: gzip
-  )
-)
+@REM set "INDEX_FILE=site\search\search_index.json"
+@REM if exist "%INDEX_FILE%" (
+@REM   powershell -NoProfile -ExecutionPolicy Bypass -Command "$in='site\search\search_index.json';$out=$in+'.gz';$fi=[IO.File]::OpenRead($in);try{$fo=[IO.File]::Create($out);try{$gz=New-Object IO.Compression.GzipStream($fo,[IO.Compression.CompressionLevel]::Optimal);try{$fi.CopyTo($gz)}finally{$gz.Dispose()}}finally{$fo.Dispose()}}finally{$fi.Dispose()}" || goto :error
+@REM   move /y "%INDEX_FILE%.gz" "%INDEX_FILE%" >nul || goto :error
+@REM
+@REM   set "HEADERS_FILE=site\_headers"
+@REM   findstr /b /c:"/search/search_index.json" "%HEADERS_FILE%" >nul 2>nul
+@REM   if errorlevel 1 (
+@REM     >> "%HEADERS_FILE%" echo(
+@REM     >> "%HEADERS_FILE%" echo /search/search_index.json
+@REM     >> "%HEADERS_FILE%" echo   Content-Type: application/json; charset=utf-8
+@REM     >> "%HEADERS_FILE%" echo   Content-Encoding: gzip
+@REM   )
+@REM )
 
 popd
 exit /b 0

@@ -10,6 +10,86 @@ MkDocs hook that rewrites GitBook-specific syntax to standard HTML/Markdown:
 import re
 import os
 
+
+_SEARCH_GZIP_SHIM = """<script>
+(function () {
+  var originalFetch = window.fetch;
+  if (typeof originalFetch !== "function") {
+    return;
+  }
+
+  window.fetch = async function (input, init) {
+    var response = await originalFetch(input, init);
+
+    try {
+      var requestUrl = "";
+      if (typeof input === "string") {
+        requestUrl = String(input);
+      } else if (input instanceof URL) {
+        requestUrl = String(input);
+      } else if (input && input.url) {
+        requestUrl = input.url;
+      }
+
+      var pathname = new URL(requestUrl, window.location.href).pathname;
+
+      if (!pathname.endsWith("/search/search_index.json")) {
+        return response;
+      }
+
+      var encoding = response.headers.get("Content-Encoding");
+      if (!encoding) {
+        encoding = response.headers.get("content-encoding");
+      }
+
+      if (encoding && /gzip/i.test(encoding)) {
+        return response;
+      }
+
+      if (typeof DecompressionStream === "undefined") {
+        return response;
+      }
+
+      var probe = new Uint8Array(await response.clone().arrayBuffer());
+      if (probe.length < 2) {
+        return response;
+      }
+
+      if (probe[0] !== 0x1f) {
+        return response;
+      }
+
+      if (probe[1] !== 0x8b) {
+        return response;
+      }
+
+      var headers = new Headers(response.headers);
+      headers.delete("Content-Encoding");
+      headers.delete("content-encoding");
+
+      var hasContentType = headers.has("Content-Type");
+      if (!hasContentType) {
+        hasContentType = headers.has("content-type");
+      }
+
+      if (!hasContentType) {
+        headers.set("Content-Type", "application/json; charset=utf-8");
+      }
+
+      var stream = new Blob([probe]).stream().pipeThrough(new DecompressionStream("gzip"));
+      return new Response(stream, {
+        status: response.status,
+        statusText: response.statusText,
+        headers: headers
+      });
+    } catch (error) {
+      return response;
+    }
+  };
+})();
+</script>
+"""
+
 # ── GitBook cover via page.meta ───────────────────────────────────────────────
 
 def _inject_cover(markdown, page):
@@ -209,4 +289,34 @@ def on_nav(nav, config, files):
 
     nav.items = _filter(nav.items)
     return nav
+
+
+def on_post_build(config):
+    """
+    Inject a pre-bundle search-index gzip shim into generated HTML so local
+    preview still works when the search index is stored as gzipped bytes.
+    """
+    site_dir = config.get('site_dir')
+    if not site_dir:
+        return
+
+    bundle_tag = '<script src="assets/javascripts/bundle'
+
+    for root, _, files in os.walk(site_dir):
+        for name in files:
+            if not name.endswith('.html'):
+                continue
+
+            path = os.path.join(root, name)
+            with open(path, 'r', encoding='utf-8') as f:
+                html = f.read()
+
+            if _SEARCH_GZIP_SHIM in html or bundle_tag not in html:
+                continue
+
+            html = html.replace(bundle_tag, _SEARCH_GZIP_SHIM + '      ' + bundle_tag, 1)
+
+            with open(path, 'w', encoding='utf-8') as f:
+                f.write(html)
+
 

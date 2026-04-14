@@ -42,18 +42,18 @@ pip install -r requirements.txt
 mkdocs build
 
 # Always compress MkDocs search index and serve it as gzipped JSON.
-INDEX_FILE="site/search/search_index.json"
-if [ -f "$INDEX_FILE" ]; then
-  gzip -9 -c "$INDEX_FILE" > "$INDEX_FILE.gz"
-  mv "$INDEX_FILE.gz" "$INDEX_FILE"
-
-  HEADERS_FILE="site/_headers"
-  if [ ! -f "$HEADERS_FILE" ] || ! grep -q '^/search/search_index.json$' "$HEADERS_FILE"; then
-    {
-      echo ""
-      echo "/search/search_index.json"
-      echo "  Content-Type: application/json; charset=utf-8"
-      echo "  Content-Encoding: gzip"
-    } >> "$HEADERS_FILE"
-  fi
-fi
+# INDEX_FILE="site/search/search_index.json"
+# if [ -f "$INDEX_FILE" ]; then
+#  gzip -9 -c "$INDEX_FILE" > "$INDEX_FILE.gz"
+#  mv "$INDEX_FILE.gz" "$INDEX_FILE"
+#
+#  HEADERS_FILE="site/_headers"
+#  if [ ! -f "$HEADERS_FILE" ] || ! grep -q '^/search/search_index.json$' "$HEADERS_FILE"; then
+#    {
+#      echo ""
+#      echo "/search/search_index.json"
+#      echo "  Content-Type: application/json; charset=utf-8"
+#      echo "  Content-Encoding: gzip"
+#    } >> "$HEADERS_FILE"
+#  fi
+#fi
