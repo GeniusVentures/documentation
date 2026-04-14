@@ -32,7 +32,7 @@ def _inject_cover(markdown, page):
     except (ValueError, TypeError):
         y_pct = 50
     hero = (
-        f'<div style="width:100%;height:375px;overflow:hidden;'
+        f'<div style="width:100%;height:450px;overflow:hidden;'
         f'max-width:calc(100% + 3.2rem);">'
         f'<img src="{cover_path}" '
         f'style="width:100%;height:100%;object-fit:cover;object-position:center {y_pct}%;" '
