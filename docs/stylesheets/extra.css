@@ -112,6 +112,8 @@
   width: var(--gnus-sidebar-width);
   min-width: var(--gnus-sidebar-width);
   max-width: var(--gnus-sidebar-width);
+  padding-top: 0;
+  padding-bottom: 0;
   overflow: hidden;
   overscroll-behavior: contain;
 }
