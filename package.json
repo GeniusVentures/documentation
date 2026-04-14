@@ -4,11 +4,14 @@
   "private": true,
   "description": "GNUS.AI documentation — MkDocs site deployed to Cloudflare Pages",
   "scripts": {
+    "docs:build": "bash scripts/cf-build.sh",
+    "docs:build:deploy": "bash scripts/cf-build-deploy.sh",
+    "docs:build:win": "scripts\\cf-build.bat",
+    "docs:build:deploy:win": "scripts\\cf-build-deploy.bat",
     "deploy": "wrangler pages deploy site --project-name=gnus-ai-docs",
     "preview": "wrangler pages dev site"
   },
   "devDependencies": {
-    "wrangler": "^3"
+    "wrangler": "^4.47.0"
   }
 }
-

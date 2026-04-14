@@ -28,6 +28,15 @@ mkdocs serve
 mkdocs build
 ```
 
+### Windows (npm scripts)
+
+Use the Windows-native scripts through npm:
+
+```bat
+npm run docs:build:win
+npm run docs:build:deploy:win
+```
+
 ### Cloudflare Pages settings
 
 Build command:

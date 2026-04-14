@@ -391,6 +391,5 @@ if __name__ == "__main__":
         print(f"\nSuccessfully generated {len(generated)} SUMMARY_EXT.md files")
         sys.exit(0)
     else:
-        print("Error: No SUMMARY_EXT.md files were generated", file=sys.stderr)
-        sys.exit(1)
-
+        print("No SUMMARY_EXT.md changes needed (already up to date)")
+        sys.exit(0)

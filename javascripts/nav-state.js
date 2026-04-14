@@ -9,21 +9,148 @@
   "use strict";
 
   const STORAGE_KEY = "nav-state";
+  const SIDEBAR_WIDTH_KEY = "gnus-sidebar-width";
   const TOGGLE_SEL  = "input.md-nav__toggle";
-  const SCROLL_SELS = [".md-sidebar__scrollwrap", ".md-sidebar__inner"];
-
-  // AbortController for the current scroll listener so we can cleanly remove
-  // it before attaching a new one on each SPA swap.
-  let scrollAbort = null;
+  const PRIMARY_SIDEBAR_SEL = ".md-sidebar--primary";
+  const SCROLL_CONTAINER_SELS = [".md-sidebar__scrollwrap", ".md-sidebar__inner"];
+  const DEFAULT_SIDEBAR_WIDTH_REM = 16;
+  const MIN_SIDEBAR_WIDTH_REM = 12;
+  const MAX_SIDEBAR_WIDTH_REM = 32;
 
   // ── Helpers ───────────────────────────────────────────────────────────────
 
+  function getPrimarySidebar() {
+    return document.querySelector(PRIMARY_SIDEBAR_SEL);
+  }
+
+  function clamp(value, min, max) {
+    return Math.min(Math.max(value, min), max);
+  }
+
+  function getRootFontSize() {
+    return parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
+  }
+
+  function loadSidebarWidthRem() {
+    const saved = parseFloat(localStorage.getItem(SIDEBAR_WIDTH_KEY) || "");
+    return Number.isFinite(saved)
+      ? clamp(saved, MIN_SIDEBAR_WIDTH_REM, MAX_SIDEBAR_WIDTH_REM)
+      : DEFAULT_SIDEBAR_WIDTH_REM;
+  }
+
+  function applySidebarWidthRem(widthRem) {
+    const clampedWidth = clamp(widthRem, MIN_SIDEBAR_WIDTH_REM, MAX_SIDEBAR_WIDTH_REM);
+    document.documentElement.style.setProperty("--gnus-sidebar-width", `${clampedWidth}rem`);
+    localStorage.setItem(SIDEBAR_WIDTH_KEY, String(clampedWidth));
+  }
+
+  function getScrollWrap(sidebar) {
+    return sidebar?.querySelector(".md-sidebar__scrollwrap") || null;
+  }
+
+  function getSidebarInner(sidebar) {
+    return sidebar?.querySelector(".md-sidebar__inner") || null;
+  }
+
   function getScrollContainer() {
-    for (const sel of SCROLL_SELS) {
-      const el = document.querySelector(sel);
-      if (el) { return el; }
+    const sidebar = getPrimarySidebar();
+    if (!sidebar) { return null; }
+
+    return getScrollWrap(sidebar) || getSidebarInner(sidebar) || sidebar;
+  }
+
+  function syncSidebarHeight() {
+    const sidebar = getPrimarySidebar();
+    const scrollWrap = getScrollWrap(sidebar);
+    const sidebarInner = getSidebarInner(sidebar);
+    const scrollContainer = getScrollContainer();
+
+    if (!sidebar || !scrollContainer) {
+      return;
     }
-    return null;
+
+    const top = Math.max(0, sidebar.getBoundingClientRect().top);
+    const availableHeight = Math.max(0, window.innerHeight - top);
+    const height = `${availableHeight}px`;
+
+    sidebar.style.height = height;
+    sidebar.style.maxHeight = height;
+    sidebar.style.overflow = "hidden";
+
+    scrollContainer.style.height = height;
+    scrollContainer.style.maxHeight = height;
+    scrollContainer.style.overflowY = "auto";
+    scrollContainer.style.overflowX = "hidden";
+
+    if (scrollWrap && scrollWrap !== scrollContainer) {
+      scrollWrap.style.height = "auto";
+      scrollWrap.style.maxHeight = "none";
+      scrollWrap.style.overflow = "visible";
+    }
+
+    if (sidebarInner && sidebarInner !== scrollContainer) {
+      sidebarInner.style.height = "auto";
+      sidebarInner.style.maxHeight = "none";
+      sidebarInner.style.overflow = "visible";
+    }
+  }
+
+  function bindSidebarResizer() {
+    const sidebar = getPrimarySidebar();
+    if (!sidebar || sidebar.querySelector(".gnus-sidebar-resizer")) {
+      return;
+    }
+
+    const handle = document.createElement("div");
+    handle.className = "gnus-sidebar-resizer";
+    handle.setAttribute("aria-hidden", "true");
+    sidebar.appendChild(handle);
+
+    handle.addEventListener("mousedown", (event) => {
+      const currentSidebar = getPrimarySidebar();
+      if (!currentSidebar) {
+        return;
+      }
+
+      const rootFontSize = getRootFontSize();
+      const sidebarLeft = currentSidebar.getBoundingClientRect().left;
+
+      const onMouseMove = (moveEvent) => {
+        const widthRem = (moveEvent.clientX - sidebarLeft) / rootFontSize;
+        applySidebarWidthRem(widthRem);
+        syncSidebarHeight();
+      };
+
+      const onMouseUp = () => {
+        document.body.classList.remove("gnus-sidebar-resizing");
+        document.removeEventListener("mousemove", onMouseMove);
+        document.removeEventListener("mouseup", onMouseUp);
+      };
+
+      document.body.classList.add("gnus-sidebar-resizing");
+      document.addEventListener("mousemove", onMouseMove);
+      document.addEventListener("mouseup", onMouseUp);
+      event.preventDefault();
+    });
+  }
+
+  function bindSidebarWheelIsolation() {
+    const sidebar = getPrimarySidebar();
+    const scrollContainer = getScrollContainer();
+    if (!sidebar || !scrollContainer || sidebar.dataset.navWheelBound) {
+      return;
+    }
+
+    sidebar.dataset.navWheelBound = "true";
+    sidebar.addEventListener("wheel", (event) => {
+      scrollContainer.scrollTop += event.deltaY;
+      event.preventDefault();
+      event.stopPropagation();
+    }, { passive: false });
+  }
+
+  function getNavToggles() {
+    return getPrimarySidebar()?.querySelectorAll(TOGGLE_SEL) || [];
   }
 
   function loadState() {
@@ -55,7 +182,7 @@
   // ── Persist open/close on user interaction ────────────────────────────────
 
   function bindToggleListeners() {
-    document.querySelectorAll(TOGGLE_SEL).forEach((toggle, index) => {
+    getNavToggles().forEach((toggle, index) => {
       if (toggle.dataset.navStateBound) { return; }
       toggle.dataset.navStateBound = "true";
 
@@ -72,18 +199,6 @@
     });
   }
 
-  function bindScrollListener() {
-    // Cancel previous listener before attaching a new one.
-    if (scrollAbort) { scrollAbort.abort(); }
-    scrollAbort = new AbortController();
-
-    const sc = getScrollContainer();
-    if (!sc) { return; }
-
-    sc.addEventListener("scroll", () => {
-      saveState({ scrollTop: sc.scrollTop });
-    }, { passive: true, signal: scrollAbort.signal });
-  }
 
   // ── Restore state (called after every SPA navigation) ────────────────────
 
@@ -95,40 +210,23 @@
     document.body.classList.add("nav-state-restoring");
 
     // Restore all open toggles.
-    document.querySelectorAll(TOGGLE_SEL).forEach((toggle, index) => {
+    getNavToggles().forEach((toggle, index) => {
       if (openIds.has(stableId(toggle, index))) {
         toggle.checked = true;
       }
     });
 
     // Re-bind toggle listeners to any new DOM nodes from the SPA swap.
+    applySidebarWidthRem(loadSidebarWidthRem());
     bindToggleListeners();
+    bindSidebarResizer();
+    bindSidebarWheelIsolation();
 
-    // Restore scroll position and re-attach scroll listener only after the
-    // browser has painted the restored toggle state, so the layout is stable
-    // and no spurious scroll event fires before we save.
+    // Re-enable transitions after the browser has painted the restored toggle
+    // state so native sidebar scrolling is left entirely to the browser.
     requestAnimationFrame(() => {
-      const sc = getScrollContainer();
-      if (sc && Number.isFinite(state.scrollTop)) {
-        sc.scrollTop = state.scrollTop;
-      }
-
-      // Re-enable transitions.
+      syncSidebarHeight();
       document.body.classList.remove("nav-state-restoring");
-
-      // Scroll the active nav link into view.  Material sets
-      // md-nav__link--active after document$ fires, so wait one more
-      // animation frame to be sure it is applied.
-      requestAnimationFrame(() => {
-        const active = document.querySelector(".md-nav__link--active");
-        if (active) {
-          active.scrollIntoView({ block: "nearest", behavior: "instant" });
-        }
-
-        // Attach scroll listener now — after scroll position is restored —
-        // so we don't immediately overwrite the saved scrollTop with 0.
-        bindScrollListener();
-      });
     });
   }
 
@@ -156,5 +254,8 @@
   } else {
     document.addEventListener("DOMContentLoaded", restoreState);
   }
+
+  window.addEventListener("resize", syncSidebarHeight, { passive: true });
+  window.addEventListener("load", syncSidebarHeight, { passive: true });
 
 })();

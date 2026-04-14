@@ -70,6 +70,92 @@
   background-color: #48cae4;
 }
 
+/* ── Sidebar viewport sizing fix ──────────────────────────────────────────── */
+:root {
+  --gnus-sidebar-width: 16rem;
+}
+
+.md-main__inner {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.md-main__inner > .md-sidebar--primary {
+  flex: 0 0 var(--gnus-sidebar-width);
+}
+
+.md-main__inner > .md-content,
+.md-main__inner > .md-grid {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin-left: 10px;
+}
+
+.md-main__inner > .md-content > .md-content__inner,
+.md-main__inner > .md-grid,
+.md-main__inner .md-grid {
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+  max-width: none !important;
+}
+
+.md-sidebar--primary,
+.md-sidebar--primary .md-sidebar__scrollwrap,
+.md-sidebar--primary .md-sidebar__inner {
+  min-height: 0;
+}
+
+.md-sidebar--primary {
+  position: relative;
+  width: var(--gnus-sidebar-width);
+  min-width: var(--gnus-sidebar-width);
+  max-width: var(--gnus-sidebar-width);
+  overflow: hidden;
+  overscroll-behavior: contain;
+}
+
+.md-sidebar--primary .md-sidebar__scrollwrap {
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+}
+
+.md-sidebar--primary .md-sidebar__inner {
+  width: 100%;
+  padding: 0 0.2rem !important;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.md-sidebar--primary .md-nav--primary,
+.md-sidebar--primary .md-nav--integrated,
+.md-sidebar--primary .md-nav.md-nav--primary,
+.md-sidebar--primary .md-nav.md-nav--integrated {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.gnus-sidebar-resizer {
+  position: absolute;
+  top: 0;
+  right: -0.25rem;
+  width: 0.5rem;
+  height: 100%;
+  cursor: col-resize;
+  z-index: 20;
+}
+
+body.gnus-sidebar-resizing,
+body.gnus-sidebar-resizing * {
+  cursor: col-resize !important;
+  user-select: none !important;
+}
+
 /* ── GitBook image / figure alignment ─────────────────────────────────────── */
 /* GitBook centers figures by default — match that behaviour. */
 .md-typeset figure                        { display:block; margin:1rem auto; text-align:center; }
