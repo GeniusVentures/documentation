@@ -69,16 +69,28 @@
       return;
     }
 
-    const height = `${window.innerHeight}px`;
+    const navTitle = sidebar.querySelector(".md-nav__title");
+    const footer = document.querySelector(".md-footer");
+    const footerIsVisible = footer && getComputedStyle(footer).display !== "none";
 
-    // Keep the outer sidebar unconstrained so page/right-pane scroll does not
-    // drag the whole left pane; only the inner container should scroll.
-    sidebar.style.height = height;
-    sidebar.style.maxHeight = height;
+    const titleBottom = navTitle
+      ? navTitle.getBoundingClientRect().bottom
+      : scrollContainer.getBoundingClientRect().top;
+    const footerTop = footerIsVisible
+      ? footer.getBoundingClientRect().top
+      : window.innerHeight;
+
+    const scrollViewportHeight = Math.max(footerTop - titleBottom, 0);
+    const sidebarViewportHeight = Math.max(footerTop - sidebar.getBoundingClientRect().top, 0);
+
+    // Clip the visible pane to the footer boundary while keeping nav content
+    // at natural height inside the scroll container.
+    sidebar.style.height = "auto";
+    sidebar.style.maxHeight = `${sidebarViewportHeight}px`;
     sidebar.style.overflow = "hidden";
 
-    scrollContainer.style.height = height;
-    scrollContainer.style.maxHeight = height;
+    scrollContainer.style.height = "auto";
+    scrollContainer.style.maxHeight = `${scrollViewportHeight}px`;
     scrollContainer.style.overflowY = "auto";
     scrollContainer.style.overflowX = "hidden";
 
