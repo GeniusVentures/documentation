@@ -69,10 +69,10 @@
       return;
     }
 
-    const top = Math.max(0, sidebar.getBoundingClientRect().top);
-    const availableHeight = Math.max(0, window.innerHeight - top);
-    const height = `${availableHeight}px`;
+    const height = `${window.innerHeight}px`;
 
+    // Keep the outer sidebar unconstrained so page/right-pane scroll does not
+    // drag the whole left pane; only the inner container should scroll.
     sidebar.style.height = height;
     sidebar.style.maxHeight = height;
     sidebar.style.overflow = "hidden";
@@ -135,18 +135,9 @@
   }
 
   function bindSidebarWheelIsolation() {
-    const sidebar = getPrimarySidebar();
-    const scrollContainer = getScrollContainer();
-    if (!sidebar || !scrollContainer || sidebar.dataset.navWheelBound) {
-      return;
-    }
-
-    sidebar.dataset.navWheelBound = "true";
-    sidebar.addEventListener("wheel", (event) => {
-      scrollContainer.scrollTop += event.deltaY;
-      event.preventDefault();
-      event.stopPropagation();
-    }, { passive: false });
+    // Intentionally disabled: native browser scrolling keeps pane scroll
+    // ownership correct and avoids cross-pane wheel coupling.
+    return;
   }
 
   function getNavToggles() {
