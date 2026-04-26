@@ -6,6 +6,10 @@ use_directory_urls: true
 hooks:
   - scripts/rewrite_gitbook_paths.py
 
+watch:
+  - javascripts
+  - stylesheets
+
 
 theme:
   name: material
@@ -92,13 +96,13 @@ markdown_extensions:
   - md_in_html
 
 extra_css:
-  - stylesheets/extra.css
+  - /stylesheets/extra.css
 
 extra_javascript:
   - https://unpkg.com/mermaid@10/dist/mermaid.min.js
-  - javascripts/mermaid.js
-  - javascripts/external-links.js
-  - javascripts/mathjax.js
+  - /javascripts/mermaid.js
+  - /javascripts/external-links.js
+  - /javascripts/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - javascripts/nav-state.js
-  - javascripts/breadcrumbs.js
+  - /javascripts/nav-state.js
+  - /javascripts/breadcrumbs.js

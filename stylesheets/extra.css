@@ -129,6 +129,14 @@
     }
 }
 
+@media screen and (max-width: 76.234375em) {
+    /* Keep the root drawer nav list expanded to intrinsic height on mobile. */
+    .md-sidebar--primary .md-nav--primary > .md-nav__list {
+        height: auto !important;
+        max-height: none !important;
+    }
+}
+
 .md-main__inner > .md-content,
 .md-main__inner > .md-grid {
     flex: 1 1 auto;
@@ -144,56 +152,58 @@
     max-width: none !important;
 }
 
-.md-sidebar--primary,
-.md-sidebar--primary .md-sidebar__scrollwrap,
-.md-sidebar--primary .md-sidebar__inner {
-    min-height: 0;
-}
+@media screen and (min-width: 76.25em) {
+    .md-sidebar--primary,
+    .md-sidebar--primary .md-sidebar__scrollwrap,
+    .md-sidebar--primary .md-sidebar__inner {
+        min-height: 0;
+    }
 
-.md-sidebar--primary {
-    padding-top: 0;
-    padding-bottom: 2.5rem;
-    overflow: hidden;
-    overscroll-behavior: contain;
-}
+    .md-sidebar--primary {
+        padding-top: 0;
+        padding-bottom: 2.5rem;
+        overflow: hidden;
+        overscroll-behavior: contain;
+    }
 
-.md-sidebar--primary .md-sidebar__scrollwrap {
-    width: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
-    overscroll-behavior: contain;
-}
+    .md-sidebar--primary .md-sidebar__scrollwrap {
+        width: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        overscroll-behavior: contain;
+    }
 
-.md-sidebar--primary .md-sidebar__inner {
-    width: 100%;
-    padding: 0 0.2rem !important;
-    box-sizing: border-box;
-    overflow: visible;
-}
+    .md-sidebar--primary .md-sidebar__inner {
+        width: 100%;
+        padding: 0 0.2rem !important;
+        box-sizing: border-box;
+        overflow: visible;
+    }
 
-.md-sidebar--primary .md-nav--primary,
-.md-sidebar--primary .md-nav--integrated,
-.md-sidebar--primary .md-nav.md-nav--primary,
-.md-sidebar--primary .md-nav.md-nav--integrated {
-    width: 100%;
-    max-width: none;
-    box-sizing: border-box;
-}
+    .md-sidebar--primary .md-nav--primary,
+    .md-sidebar--primary .md-nav--integrated,
+    .md-sidebar--primary .md-nav.md-nav--primary,
+    .md-sidebar--primary .md-nav.md-nav--integrated {
+        width: 100%;
+        max-width: none;
+        box-sizing: border-box;
+    }
 
-.gnus-sidebar-resizer {
-    position: absolute;
-    top: 0;
-    right: -0.25rem;
-    width: 0.5rem;
-    height: 100%;
-    cursor: col-resize;
-    z-index: 20;
-}
+    .gnus-sidebar-resizer {
+        position: absolute;
+        top: 0;
+        right: -0.25rem;
+        width: 0.5rem;
+        height: 100%;
+        cursor: col-resize;
+        z-index: 20;
+    }
 
-body.gnus-sidebar-resizing,
-body.gnus-sidebar-resizing * {
-    cursor: col-resize !important;
-    user-select: none !important;
+    body.gnus-sidebar-resizing,
+    body.gnus-sidebar-resizing * {
+        cursor: col-resize !important;
+        user-select: none !important;
+    }
 }
 
 /* ── GitBook image / figure alignment ─────────────────────────────────────── */

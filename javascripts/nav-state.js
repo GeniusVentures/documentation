@@ -12,6 +12,7 @@
   const SIDEBAR_WIDTH_KEY = "gnus-sidebar-width";
   const TOGGLE_SEL  = "input.md-nav__toggle";
   const PRIMARY_SIDEBAR_SEL = ".md-sidebar--primary";
+  const DESKTOP_MEDIA_QUERY = "(min-width: 76.25em)";
   const SCROLL_CONTAINER_SELS = [".md-sidebar__scrollwrap", ".md-sidebar__inner"];
   const DEFAULT_SIDEBAR_WIDTH_REM = 16;
   const MIN_SIDEBAR_WIDTH_REM = 12;
@@ -59,6 +60,33 @@
     return getScrollWrap(sidebar) || getSidebarInner(sidebar) || sidebar;
   }
 
+  function clearSidebarHeightStyles(sidebar, scrollContainer, scrollWrap, sidebarInner) {
+    if (sidebar) {
+      sidebar.style.height = "";
+      sidebar.style.maxHeight = "";
+      sidebar.style.overflow = "";
+    }
+
+    if (scrollContainer) {
+      scrollContainer.style.height = "";
+      scrollContainer.style.maxHeight = "";
+      scrollContainer.style.overflowY = "";
+      scrollContainer.style.overflowX = "";
+    }
+
+    if (scrollWrap && scrollWrap !== scrollContainer) {
+      scrollWrap.style.height = "";
+      scrollWrap.style.maxHeight = "";
+      scrollWrap.style.overflow = "";
+    }
+
+    if (sidebarInner && sidebarInner !== scrollContainer) {
+      sidebarInner.style.height = "";
+      sidebarInner.style.maxHeight = "";
+      sidebarInner.style.overflow = "";
+    }
+  }
+
   function syncSidebarHeight() {
     const sidebar = getPrimarySidebar();
     const scrollWrap = getScrollWrap(sidebar);
@@ -66,6 +94,11 @@
     const scrollContainer = getScrollContainer();
 
     if (!sidebar || !scrollContainer) {
+      return;
+    }
+
+    if (!window.matchMedia(DESKTOP_MEDIA_QUERY).matches) {
+      clearSidebarHeightStyles(sidebar, scrollContainer, scrollWrap, sidebarInner);
       return;
     }
 
