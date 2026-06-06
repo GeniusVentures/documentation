@@ -164,7 +164,7 @@ _GITBOOK_CONTENT_REF = re.compile(
 )
 
 def _content_ref_to_link(match):
-    url   = match.group(1).strip()
+    url   = re.sub(r'\.md$', '/', match.group(1).strip())
     # Extract any markdown link label from the inner content, fall back to url.
     inner = match.group(2).strip()
     label_m = re.search(r'\[([^\]]+)\]', inner)
