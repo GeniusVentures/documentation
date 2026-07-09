@@ -12,7 +12,7 @@ See: .planning/PROJECT.md (updated 2026-07-08)
 Phase: 0 of 5 (Pre-planning)
 Plan: N/A
 Status: Ready to plan
-Last activity: 2026-07-08 — Roadmap created, 5 phases defined, 26 requirements mapped
+Last activity: 2026-07-09 - Completed quick task 260709-e4k: Make ask worker origin-aware with per-origin caches, reference wrangler-ask.toml from parent repo
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -53,6 +53,12 @@ None yet.
 ### Blockers/Concerns
 
 None yet.
+
+### Quick Tasks Completed
+
+| # | Description | Date | Commit | Directory |
+|---|-------------|------|--------|-----------|
+| 260709-e4k | Make ask worker origin-aware with per-origin caches, reference wrangler-ask.toml from parent repo | 2026-07-09 | 31128b0 | [260709-e4k-make-ask-worker-origin-aware-with-per-or](./quick/260709-e4k-make-ask-worker-origin-aware-with-per-or/) |
 
 ## Deferred Items
 
