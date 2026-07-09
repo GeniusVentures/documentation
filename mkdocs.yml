@@ -1,37 +1,37 @@
-site_name: GNUS.ai Docs
+# mkdocs.yml — GNUS.AI Documentation
+# Host-owned config that mirrors gendoc-template/mkdocs.yml while adding
+# project-specific hooks (rewrite_gitbook_paths.py) and plugins (redirects).
+# Site name, docs_dir, and site_dir are injected at startup by load-gendoc-config.py
+# from gendoc.yml.
+
+site_name: "GNUS.AI Docs"
 docs_dir: docs
 site_dir: site
 use_directory_urls: true
 
 hooks:
+  - gendoc-template/scripts/load-gendoc-config.py
+  - gendoc-template/scripts/clean-nav.py
   - scripts/rewrite_gitbook_paths.py
-
-watch:
-  - javascripts
-  - stylesheets
-
+  - gendoc-template/scripts/copy-assets.py
 
 theme:
   name: material
-  # Features that make it feel more GitBook-like
   features:
-    - navigation.indexes           # Let section index pages (README.md / index.md) work as section landing pages
-    - navigation.sections          # Render top-level nav sections as non-collapsible headers (GitBook-like)
-    #- navigation.expand            # Expand all nav sections by default (no dropdowns)
-    - navigation.top               # Sticky top nav bar
-    - navigation.footer            # Footer with prev/next
-    - navigation.instant           # Faster page loads (SPA-like)
-    - navigation.tracking          # Keep active nav item highlighted and URL in sync
-    - navigation.path              # Show breadcrumb path in nav
-    - search.suggest               # Autocomplete search
-    - search.highlight             # Highlight search results
-    - content.tabs                 # Tabbed content blocks
-    - content.code.copy            # Copy code buttons
-    - toc.integrate                # Table of contents integrated into sidebar
+    - navigation.indexes
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.instant
+    - navigation.tracking
+    - navigation.path
+    - search.suggest
+    - search.highlight
+    - content.tabs
+    - content.code.copy
+    - toc.integrate
 
-  # Light/dark/auto switching
   palette:
-    # Light mode — custom scheme so CSS variables control all colors
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: custom
@@ -40,7 +40,6 @@ theme:
         icon: material/brightness-7
         name: Switch to dark mode
 
-    # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: custom
@@ -49,20 +48,10 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 
-  # Optional: Add auto/system preference toggle (three-state: light / dark / auto)
-  # palette:
-  #   - media: "(prefers-color-scheme)"
-  #     toggle:
-  #       icon: material/brightness-auto
-  #       name: Switch to system preference
-  #   # Then the two above...
-
-# Extra goodies for GitBook feel
 plugins:
   - search
   - literate-nav:
       nav_file: SUMMARY_EXT.md
-  #- git-revision-date-localized:  # Shows last updated dates
   - redirects:
       redirect_maps:
 
@@ -96,7 +85,7 @@ markdown_extensions:
   - md_in_html
 
 extra_css:
-  - /stylesheets/extra.css
+  - /stylesheets/theme.css
 
 extra_javascript:
   - https://unpkg.com/mermaid@10/dist/mermaid.min.js
@@ -106,3 +95,5 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - /javascripts/nav-state.js
   - /javascripts/breadcrumbs.js
+  - path: /javascripts/ask/main.js
+    type: module

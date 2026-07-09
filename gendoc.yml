@@ -1,0 +1,64 @@
+# gendoc.yml — GNUS.AI Documentation configuration
+# See gendoc-template/gendoc.yml.example for the full schema reference.
+
+# ── Project identification ──────────────────────────────────────────────────
+project:
+  name: "GNUS.AI Docs"
+  number: "0.1"
+  brief: "GNUS.AI Network — decentralized AI compute platform documentation"
+  generator: false
+
+# ── Paths (relative to this file's location — the host project root) ──
+paths:
+  handwritten_docs: "docs"
+  exclude_patterns:
+    - "*/supergenius/*"
+
+# ── MkDocs configuration ────────────────────────────────────────────────────
+mkdocs:
+  site_dir: "site"
+  use_directory_urls: true
+  strict: false
+
+# ── Navigation ────────────────────────────────────────────────────────────────
+navigation:
+  generate_index: false
+  sections:
+    - label: "Documentation"
+      source_file: "SUMMARY_EXT.md"
+      extract_heading: ""
+
+# ── Deploy (Cloudflare Pages via Wrangler) ──────────────────────────────────
+deploy:
+  cloudflare:
+    pages_project_name: "gnus-docs"
+    compatibility_date: "2024-01-01"
+    production_branch: "main"
+    custom_domain: "docs.gnus.ai"
+
+# ── LLMs / Ask AI ──────────────────────────────────────────────────────────
+llms:
+  enabled: true
+  site_url: "https://docs.gnus.ai"
+  corpus_cache: "llms-corpus"
+  meta_file: "llms-meta.json"
+
+  audiences:
+    llms-technical.txt:
+      title: "GNUS.AI Technical Reference"
+      categories: [technical, architecture, api, blockchain]
+
+  related_catalogs:
+    - url: "https://gcs.gnus.ai/llms.txt"
+      title: "Genius Cognitive System"
+      description: "Distributed cognitive platform documentation"
+      audiences: [llms-technical.txt]
+
+  ask:
+    enabled: true
+    endpoint: "https://ask.gnus.ai/api/ask"
+    allowed_origins:
+      - "https://docs.gnus.ai"
+    providers: "openrouter,gemini"
+    gemini_model: "gemini-2.5-flash"
+    openrouter_models: "nvidia/nemotron-3-super-120b-a12b:free,nvidia/nemotron-3-ultra-550b-a55b:free,nvidia/nemotron-3-nano-30b-a3b:free"
