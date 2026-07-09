@@ -41,6 +41,10 @@ call pip install --upgrade pip setuptools wheel || goto :error
 call pip install -r requirements.txt || goto :error
 call mkdocs build || goto :error
 
+echo   Generating llms.txt agent catalogs
+call python "%~dp0build_llms.py" %*
+if errorlevel 1 exit /b %errorlevel%
+
 @REM set "INDEX_FILE=site\search\search_index.json"
 @REM if exist "%INDEX_FILE%" (
 @REM   powershell -NoProfile -ExecutionPolicy Bypass -Command "$in='site\search\search_index.json';$out=$in+'.gz';$fi=[IO.File]::OpenRead($in);try{$fo=[IO.File]::Create($out);try{$gz=New-Object IO.Compression.GzipStream($fo,[IO.Compression.CompressionLevel]::Optimal);try{$fi.CopyTo($gz)}finally{$gz.Dispose()}}finally{$fo.Dispose()}}finally{$fi.Dispose()}" || goto :error

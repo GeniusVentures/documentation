@@ -1,10 +1,6 @@
-mkdocs==1.6.1
-mkdocs-material==9.5.27
-pymdown-extensions>=10.14
-pygments>=2.18
+# Base dependencies are installed from gendoc-template/requirements.txt.
+# This file contains only project-specific additions not in the template.
+#
+# Install: pip install -r gendoc-template/requirements.txt -r requirements.txt
+
 mkdocs-redirects==1.2.1
-mkdocs-literate-nav==0.6.1
-mkdocs-section-index==0.3.9
-mkdocs-exclude
-mkdocs-git-revision-date-localized-plugin
-mkdocs-literate-nav

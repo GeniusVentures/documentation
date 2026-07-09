@@ -35,11 +35,16 @@ doxybook2 --input sg-docs/doxygen/xml/ --output "$OUTPUT_DIR" -c scripts/doxyboo
 python3 scripts/build_navigation.py "$OUTPUT_DIR"
 
 # ── Python venv + MkDocs build ────────────────────────────────────────────────
+echo "  Generating documents with mkdocs"
 python3 -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt
 mkdocs build
+
+echo "  Generating llms.txt agent catalogs"
+python3 "$SCRIPT_DIR/build_llms.py" "$@"
+
 
 # Always compress MkDocs search index and serve it as gzipped JSON.
 # INDEX_FILE="site/search/search_index.json"

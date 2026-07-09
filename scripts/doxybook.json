@@ -40,7 +40,7 @@
   "linkSuffix": "/",
   "mainPageInRoot": false,
   "mainPageName": "indexpage",
-  "replaceUnderscoresInAnchors": true,
+  "replaceUnderscoresInAnchors": false,
   "sort": false,
   "templateIndexClasses": "index_classes",
   "templateIndexExamples": "index_examples",
