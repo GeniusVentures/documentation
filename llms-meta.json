@@ -1,0 +1,37 @@
+{
+  "docs": {
+    "docs:./about-gnus.ai/introduction.md": {
+      "hash": "",
+      "description": "Introduction to GNUS.AI — a decentralized AI compute platform. Covers the DePIN model, GPU-based processing, and the Genius Ventures ecosystem.",
+      "category": "architecture",
+      "optional": false,
+      "exclude": false,
+      "pinned": true,
+      "nav_section": "About GNUS.AI"
+    },
+    "docs:./technical-information/software-engineering-handbook/README.md": {
+      "hash": "",
+      "description": "Software Engineering Handbook covering C++ coding standards, smart contract projects, and recommended LLM usage patterns for the GNUS.AI ecosystem.",
+      "category": "technical",
+      "optional": false,
+      "exclude": false,
+      "nav_section": "Technical Information"
+    },
+    "docs:./technical-information/software-engineering-handbook/c++-coding-standards.md": {
+      "hash": "",
+      "description": "C++ Coding Standards for GNUS.AI — naming conventions, bracing style (Allman/Ullman), Doxygen headers, variable initialization, and testing discipline requirements.",
+      "category": "technical",
+      "optional": false,
+      "exclude": false,
+      "nav_section": "Technical Information"
+    },
+    "docs:./technical-information/super-genius-blockchain-technical-details/README.md": {
+      "hash": "",
+      "description": "SuperGenius Blockchain technical details including DB layout, AI data blocks, macro/microjob slicing, verification, consensus algorithm, and crypto primitives.",
+      "category": "blockchain",
+      "optional": false,
+      "exclude": false,
+      "nav_section": "Technical Information"
+    }
+  }
+}
