@@ -20,6 +20,24 @@ mkdocs:
   use_directory_urls: true
   strict: false
 
+# ── Doxygen configuration (required by build.sh, unused for docs-only site) ──
+doxygen:
+  output_dir: "gendoc-template/doxygen-output"
+  generate_xml: true
+  generate_html: false
+  recursive: true
+  strip_from_path: ""
+
+# ── Source references (docs-only site — no code to document) ─────────────────
+source_references:
+  - name: "noop"
+    label: "No Source Reference"
+    language: "C++"
+    source: ""
+    file_patterns: []
+    output_subdir: ""
+    base_url: ""
+
 # ── Navigation ────────────────────────────────────────────────────────────────
 navigation:
   generate_index: false
