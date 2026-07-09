@@ -1,0 +1,85 @@
+# Roadmap: GNUS.AI Documentation Refactoring
+
+## Overview
+
+The documentation site (`docs.gnus.ai`) transitions from embedded build infrastructure to a consumer of the `gendoc-template` git submodule — completing the circle after the template was originally extracted from this codebase. This is a hybrid pattern: the host keeps its own `mkdocs.yml` for the GitBook content hook (`rewrite_gitbook_paths.py`), while shared assets (JS, CSS, Python deps) come from the submodule. The primary motivation is enabling the Ask AI widget on all pages. Five sequential phases move from structural foundation through asset cleanup, build script modernization, widget enablement, and end with full parity verification.
+
+## Phases
+
+- [ ] **Phase 1: Template Integration** — Add submodule, create gendoc.yml, update mkdocs.yml to reference template hooks
+- [ ] **Phase 2: Asset Cleanup** — Delete duplicate JS/CSS, switch to submodule-provided assets and dependencies
+- [ ] **Phase 3: Build Script Refactoring** — Update cf-build.sh/.bat for submodule paths while preserving Doxygen pipeline
+- [ ] **Phase 4: Ask AI Widget Enablement** — Enable llms.ask in gendoc.yml, add widget JS module, verify ask-config.json
+- [ ] **Phase 5: Full Verification** — Parity check against pre-refactoring build, verify all 8 VERIFY criteria
+
+## Phase Details
+
+### Phase 1: Template Integration
+**Goal**: The project is structurally integrated with gendoc-template — submodule is tracked, gendoc.yml exists, and mkdocs.yml references template hooks alongside the host-specific GitBook hook.
+**Depends on**: Nothing (first phase)
+**Requirements**: SUBMOD-01, SUBMOD-02, SUBMOD-03, SUBMOD-04
+**Success Criteria** (what must be TRUE):
+  1. `gendoc-template/` directory exists at project root as a tracked git submodule, pinned to commit `fc99df9e`
+  2. `gendoc.yml` exists at project root with valid project metadata (name, number, logo, brief), paths (`handwritten_docs: "docs"`), mkdocs settings, and llms configuration including ask AI settings
+  3. `mkdocs.yml` references gendoc-template hooks (`load-gendoc-config.py`, `clean-nav.py`, `copy-assets.py`) alongside the host-specific `rewrite_gitbook_paths.py` hook
+  4. Running `mkdocs build -f mkdocs.yml` completes without errors (content may render with raw GitBook syntax at this stage — assets are not yet migrated)
+**Plans**: TBD
+
+### Phase 2: Asset Cleanup
+**Goal**: All duplicate assets removed from host project. Site builds and renders using template-provided JavaScript, CSS, and Python dependencies exclusively.
+**Depends on**: Phase 1
+**Requirements**: ASSET-01, ASSET-02, ASSET-03, ASSET-04, ASSET-05
+**Success Criteria** (what must be TRUE):
+  1. `javascripts/` directory no longer exists at project root — all five JS files (breadcrumbs, external-links, mathjax, mermaid, nav-state) are served from gendoc-template via `copy-assets.py`
+  2. Site renders with correct GNUS.AI brand colors, typography, and spacing using `theme.css` from the submodule — no visual regression compared to pre-refactoring build
+  3. Mermaid diagrams, MathJax equations, breadcrumbs, external links, and nav state all function using template-provided JavaScript
+  4. Python dependencies resolve correctly — `pyyaml>=6.0` is available from `gendoc-template/requirements.txt`, `mkdocs-redirects` is preserved for the redirects plugin
+**Plans**: TBD
+**UI hint**: yes
+
+### Phase 3: Build Script Refactoring
+**Goal**: `cf-build.sh` and `cf-build.bat` produce a complete, successful build using submodule-relative paths while preserving the custom SuperGenius Doxygen + doxybook2 pipeline.
+**Depends on**: Phase 2
+**Requirements**: BUILD-01, BUILD-02, BUILD-03, BUILD-04, BUILD-05
+**Success Criteria** (what must be TRUE):
+  1. Running `scripts/cf-build.sh` produces a complete `site/` directory with all documentation pages and the SuperGenius API reference
+  2. The SuperGenius Doxygen + doxybook2 pipeline runs successfully within the build script, generating API reference pages with correct category navigation (Classes, Files, Namespaces)
+  3. `llms.txt` and audience-specific catalogs are generated in the site directory using the template's `build-llms.py`
+  4. `llms-meta.json` exists at project root and is consumed by the llms generation pipeline
+  5. Running `scripts/cf-build.bat` produces equivalent output on Windows
+**Plans**: TBD
+
+### Phase 4: Ask AI Widget Enablement
+**Goal**: The Ask AI floating button and chat drawer appear and function on every documentation page, powered by the shared `ask.gnus.ai` worker.
+**Depends on**: Phase 3
+**Requirements**: ASKAI-01, ASKAI-02, ASKAI-03, ASKAI-04
+**Success Criteria** (what must be TRUE):
+  1. Every documentation page loads the Ask AI widget — a floating "Ask" button is visible in the bottom-right corner
+  2. Clicking "Ask" opens a chat drawer where users can type questions and receive AI-generated responses powered by documentation content
+  3. `ask-config.json` is generated in the site directory during build with correct endpoint (`https://ask.gnus.ai/api/ask`), allowed origins, and provider configuration
+  4. The Ask AI widget functions correctly on both light and dark mode, desktop and mobile viewports
+**Plans**: TBD
+**UI hint**: yes
+
+### Phase 5: Full Verification
+**Goal**: Confirm the refactored site is functionally and visually identical to the pre-refactoring build, Ask AI widget functions on all pages, and the migration is documented.
+**Depends on**: Phase 4
+**Requirements**: VERIFY-01, VERIFY-02, VERIFY-03, VERIFY-04, VERIFY-05, VERIFY-06, VERIFY-07, VERIFY-08
+**Success Criteria** (what must be TRUE):
+  1. All existing page URLs are unchanged — no broken links, no redirect regressions, directory URLs preserved
+  2. GitBook-syntax pages render correctly — embed tags, hint blocks, cover page meta, and GitBook math syntax all convert to valid HTML
+  3. Site appearance is visually identical to pre-refactoring build in both light and dark modes, on desktop and mobile — same brand colors, typography, spacing
+  4. Mermaid diagrams, MathJax equations, breadcrumbs, external links, and nav state all function identically to pre-refactoring build
+  5. `DOCUMENTATION_CHANGES.md` contains a summary of the refactoring including what was added (submodule, gendoc.yml, Ask AI widget), removed (duplicate JS/CSS, old build files), and modified (mkdocs.yml, build scripts)
+**Plans**: TBD
+**UI hint**: yes
+
+## Progress
+
+| Phase | Plans Complete | Status | Completed |
+|-------|----------------|--------|-----------|
+| 1. Template Integration | 0/TBD | Not started | - |
+| 2. Asset Cleanup | 0/TBD | Not started | - |
+| 3. Build Script Refactoring | 0/TBD | Not started | - |
+| 4. Ask AI Widget Enablement | 0/TBD | Not started | - |
+| 5. Full Verification | 0/TBD | Not started | - |

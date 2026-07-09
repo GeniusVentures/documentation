@@ -63,11 +63,32 @@
 
 | REQ-ID | Phase | Status |
 |--------|-------|--------|
-| SUBMOD-01 through SUBMOD-04 | Phase 1 | — Pending |
-| ASSET-01 through ASSET-05 | Phase 2 | — Pending |
-| BUILD-01 through BUILD-05 | Phase 3 | — Pending |
-| ASKAI-01 through ASKAI-04 | Phase 4 | — Pending |
-| VERIFY-01 through VERIFY-08 | Phase 5 | — Pending |
+| SUBMOD-01 | Phase 1 | Pending |
+| SUBMOD-02 | Phase 1 | Pending |
+| SUBMOD-03 | Phase 1 | Pending |
+| SUBMOD-04 | Phase 1 | Pending |
+| ASSET-01 | Phase 2 | Pending |
+| ASSET-02 | Phase 2 | Pending |
+| ASSET-03 | Phase 2 | Pending |
+| ASSET-04 | Phase 2 | Pending |
+| ASSET-05 | Phase 2 | Pending |
+| BUILD-01 | Phase 3 | Pending |
+| BUILD-02 | Phase 3 | Pending |
+| BUILD-03 | Phase 3 | Pending |
+| BUILD-04 | Phase 3 | Pending |
+| BUILD-05 | Phase 3 | Pending |
+| ASKAI-01 | Phase 4 | Pending |
+| ASKAI-02 | Phase 4 | Pending |
+| ASKAI-03 | Phase 4 | Pending |
+| ASKAI-04 | Phase 4 | Pending |
+| VERIFY-01 | Phase 5 | Pending |
+| VERIFY-02 | Phase 5 | Pending |
+| VERIFY-03 | Phase 5 | Pending |
+| VERIFY-04 | Phase 5 | Pending |
+| VERIFY-05 | Phase 5 | Pending |
+| VERIFY-06 | Phase 5 | Pending |
+| VERIFY-07 | Phase 5 | Pending |
+| VERIFY-08 | Phase 5 | Pending |
 
 ## Definition of Done
 
@@ -81,4 +102,4 @@
 8. All verification checks pass
 
 ---
-*Last updated: 2026-07-08 — auto-generated from research synthesis*
+*Last updated: 2026-07-08 — traceability updated during roadmap creation*
