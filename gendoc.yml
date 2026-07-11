@@ -37,8 +37,6 @@ source_references:
     language: "C++"
     source:
       - "../SuperGenius/src"
-      - "../SuperGenius/node"
-      - "../SuperGenius/app"
       - "../SuperGenius/example"
       - "../SuperGenius/ProofSystem/include"
       - "../SuperGenius/ProofSystem/src"

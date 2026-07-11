@@ -1,37 +1,696 @@
 {
   "docs": {
-    "docs:./about-gnus.ai/introduction.md": {
-      "hash": "",
-      "description": "Introduction to GNUS.AI — a decentralized AI compute platform. Covers the DePIN model, GPU-based processing, and the Genius Ventures ecosystem.",
-      "category": "architecture",
+    "docs:about-gnus.ai/introduction.md": {
+      "hash": "9cd40df57c9c4fd4",
+      "description": "What is GNUS.AI? Explains the decentralized AI compute platform where users earn GNUS tokens by contributing idle GPU/device cycles.",
+      "category": "product",
       "optional": false,
       "exclude": false,
-      "pinned": true,
-      "nav_section": "About GNUS.AI"
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": true
     },
-    "docs:./technical-information/software-engineering-handbook/README.md": {
-      "hash": "",
-      "description": "Software Engineering Handbook covering C++ coding standards, smart contract projects, and recommended LLM usage patterns for the GNUS.AI ecosystem.",
+    "docs:about-gnus.ai/why-gnus.ai/README.md": {
+      "hash": "37d278e906ad9aca",
+      "description": "What makes GNUS.AI different from other DePIN projects? Explains the four pillars: works everywhere, customizable, fast, and secure.",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:about-gnus.ai/why-gnus.ai/works-everywhere.md": {
+      "hash": "ecb6a268f4a66db5",
+      "description": "How does GNUS.AI achieve cross-platform compatibility? Runs on mobile, desktop, gaming consoles, and IoT devices.",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:about-gnus.ai/why-gnus.ai/customizable.md": {
+      "hash": "45554ce3367176fd",
+      "description": "How customizable is the GNUS.AI platform? SDK integration options for games and applications.",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:about-gnus.ai/why-gnus.ai/fast.md": {
+      "hash": "35e26da7ca7d1a49",
+      "description": "How fast is GNUS.AI processing? Performance characteristics of the distributed compute network.",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:about-gnus.ai/why-gnus.ai/secure/README.md": {
+      "hash": "543b04da72658dac",
+      "description": "How does GNUS.AI security work? Encryption, verification, and secure processing architecture.",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:about-gnus.ai/why-gnus.ai/secure/secure-2fa-with-totp-and-zk-snarks.md": {
+      "hash": "e7afb86b966d1856",
+      "description": "How does GNUS.AI implement 2FA using TOTP and zk-SNARKs? Privacy-preserving two-factor authentication design.",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:about-gnus.ai/features-and-benefits/README.md": {
+      "hash": "e06376d81d6288af",
+      "description": "What are the key features and benefits of the GNUS.AI platform? Scale, cost-efficiency, and competitive advantages.",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:about-gnus.ai/features-and-benefits/scale-and-cost-efficiency.md": {
+      "hash": "88cf770f3584af76",
+      "description": "How does GNUS.AI achieve scale and cost-efficiency? Comparison of decentralized vs centralized infrastructure costs.",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/README.md": {
+      "hash": "f6e3d180f1cad68e",
+      "description": "How does the GNUS.AI decentralized network compare to a centralized 100k GPU cluster? Full cost and capability comparison.",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/1.-executive-summary.md": {
+      "hash": "44e19419daf94fea",
+      "description": "Executive summary comparing GNUS.AI decentralized network economics vs centralized xAI 100k cluster.",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/2.-introduction.md": {
+      "hash": "3b0f288fde202b49",
+      "description": "Introduction to the GNUS.ai vs centralized xAI cluster comparison: methodology and scope.",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/3.-understanding-the-gnus.ai-decentralized-network.md": {
+      "hash": "ff4653edbc9fc3c4",
+      "description": "What is the GNUS.ai decentralized network architecture? Node types, GPU contributions, and incentive structures.",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/4.-the-centralized-xai-100k-cluster-explained.md": {
+      "hash": "f7724fd83e9941fd",
+      "description": "What is the xAI 100k GPU cluster? Architecture, costs, and operational characteristics.",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/5.-comparing-capex-and-opex.md": {
+      "hash": "e6373afdcb966cbb",
+      "description": "How do CAPEX and OPEX compare between GNUS.ai decentralized network and xAI centralized cluster?",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/6.-payout-structure-and-profitability.md": {
+      "hash": "04e372657f83e9dc",
+      "description": "How does the GNUS.ai payout structure and profitability model work compared to centralized alternatives?",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/7.-the-deflationary-token-mechanism.md": {
+      "hash": "fce462dd635782ea",
+      "description": "How does the GNUS deflationary token mechanism create value? Token burn, supply reduction, and price dynamics.",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/8.-projected-token-price-appreciation.md": {
+      "hash": "ae1fcc51edc2bfe1",
+      "description": "What are the projected GNUS token price appreciation scenarios? Growth modeling based on network adoption.",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/9.-summary-comparison-tables.md": {
+      "hash": "4e434a6e0aa37f92",
+      "description": "Summary comparison tables: GNUS.ai decentralized vs xAI centralized across all evaluated dimensions.",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/10.-conclusion-and-next-steps.md": {
+      "hash": "8c2b6defd8446c56",
+      "description": "What are the conclusions from the GNUS.ai vs xAI cluster comparison? Key takeaways and recommended next steps.",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/final-thoughts.md": {
+      "hash": "a2a4c89b090c1da1",
+      "description": "Final thoughts on GNUS.ai vs centralized AI infrastructure: strategic positioning and market implications.",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:about-gnus.ai/features-and-benefits/tokenomics.md": {
+      "hash": "7e29bf60197b71af",
+      "description": "What is the GNUS token economic model? Deflationary mechanism, reward distribution, staking, and supply dynamics.",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:about-gnus.ai/public-roadmap.md": {
+      "hash": "19a41e504478d1c4",
+      "description": "What is on the GNUS.AI public roadmap? Planned features, milestones, and development timeline.",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:about-gnus.ai/how-does-it-work/README.md": {
+      "hash": "a2f93f6a39ccb98f",
+      "description": "How does GNUS.AI actually process work? Explains idle GPU utilization, distributed computation model, and dynamic resource allocation.",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:about-gnus.ai/how-does-it-work/idle-central-processing-gpu.md": {
+      "hash": "97635858b2b1ccdb",
+      "description": "How does GNUS.AI use idle GPU cycles? Technical explanation of GPU resource contribution and reward mechanisms.",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:about-gnus.ai/how-does-it-work/distributed-computation.md": {
+      "hash": "10d254242e1a190c",
+      "description": "How does distributed computation work in GNUS.AI? Work distribution, task splitting, and result aggregation.",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:about-gnus.ai/how-does-it-work/dynamically-adjusted-resource-allocation.md": {
+      "hash": "cb62bbf29478bcdb",
+      "description": "How does GNUS.AI dynamically adjust resource allocation? Load balancing and adaptive task distribution across nodes.",
+      "category": "product",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "pinned": false
+    },
+    "docs:technical-information/software-engineering-handbook/README.md": {
+      "hash": "22da2a37c49e3b1f",
+      "description": "What are the GNUS.AI coding standards and engineering principles? Covers naming conventions, SOLID principles, testing requirements, and AI tool usage policy.",
       "category": "technical",
       "optional": false,
       "exclude": false,
-      "nav_section": "Technical Information"
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": true
     },
-    "docs:./technical-information/software-engineering-handbook/c++-coding-standards.md": {
-      "hash": "",
-      "description": "C++ Coding Standards for GNUS.AI — naming conventions, bracing style (Allman/Ullman), Doxygen headers, variable initialization, and testing discipline requirements.",
+    "docs:technical-information/software-engineering-handbook/c++-coding-standards.md": {
+      "hash": "0ae7911ea7c42594",
+      "description": "What C++17 coding rules must SuperGenius developers follow? Required/recommended classifications covering naming, bracing, Doxygen headers, and clang-tidy enforcement.",
       "category": "technical",
       "optional": false,
       "exclude": false,
-      "nav_section": "Technical Information"
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": true
     },
-    "docs:./technical-information/super-genius-blockchain-technical-details/README.md": {
-      "hash": "",
-      "description": "SuperGenius Blockchain technical details including DB layout, AI data blocks, macro/microjob slicing, verification, consensus algorithm, and crypto primitives.",
+    "docs:technical-information/software-engineering-handbook/smart-contract-projects.md": {
+      "hash": "c4e13889e7bf7609",
+      "description": "How should GNUS.AI smart contract projects be structured? Standards and best practices for Solidity development.",
+      "category": "technical",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/software-engineering-handbook/recommended-pattern-for-llm-usage-in-team-gpt.md": {
+      "hash": "f3a672764d550b11",
+      "description": "What is the recommended pattern for using LLMs in GNUS.AI development? Guidelines for AI-assisted coding with human oversight.",
+      "category": "technical",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/super-genius-blockchain-technical-details/README.md": {
+      "hash": "c45ed8b4df0614d4",
+      "description": "How does the SuperGenius blockchain work? Patent-based system overview: token contracts, IPFS pub/sub, DAG consensus, RocksDB storage, and processing components.",
       "category": "blockchain",
       "optional": false,
       "exclude": false,
-      "nav_section": "Technical Information"
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": true
+    },
+    "docs:technical-information/super-genius-blockchain-technical-details/supergenius-db-layout.md": {
+      "hash": "54655df6c46c333e",
+      "description": "What is the SuperGenius database layout? RocksDB schema, key structures, and data organization.",
+      "category": "blockchain",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/super-genius-blockchain-technical-details/ai-data-blocks.md": {
+      "hash": "06efdf64d0e603d0",
+      "description": "How do AI data blocks work in SuperGenius? Block structure and data format for AI computation results.",
+      "category": "blockchain",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/super-genius-blockchain-technical-details/slicing-data-for-macro-microjobs.md": {
+      "hash": "5c2e8bdd9e97fe6d",
+      "description": "How does SuperGenius slice data into macro and micro jobs? Work partitioning and parallel execution strategy.",
+      "category": "blockchain",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/super-genius-blockchain-technical-details/verification-and-hash-results-from-processing.md": {
+      "hash": "dccf052da1eb031a",
+      "description": "How does SuperGenius verify processing results? Hash-based verification system for distributed computation.",
+      "category": "blockchain",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/super-genius-blockchain-technical-details/diagram-of-the-internal-blockchain-blocks-and-processing-functionality.md": {
+      "hash": "ad11d3c410a1cba5",
+      "description": "What is the internal blockchain block structure? Visual diagram and explanation of block components and processing.",
+      "category": "blockchain",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/super-genius-blockchain-technical-details/ipfs-pub-sub.md": {
+      "hash": "d531ab734392ca82",
+      "description": "How does SuperGenius use IPFS pub/sub? Gossip protocol for node communication and data distribution.",
+      "category": "blockchain",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/super-genius-blockchain-technical-details/sg-consensus-algorithm-implementation.md": {
+      "hash": "40dab743a6f13adb",
+      "description": "How is the SuperGenius consensus algorithm implemented? POW/POS blended consensus mechanics.",
+      "category": "blockchain",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/super-genius-blockchain-technical-details/account-creation-with-ecsda-and-el-gamal.md": {
+      "hash": "d73ce92d3a801d87",
+      "description": "How does SuperGenius handle account creation? ECDSA and El Gamal cryptographic primitives for account generation.",
+      "category": "blockchain",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/super-genius-blockchain-technical-details/key-derivation-function.md": {
+      "hash": "f0bfad49eb8314cf",
+      "description": "What key derivation function does SuperGenius use? Cryptographic key derivation implementation details.",
+      "category": "blockchain",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/super-genius-blockchain-technical-details/el-gamal-encryption.md": {
+      "hash": "6c2eb6a74ed8c95b",
+      "description": "How does SuperGenius implement El Gamal encryption? Encryption scheme for secure data transmission.",
+      "category": "blockchain",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/super-genius-blockchain-technical-details/prover-specification.md": {
+      "hash": "1905020b036c5ad7",
+      "description": "What is the SuperGenius prover specification? Zero-knowledge proof generation requirements and interface.",
+      "category": "blockchain",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/super-genius-blockchain-technical-details/supergenius-processing-component-information/README.md": {
+      "hash": "1283fed53c43eaad",
+      "description": "How does the SuperGenius processing component work? Worker app workflow and job processing architecture.",
+      "category": "blockchain",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/super-genius-blockchain-technical-details/supergenius-processing-component-information/processing-worker-app-workflow.md": {
+      "hash": "e3fe7378ac47a4f1",
+      "description": "What is the SuperGenius processing worker app workflow? Step-by-step job lifecycle from assignment to completion.",
+      "category": "blockchain",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/super-genius-blockchain-technical-details/supergenius-processing-component-information/job-processing-flow.md": {
+      "hash": "0a067067ea4dfdad",
+      "description": "How does job processing flow through SuperGenius? Task queue, worker assignment, and result submission.",
+      "category": "blockchain",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/super-genius-blockchain-technical-details/super-genius-dag-blockchain.md": {
+      "hash": "abc9bef0bb17a93b",
+      "description": "How does the SuperGenius DAG blockchain work? Directed Acyclic Graph structure, branching, and consensus.",
+      "category": "blockchain",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/super-genius-blockchain-technical-details/minimal-proof-mountain.md": {
+      "hash": "503f56c303c240d0",
+      "description": "What is the Minimal MMR Proof System with UTXOs? Proof Mountain Range for efficient transaction verification.",
+      "category": "blockchain",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/super-genius-blockchain-technical-details/cross-chain-bridging-to-supergenius/README.md": {
+      "hash": "1a16583e559f9e32",
+      "description": "How does cross-chain bridging to SuperGenius work? Bridge architecture, message passing, and asset transfer.",
+      "category": "blockchain",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/super-genius-blockchain-technical-details/cross-chain-bridging-to-supergenius/overview.md": {
+      "hash": "06f1c4c9e8703325",
+      "description": "What is the cross-chain bridging flow overview? Technical details of bridging from external chains to SuperGenius.",
+      "category": "blockchain",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/super-genius-blockchain-technical-details/cross-chain-bridging-to-supergenius/message-creation-leader-election.md": {
+      "hash": "519fa40443ef510d",
+      "description": "How does message creation and leader election work in SuperGenius bridging?",
+      "category": "blockchain",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/super-genius-blockchain-technical-details/cross-chain-bridging-to-supergenius/verification-channel-creation.md": {
+      "hash": "332e6bd1373aa4e8",
+      "description": "How are verification channels created during SuperGenius cross-chain bridging?",
+      "category": "blockchain",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/super-genius-blockchain-technical-details/cross-chain-bridging-to-supergenius/node-verification-voting.md": {
+      "hash": "9e829d6ec50c7649",
+      "description": "How does node verification voting work in SuperGenius cross-chain bridging?",
+      "category": "blockchain",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/super-genius-blockchain-technical-details/cross-chain-bridging-to-supergenius/signature-collection-aggregation.md": {
+      "hash": "51cf4fe2f210a032",
+      "description": "How does signature collection and aggregation work in SuperGenius cross-chain bridging?",
+      "category": "blockchain",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/super-genius-blockchain-technical-details/cross-chain-bridging-to-supergenius/destination-chain-submission-validation.md": {
+      "hash": "3c482a825c9277b3",
+      "description": "How does destination chain submission and validation work in SuperGenius bridging?",
+      "category": "blockchain",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/hybrid-smart-contract/README.md": {
+      "hash": "1677d42cba6353aa",
+      "description": "How does the GNUS.ai hybrid smart contract work? Hierarchical ERC-1155 container with ERC-20 GNUS token architecture.",
+      "category": "technical",
+      "optional": false,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": true
+    },
+    "docs:technical-information/hybrid-smart-contract/gnus.ai-ecosystem-a-unified-network-of-intelligence.md": {
+      "hash": "9f94a12db3ebf2af",
+      "description": "How does the GNUS.ai ecosystem form a unified network of intelligence? Smart contract, token, and node integration.",
+      "category": "technical",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/hybrid-smart-contract/structure/README.md": {
+      "hash": "96e930fe8929b28b",
+      "description": "What is the structure of the GNUS.ai hybrid smart contract? Hierarchical container design overview.",
+      "category": "technical",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/hybrid-smart-contract/structure/structure-details.md": {
+      "hash": "c9594d0d08b96986",
+      "description": "What are the detailed structural components of the GNUS.ai hybrid smart contract?",
+      "category": "technical",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/hybrid-smart-contract/encoded-ids.md": {
+      "hash": "f117c66ce39ea5e3",
+      "description": "How do encoded IDs work in the GNUS.ai smart contract? ID encoding scheme and resolution.",
+      "category": "technical",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/our-smart-contract-testing-philosophy.md": {
+      "hash": "ea1a0fe701705dd5",
+      "description": "How does GNUS.AI approach smart contract testing? Testing philosophy, methodology, and quality assurance gates.",
+      "category": "technical",
+      "optional": false,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/ai-systems/README.md": {
+      "hash": "68403ec228249ddf",
+      "description": "How do AI systems work within GNUS.AI? Overview of query workflows, data storage, pub/sub communication, and model retraining.",
+      "category": "architecture",
+      "optional": false,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/ai-systems/overview.md": {
+      "hash": "ae88f99e3a6e11f0",
+      "description": "What is the AI systems architecture overview for GNUS.AI? Component relationships and data flow.",
+      "category": "architecture",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/ai-systems/query-workflow.md": {
+      "hash": "9d662d929475212d",
+      "description": "How does the AI query workflow operate in GNUS.AI? From user request to model inference and response.",
+      "category": "architecture",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/ai-systems/data-storage.md": {
+      "hash": "5895b06df763565a",
+      "description": "How does GNUS.AI store AI-related data? Storage architecture for models, embeddings, and inference results.",
+      "category": "architecture",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/ai-systems/pub-sub-communication.md": {
+      "hash": "7511ac26948da261",
+      "description": "How does pub/sub communication work in GNUS.AI AI systems? Event-driven messaging between AI components.",
+      "category": "architecture",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/ai-systems/retraining-mechanism.md": {
+      "hash": "836952a87a1284d3",
+      "description": "How does the AI model retraining mechanism work in GNUS.AI? Continuous learning and model update pipeline.",
+      "category": "architecture",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/zero-knowledge-proofs/README.md": {
+      "hash": "b56c912ee7bd41d0",
+      "description": "What ZK proof schemes does GNUS.AI use? Elliptic curve choices and proof system architecture.",
+      "category": "technical",
+      "optional": false,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:technical-information/zero-knowledge-proofs/proof-schemes-and-elliptical-curves.md": {
+      "hash": "15189ac7826adfd8",
+      "description": "What ZK proof schemes and elliptic curves does GNUS.AI use? Technical details of the cryptographic choices.",
+      "category": "technical",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": false
+    },
+    "docs:resources/contact-us.md": {
+      "hash": "33953d6e4f0a8e3c",
+      "description": "How to contact the GNUS.AI team? Official communication channels.",
+      "category": "sales",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Resources",
+      "pinned": false
+    },
+    "docs:resources/contracts.md": {
+      "hash": "fd5b214cd4d81ef4",
+      "description": "What are the official GNUS.AI smart contract addresses? Deployed contract references across networks.",
+      "category": "technical",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Resources",
+      "pinned": false
+    },
+    "docs:resources/faqs/README.md": {
+      "hash": "5812d2529c6ec107",
+      "description": "What are the most frequently asked questions about GNUS.AI? Common user and developer questions.",
+      "category": "sales",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Resources",
+      "pinned": false
+    },
+    "docs:resources/faqs/technical-deep-dive-how-gnus.ai-works.md": {
+      "hash": "d784373aec6e7239",
+      "description": "How does GNUS.ai work? Technical deep dive into system architecture for developers.",
+      "category": "sales",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Resources",
+      "pinned": false
+    },
+    "docs:resources/multisig-wallets.md": {
+      "hash": "2567185d73a44be5",
+      "description": "How do GNUS.AI multisig wallets work? Multi-signature wallet configuration and security.",
+      "category": "technical",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Resources",
+      "pinned": false
+    },
+    "docs:resources/glossary.md": {
+      "hash": "90364eb5d028b8a7",
+      "description": "What do GNUS.AI-specific terms mean? Glossary of blockchain, token, and platform terminology.",
+      "category": "technical",
+      "optional": false,
+      "exclude": false,
+      "nav_section": "Resources",
+      "pinned": false
+    },
+    "docs:resources/official-links.md": {
+      "hash": "5cad9eac5bdaa813",
+      "description": "Where are the official GNUS.AI resources? Links to website, docs, GitHub, social media, and token contracts.",
+      "category": "sales",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Resources",
+      "pinned": false
+    },
+    "set:supergenius": {
+      "hash": "set",
+      "description": null,
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
     }
   }
 }
