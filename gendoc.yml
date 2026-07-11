@@ -4,6 +4,7 @@
 # ── Project identification ──────────────────────────────────────────────────
 project:
   name: "GNUS.AI Docs"
+  logo: "./gnus-ai-logo.png"
   number: "0.1"
   brief: "GNUS.AI Network — decentralized AI compute platform documentation"
   generator: false
@@ -27,24 +28,58 @@ doxygen:
   generate_html: false
   recursive: true
   strip_from_path: ""
+  full_path_names: false
 
-# ── Source references (docs-only site — no code to document) ─────────────────
+# ── Source references ──────────────────────────────────────────────────────
 source_references:
-  - name: "noop"
-    label: "No Source Reference"
+  - name: "supergenius"
+    label: "⌨️ SuperGenius Code"
     language: "C++"
-    source: ""
-    file_patterns: []
-    output_subdir: ""
-    base_url: ""
+    source:
+      - "../SuperGenius/src"
+      - "../SuperGenius/node"
+      - "../SuperGenius/app"
+      - "../SuperGenius/example"
+      - "../SuperGenius/ProofSystem/include"
+      - "../SuperGenius/ProofSystem/src"
+      - "../SuperGenius/ProofSystem/SGProofCircuits/src"
+      - "../SuperGenius/ProofSystem/SGProofCircuits/include"
+      - "../SuperGenius/SGProcessingManager/include"
+      - "../SuperGenius/SGProcessingManager/src"
+      - "../SuperGenius/gRPCForSuperGenius/proto-include"
+      - "../SuperGenius/GeniusKDF/src"
+      - "../SuperGenius/evmrelay/src"
+      - "../SuperGenius/evmrelay/include"
+      - "../SuperGenius/evmrelay/examples"
+    file_patterns:
+      - "*.c"
+      - "*.cc"
+      - "*.cpp"
+      - "*.cxx"
+      - "*.d"
+      - "*.h"
+      - "*.hh"
+      - "*.hpp"
+      - "*.hxx"
+      - "*.ipp"
+      - "*.inc"
+      - "*.java"
+      - "*.markdown"
+      - "*.md"
+      - "*.php"
+      - "*.py"
+    output_subdir: "SuperGenius"
+    base_url: "/SuperGenius/"
 
 # ── Navigation ────────────────────────────────────────────────────────────────
 navigation:
   generate_index: false
+  section_index: true
   sections:
     - label: "Documentation"
-      source_file: "SUMMARY_EXT.md"
+      source_file: "SUMMARY.md"
       extract_heading: ""
+      gitbook: true
 
 # ── Deploy (Cloudflare Pages via Wrangler) ──────────────────────────────────
 deploy:

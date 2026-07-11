@@ -1,9 +1,6 @@
 [submodule "gitbook"]
 	path = docs
 	url = ../gitbook
-[submodule "sg-docs"]
-	path = sg-docs
-	url = ../sg-docs
 [submodule "gendoc-template"]
 	path = gendoc-template
 	url = ../gendoc-template.git
