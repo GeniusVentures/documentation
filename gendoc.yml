@@ -17,9 +17,12 @@ paths:
 
 # ── MkDocs configuration ────────────────────────────────────────────────────
 mkdocs:
-  site_dir: "site"
   use_directory_urls: true
   strict: false
+
+# ── Theme selection ──────────────────────────────────────────────────────────
+theme:
+  name: "protocol"                            # built-in presets: "default" (original cyan) | "protocol" (new)
 
 # ── Doxygen configuration (required by build.sh, unused for docs-only site) ──
 doxygen:
