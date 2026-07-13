@@ -85,9 +85,10 @@ navigation:
 # ── Deploy (Cloudflare Pages via Wrangler) ──────────────────────────────────
 deploy:
   cloudflare:
-    pages_project_name: "gnus-docs"
+    pages_project_name: "gnus-ai-docs"
     compatibility_date: "2024-01-01"
     production_branch: "main"
+    branch: "main"
     custom_domain: "docs.gnus.ai"
 
 # ── LLMs / Ask AI ──────────────────────────────────────────────────────────
