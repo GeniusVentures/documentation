@@ -98,18 +98,18 @@ The documentation site (`docs.gnus.ai`) transitions from embedded build infrastr
 **Scope**: gendoc-template submodule, gendoc workstream only
 **Requirements**: DEPLOY-01, DEPLOY-02, DEPLOY-03, DEPLOY-04
 **Success Criteria** (what must be TRUE):
-  1. All `.json` files in the site directory are uniformly gzipped to `.json.gz` and raw `.json` deleted pre-upload — no in-place gzip, no `_headers` hack, no special cases
-  2. MkDocs search is overridden via pre-bundle `extra_javascript` fetch interception (NOT Service Worker — SW requires HTTPS, breaks local `mkdocs serve`). Redirects `search_index.json` → `search_index.json.gz` with magic-byte + `DecompressionStream`, same pattern as `config.ts`
+  1. All `.json` files in the site directory are uniformly gzipped to `.json.gz` and raw `.json` permanently deleted pre-upload — no in-place gzip, no `_headers` hack, no post-deploy restore, no special cases
+  2. Shared `fetch-gzip.js` wrapper (injected by `load-gendoc-config.py` only when `gzip_json: true`) intercepts ALL `.json` fetches → `.json.gz` with transparent magic-byte + `DecompressionStream` decompression. No runtime fallback — clean rewrite. MkDocs search (`search_index.json`) and Ask AI widget (`ask-config.json`) both benefit from a single file. `config.ts` drops its inline gzip logic
   3. Frontend `config.ts` fetches `/ask-config.json.gz` with gzip magic-byte detection and `DecompressionStream` fallback; falls back to `/ask-config.json` for local dev
   4. Worker fetches `.json.gz` with `.json` fallback (`catalog.ts`, `normalizer.ts`) — already implemented, no changes needed
-  5. `deploy.sh` restores all raw `.json` files after deploy for local development compatibility
+  5. `deploy.sh` permanently deletes raw `.json` files after gzip — no restore. `.json.gz` works everywhere (local and production) via the fetch wrapper, so raw `.json` is never needed
   6. Deploy branch is read from `gendoc.yml` (`deploy.cloudflare.branch`, default `"main"`) — not hardcoded
   7. `deploy.cloudflare.gzip_json` toggle (default `true`) controls deploy.sh gzip behavior only — consumers always try `.json.gz` with magic-byte detection + `.json` fallback regardless of config
 **Plans**: 3 plans
 
 Plans:
-- [ ] 07-01-PLAN.md — Uniform JSON gzip in deploy.sh, remove _headers and in-place gzip, add gendoc.yml-driven branch and gzip_json config
-- [ ] 07-02-PLAN.md — Service Worker override for MkDocs Material search fetching search_index.json.gz with gzip decompression
+- [x] 07-01-PLAN.md — Uniform JSON gzip in deploy.sh, remove _headers and in-place gzip, add gendoc.yml-driven branch and gzip_json config
+- [ ] 07-02-PLAN.md — Shared fetch-gzip.js wrapper (conditionally injected via load-gendoc-config.py) intercepts all .json fetches → .json.gz with transparent decompression
 - [ ] 07-03-PLAN.md — Update gendoc.yml.example and host gendoc.yml with deploy.cloudflare.branch and gzip_json fields
 
 ## Progress
@@ -122,4 +122,4 @@ Plans:
 | 4. Ask AI Widget Enablement | 0/TBD | Not started | - |
 | 5. Full Verification | 0/TBD | Not started | - |
 | 6. Theme Loader | 0/TBD | Not started | - |
-| 7. Cloudflare Pages Deploy Fix | 0/TBD | Not started | - |
+| 7. Cloudflare Pages Deploy Fix | 1/3 | In progress | - |
