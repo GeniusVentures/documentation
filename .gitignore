@@ -19,3 +19,5 @@ __pycache__/
 docs/SuperGenius
 
 .dev.vars
+.generated-vars
+wrangler-ask.toml
