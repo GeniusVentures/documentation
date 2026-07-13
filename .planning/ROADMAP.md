@@ -104,6 +104,7 @@ The documentation site (`docs.gnus.ai`) transitions from embedded build infrastr
   4. Worker fetches `.json.gz` with `.json` fallback (`catalog.ts`, `normalizer.ts`) — already implemented, no changes needed
   5. `deploy.sh` restores all raw `.json` files after deploy for local development compatibility
   6. Deploy branch is read from `gendoc.yml` (`deploy.cloudflare.branch`, default `"main"`) — not hardcoded
+  7. `deploy.cloudflare.gzip_json` toggle (default `true`) controls deploy.sh gzip behavior only — consumers always try `.json.gz` with magic-byte detection + `.json` fallback regardless of config
 **Plans**: TBD
 
 ## Progress

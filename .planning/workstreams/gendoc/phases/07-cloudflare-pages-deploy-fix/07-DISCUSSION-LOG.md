@@ -56,3 +56,19 @@ None.
 ---
 
 *Discussion completed: 2026-07-13*
+
+## Area 4: gendoc.yml gzip_json Toggle (--assumptions follow-up)
+
+**Question:** Should the `.json.gz` → `.json` fallback be a gendoc.yml toggle, or should consumers always try `.json.gz` unconditionally?
+
+**Context:** If the toggle controlled consumer behavior, frontend and MkDocs search (browser-side) would need config awareness — read from ask-config.json or sniff environment.
+
+| Option | Description |
+|--------|-------------|
+| A) Config controls consumers | gendoc.yml flag → ask-config.json → frontend/MkDocs search read it and decide .json.gz vs .json |
+| B) Config controls deploy.sh only | Deploy toggle only. Consumers always try .json.gz with magic-byte detection — handles both transparently. |
+
+**Selected:** B — Config controls deploy.sh only
+
+**Rationale:** Magic-byte detection already handles both cases transparently — no runtime config awareness needed. The toggle only determines whether deploy.sh creates the .json.gz files. Cleaner, simpler, zero coordination between deploy config and runtime code.
+

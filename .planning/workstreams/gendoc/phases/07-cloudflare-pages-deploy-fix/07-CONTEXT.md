@@ -16,16 +16,17 @@ The gendoc-template deployment pipeline handles Cloudflare Pages' 25 MiB per-fil
 ### JSON Gzip Strategy
 - **D-01: Uniform `.json.gz` for all JSON files.** All `.json` files in the site directory are gzipped to `.json.gz` and the raw `.json` is deleted before `wrangler pages deploy`. No in-place gzip, no `_headers` file. Every file follows the same pattern.
 - **D-02: Revert in-place gzip + `_headers` for `search_index.json`.** The current deploy.sh gzip-replaces `search_index.json` content in-place and writes a `_headers` file for Cloudflare transparent serving. This is removed — `search_index.json` is handled identically to every other `.json` file.
+- **D-03: `deploy.cloudflare.gzip_json` toggle in gendoc.yml — deploy.sh only.** A boolean (default `true`) that controls whether `deploy.sh` gzips+deletes raw `.json` before upload. When `false`, deploy.sh skips the entire gzip/delete/restore cycle. Consumers (frontend, worker, MkDocs search) do NOT read this flag — they always try `.json.gz` first with magic-byte detection + `.json` fallback. The toggle exists purely for teams that don't use Cloudflare Pages and don't want the gzip overhead.
 
 ### MkDocs Search
-- **D-03: Override MkDocs Material search to fetch `.json.gz`.** The MkDocs Material theme's search worker fetches `search_index.json` from a hardcoded URL. A JS shim intercepts this and redirects to `search_index.json.gz`, with the same gzip magic-byte detection + `DecompressionStream` decompression pattern used by `config.ts`. The override must load before the MkDocs search JS initializes.
+- **D-04: Override MkDocs Material search to fetch `.json.gz`.** The MkDocs Material theme's search worker fetches `search_index.json` from a hardcoded URL. A JS shim intercepts this and redirects to `search_index.json.gz`, with the same gzip magic-byte detection + `DecompressionStream` decompression pattern used by `config.ts`. The override must load before the MkDocs search JS initializes.
 
-### Deploy Branch
-- **D-04: Deploy branch configurable via gendoc.yml.** `deploy.cloudflare.branch` in `gendoc.yml` (default: `"main"`). `deploy.sh` reads this value and passes it to `wrangler pages deploy --branch <value>`. This replaces the hardcoded `--branch main`.
+### Deploy Configuration (gendoc.yml)
+- **D-05: Deploy branch configurable via gendoc.yml.** `deploy.cloudflare.branch` in `gendoc.yml` (default: `"main"`). `deploy.sh` reads this value and passes it to `wrangler pages deploy --branch <value>`. Replaces hardcoded `--branch main`.
+- **D-03 (see above): `deploy.cloudflare.gzip_json`** — deploy.sh-only toggle. Both keys under the existing `deploy.cloudflare` block.
 
 ### Claude's Discretion
 - Exact implementation of the MkDocs search JS override — fetch interception shim, `extra_javascript` injection, or post-build template patch. Planner picks the most maintainable approach consistent with the existing `config.ts` pattern.
-- `gendoc.yml` key placement — under existing `deploy.cloudflare` block or new section. Planner resolves based on existing YAML structure.
 
 </decisions>
 
