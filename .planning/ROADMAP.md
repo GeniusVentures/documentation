@@ -11,6 +11,7 @@ The documentation site (`docs.gnus.ai`) transitions from embedded build infrastr
 - [ ] **Phase 3: Build Script Refactoring** — Update cf-build.sh/.bat for submodule paths while preserving Doxygen pipeline
 - [ ] **Phase 4: Ask AI Widget Enablement** — Enable llms.ask in gendoc.yml, add widget JS module, verify ask-config.json
 - [ ] **Phase 5: Full Verification** — Parity check against pre-refactoring build, verify all 8 VERIFY criteria
+- [ ] **Phase 6: Theme Loader** — Add load-theme.py hook for dynamic theme CSS selection, two built-in presets, BYO custom theme support
 
 ## Phase Details
 
@@ -74,6 +75,22 @@ The documentation site (`docs.gnus.ai`) transitions from embedded build infrastr
 **Plans**: TBD
 **UI hint**: yes
 
+### Phase 6: Theme Loader
+**Goal**: The gendoc-template supports dynamic theme CSS selection via a `load-theme.py` MkDocs hook. Two built-in presets (default/protocol) are included, the old hardcoded `stylesheets/theme.css` is removed, and host projects can supply a custom theme via `gendoc.yml` without modifying the submodule.
+**Depends on**: Phase 5 (verified baseline)
+**Requirements**: THEME-01, THEME-02, THEME-03, THEME-04, THEME-05, THEME-06
+**Success Criteria** (what must be TRUE):
+  1. `scripts/load-theme.py` is registered as a MkDocs hook in `mkdocs.yml` and selects the correct CSS at build time based on `gendoc.yml` `theme.name`
+  2. Two built-in presets exist: `default` (original cyan look, zero-change fallback) and `protocol` (new design)
+  3. `stylesheets/theme.css` is deleted — `load-theme.py` dynamically sets `extra_css` instead
+  4. `stylesheets/base.css` provides shared foundation styles; `themes/default.css` and `themes/protocol.css` provide the preset overrides
+  5. `scripts/copy-assets.py` is updated to include `themes/` in its `ASSET_DIRS` tuple
+  6. Host projects can set `theme.name: "custom"` + `theme.custom_css: "my-theme.css"` in `gendoc.yml` to load a project-specific theme — `load-theme.py` copies the file into `themes/custom.css` at build time
+  7. `gendoc.yml.example` and host `gendoc.yml` document the `theme:` block with `name` (default/protocol/custom) and optional `custom_css`
+  8. `themes/custom.css` is listed in `gendoc-template/.gitignore` to prevent accidental commits
+**Plans**: TBD
+**UI hint**: yes
+
 ## Progress
 
 | Phase | Plans Complete | Status | Completed |
@@ -83,3 +100,4 @@ The documentation site (`docs.gnus.ai`) transitions from embedded build infrastr
 | 3. Build Script Refactoring | 0/TBD | Not started | - |
 | 4. Ask AI Widget Enablement | 0/TBD | Not started | - |
 | 5. Full Verification | 0/TBD | Not started | - |
+| 6. Theme Loader | 0/TBD | Not started | - |
