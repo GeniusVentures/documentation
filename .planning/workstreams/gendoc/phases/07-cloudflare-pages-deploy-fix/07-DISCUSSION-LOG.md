@@ -72,3 +72,14 @@ None.
 
 **Rationale:** Magic-byte detection already handles both cases transparently — no runtime config awareness needed. The toggle only determines whether deploy.sh creates the .json.gz files. Cleaner, simpler, zero coordination between deploy config and runtime code.
 
+
+## Area 5: MkDocs Search Override — Service Worker Rejected
+
+**Issue:** Planner chose Service Worker for MkDocs search override. User rejected: "service worker won't work for local, not a good choice."
+
+**Root cause:** SWs require HTTPS. `mkdocs serve` runs on `localhost:8000` (HTTP) — SW registration fails silently, search breaks locally.
+
+**Correction:** `search_index.json` is fetched from the MAIN THREAD (in `bundle.*.min.js`), not from the search worker. A plain `extra_javascript` script loaded before the MkDocs bundle can intercept `fetch` directly — no SW needed. Same gzip magic-byte + `DecompressionStream` pattern.
+
+**Updated D-04:** Pre-bundle fetch interception shim. Loaded via `extra_javascript` before the MkDocs bundle. Works on HTTP localhost, HTTPS Cloudflare, everywhere.
+

@@ -19,14 +19,14 @@ The gendoc-template deployment pipeline handles Cloudflare Pages' 25 MiB per-fil
 - **D-03: `deploy.cloudflare.gzip_json` toggle in gendoc.yml — deploy.sh only.** A boolean (default `true`) that controls whether `deploy.sh` gzips+deletes raw `.json` before upload. When `false`, deploy.sh skips the entire gzip/delete/restore cycle. Consumers (frontend, worker, MkDocs search) do NOT read this flag — they always try `.json.gz` first with magic-byte detection + `.json` fallback. The toggle exists purely for teams that don't use Cloudflare Pages and don't want the gzip overhead.
 
 ### MkDocs Search
-- **D-04: Override MkDocs Material search to fetch `.json.gz`.** The MkDocs Material theme's search worker fetches `search_index.json` from a hardcoded URL. A JS shim intercepts this and redirects to `search_index.json.gz`, with the same gzip magic-byte detection + `DecompressionStream` decompression pattern used by `config.ts`. The override must load before the MkDocs search JS initializes.
+- **D-04: Override MkDocs Material search to fetch `.json.gz` via pre-bundle fetch interception.** `search_index.json` is fetched from the main thread (in `bundle.*.min.js`, NOT the search worker). An `extra_javascript` script loaded before the MkDocs bundle intercepts `fetch` — when the URL ends with `search_index.json`, it redirects to `search_index.json.gz` and applies the same gzip magic-byte detection + `DecompressionStream` pattern used by `config.ts`. Falls back to `.json` on 404 for local dev. **Service Worker is rejected** — SWs require HTTPS, breaking `mkdocs serve` on `localhost:8000`. Fetch interception on the main thread works everywhere.
 
 ### Deploy Configuration (gendoc.yml)
 - **D-05: Deploy branch configurable via gendoc.yml.** `deploy.cloudflare.branch` in `gendoc.yml` (default: `"main"`). `deploy.sh` reads this value and passes it to `wrangler pages deploy --branch <value>`. Replaces hardcoded `--branch main`.
 - **D-03 (see above): `deploy.cloudflare.gzip_json`** — deploy.sh-only toggle. Both keys under the existing `deploy.cloudflare` block.
 
 ### Claude's Discretion
-- Exact implementation of the MkDocs search JS override — fetch interception shim, `extra_javascript` injection, or post-build template patch. Planner picks the most maintainable approach consistent with the existing `config.ts` pattern.
+- Naming and placement of the MkDocs search shim JS file (under `javascripts/`, loaded via `extra_javascript` before the MkDocs bundle).
 
 </decisions>
 

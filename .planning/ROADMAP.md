@@ -25,7 +25,7 @@ The documentation site (`docs.gnus.ai`) transitions from embedded build infrastr
   2. `gendoc.yml` exists at project root with valid project metadata (name, number, logo, brief), paths (`handwritten_docs: "docs"`), mkdocs settings, and llms configuration including ask AI settings
   3. `mkdocs.yml` references gendoc-template hooks (`load-gendoc-config.py`, `clean-nav.py`, `copy-assets.py`) alongside the host-specific `rewrite_gitbook_paths.py` hook
   4. Running `mkdocs build -f mkdocs.yml` completes without errors (content may render with raw GitBook syntax at this stage — assets are not yet migrated)
-**Plans**: TBD
+**Plans**: 3 plans
 
 ### Phase 2: Asset Cleanup
 **Goal**: All duplicate assets removed from host project. Site builds and renders using template-provided JavaScript, CSS, and Python dependencies exclusively.
@@ -36,7 +36,7 @@ The documentation site (`docs.gnus.ai`) transitions from embedded build infrastr
   2. Site renders with correct GNUS.AI brand colors, typography, and spacing using `theme.css` from the submodule — no visual regression compared to pre-refactoring build
   3. Mermaid diagrams, MathJax equations, breadcrumbs, external links, and nav state all function using template-provided JavaScript
   4. Python dependencies resolve correctly — `pyyaml>=6.0` is available from `gendoc-template/requirements.txt`, `mkdocs-redirects` is preserved for the redirects plugin
-**Plans**: TBD
+**Plans**: 3 plans
 **UI hint**: yes
 
 ### Phase 3: Build Script Refactoring
@@ -49,7 +49,7 @@ The documentation site (`docs.gnus.ai`) transitions from embedded build infrastr
   3. `llms.txt` and audience-specific catalogs are generated in the site directory using the template's `build-llms.py`
   4. `llms-meta.json` exists at project root and is consumed by the llms generation pipeline
   5. Running `scripts/cf-build.bat` produces equivalent output on Windows
-**Plans**: TBD
+**Plans**: 3 plans
 
 ### Phase 4: Ask AI Widget Enablement
 **Goal**: The Ask AI floating button and chat drawer appear and function on every documentation page, powered by the shared `ask.gnus.ai` worker.
@@ -60,7 +60,7 @@ The documentation site (`docs.gnus.ai`) transitions from embedded build infrastr
   2. Clicking "Ask" opens a chat drawer where users can type questions and receive AI-generated responses powered by documentation content
   3. `ask-config.json` is generated in the site directory during build with correct endpoint (`https://ask.gnus.ai/api/ask`), allowed origins, and provider configuration
   4. The Ask AI widget functions correctly on both light and dark mode, desktop and mobile viewports
-**Plans**: TBD
+**Plans**: 3 plans
 **UI hint**: yes
 
 ### Phase 5: Full Verification
@@ -73,7 +73,7 @@ The documentation site (`docs.gnus.ai`) transitions from embedded build infrastr
   3. Site appearance is visually identical to pre-refactoring build in both light and dark modes, on desktop and mobile — same brand colors, typography, spacing
   4. Mermaid diagrams, MathJax equations, breadcrumbs, external links, and nav state all function identically to pre-refactoring build
   5. `DOCUMENTATION_CHANGES.md` contains a summary of the refactoring including what was added (submodule, gendoc.yml, Ask AI widget), removed (duplicate JS/CSS, old build files), and modified (mkdocs.yml, build scripts)
-**Plans**: TBD
+**Plans**: 3 plans
 **UI hint**: yes
 
 ### Phase 6: Theme Loader
@@ -89,7 +89,7 @@ The documentation site (`docs.gnus.ai`) transitions from embedded build infrastr
   6. Host projects can set `theme.name: "custom"` + `theme.custom_css: "my-theme.css"` in `gendoc.yml` to load a project-specific theme — `load-theme.py` copies the file into `themes/custom.css` at build time
   7. `gendoc.yml.example` and host `gendoc.yml` document the `theme:` block with `name` (default/protocol/custom) and optional `custom_css`
   8. `themes/custom.css` is listed in `gendoc-template/.gitignore` to prevent accidental commits
-**Plans**: TBD
+**Plans**: 3 plans
 **UI hint**: yes
 
 ### Phase 7: Cloudflare Pages Deploy Fix
@@ -99,13 +99,18 @@ The documentation site (`docs.gnus.ai`) transitions from embedded build infrastr
 **Requirements**: DEPLOY-01, DEPLOY-02, DEPLOY-03, DEPLOY-04
 **Success Criteria** (what must be TRUE):
   1. All `.json` files in the site directory are uniformly gzipped to `.json.gz` and raw `.json` deleted pre-upload — no in-place gzip, no `_headers` hack, no special cases
-  2. MkDocs search widget is overridden (JS shim) to fetch `search_index.json.gz` with gzip magic-byte detection (`1f 8b`) and `DecompressionStream` fallback — same pattern as `config.ts`
+  2. MkDocs search is overridden via pre-bundle `extra_javascript` fetch interception (NOT Service Worker — SW requires HTTPS, breaks local `mkdocs serve`). Redirects `search_index.json` → `search_index.json.gz` with magic-byte + `DecompressionStream`, same pattern as `config.ts`
   3. Frontend `config.ts` fetches `/ask-config.json.gz` with gzip magic-byte detection and `DecompressionStream` fallback; falls back to `/ask-config.json` for local dev
   4. Worker fetches `.json.gz` with `.json` fallback (`catalog.ts`, `normalizer.ts`) — already implemented, no changes needed
   5. `deploy.sh` restores all raw `.json` files after deploy for local development compatibility
   6. Deploy branch is read from `gendoc.yml` (`deploy.cloudflare.branch`, default `"main"`) — not hardcoded
   7. `deploy.cloudflare.gzip_json` toggle (default `true`) controls deploy.sh gzip behavior only — consumers always try `.json.gz` with magic-byte detection + `.json` fallback regardless of config
-**Plans**: TBD
+**Plans**: 3 plans
+
+Plans:
+- [ ] 07-01-PLAN.md — Uniform JSON gzip in deploy.sh, remove _headers and in-place gzip, add gendoc.yml-driven branch and gzip_json config
+- [ ] 07-02-PLAN.md — Service Worker override for MkDocs Material search fetching search_index.json.gz with gzip decompression
+- [ ] 07-03-PLAN.md — Update gendoc.yml.example and host gendoc.yml with deploy.cloudflare.branch and gzip_json fields
 
 ## Progress
 
