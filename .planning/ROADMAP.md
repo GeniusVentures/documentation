@@ -12,6 +12,7 @@ The documentation site (`docs.gnus.ai`) transitions from embedded build infrastr
 - [ ] **Phase 4: Ask AI Widget Enablement** — Enable llms.ask in gendoc.yml, add widget JS module, verify ask-config.json
 - [ ] **Phase 5: Full Verification** — Parity check against pre-refactoring build, verify all 8 VERIFY criteria
 - [ ] **Phase 6: Theme Loader** — Add load-theme.py hook for dynamic theme CSS selection, two built-in presets, BYO custom theme support
+- [ ] **Phase 7: Cloudflare Pages Deploy Fix** — [gendoc, gendoc-template] Gzip JSON assets for 25 MiB limit, frontend .json.gz handling with decompression fallback, production branch deploys (INSERTED)
 
 ## Phase Details
 
@@ -91,6 +92,20 @@ The documentation site (`docs.gnus.ai`) transitions from embedded build infrastr
 **Plans**: TBD
 **UI hint**: yes
 
+### Phase 7: Cloudflare Pages Deploy Fix
+**Goal**: The gendoc-template deployment pipeline handles Cloudflare Pages' 25 MiB per-file upload limit with a uniform gzip strategy: all `.json` files become `.json.gz`, raw `.json` deleted pre-upload. Every consumer — frontend widget, worker, AND MkDocs search — handles `.json.gz` with transparent decompression fallback. Deploy branch is configurable via `gendoc.yml`. All changes scoped to gendoc-template submodule (gendoc workstream).
+**Depends on**: Phase 6 (deployment infrastructure from Phase 4-6)
+**Scope**: gendoc-template submodule, gendoc workstream only
+**Requirements**: DEPLOY-01, DEPLOY-02, DEPLOY-03, DEPLOY-04
+**Success Criteria** (what must be TRUE):
+  1. All `.json` files in the site directory are uniformly gzipped to `.json.gz` and raw `.json` deleted pre-upload — no in-place gzip, no `_headers` hack, no special cases
+  2. MkDocs search widget is overridden (JS shim) to fetch `search_index.json.gz` with gzip magic-byte detection (`1f 8b`) and `DecompressionStream` fallback — same pattern as `config.ts`
+  3. Frontend `config.ts` fetches `/ask-config.json.gz` with gzip magic-byte detection and `DecompressionStream` fallback; falls back to `/ask-config.json` for local dev
+  4. Worker fetches `.json.gz` with `.json` fallback (`catalog.ts`, `normalizer.ts`) — already implemented, no changes needed
+  5. `deploy.sh` restores all raw `.json` files after deploy for local development compatibility
+  6. Deploy branch is read from `gendoc.yml` (`deploy.cloudflare.branch`, default `"main"`) — not hardcoded
+**Plans**: TBD
+
 ## Progress
 
 | Phase | Plans Complete | Status | Completed |
@@ -101,3 +116,4 @@ The documentation site (`docs.gnus.ai`) transitions from embedded build infrastr
 | 4. Ask AI Widget Enablement | 0/TBD | Not started | - |
 | 5. Full Verification | 0/TBD | Not started | - |
 | 6. Theme Loader | 0/TBD | Not started | - |
+| 7. Cloudflare Pages Deploy Fix | 0/TBD | Not started | - |
