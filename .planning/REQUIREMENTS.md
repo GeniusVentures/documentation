@@ -43,6 +43,13 @@
 - [ ] **VERIFY-07**: Mobile responsive layout is unchanged
 - [ ] **VERIFY-08**: Update `DOCUMENTATION_CHANGES.md` with refactoring summary
 
+### Cloudflare Pages Deploy Fix (DEPLOY)
+
+- [x] **DEPLOY-01**: Uniform `.json.gz` for all JSON files — permanently, no restore. All `.json` files in the site directory are gzipped to `.json.gz` and the raw `.json` is deleted before `wrangler pages deploy`. No in-place gzip, no `_headers` file, no post-deploy restore.
+- [x] **DEPLOY-02**: Shared `fetch-gzip.js` wrapper intercepts ALL `.json` fetches → `.json.gz` with transparent magic-byte + `DecompressionStream` decompression. Conditionally injected by `load-gendoc-config.py` when `gzip_json: true`.
+- [x] **DEPLOY-03**: `deploy.cloudflare.gzip_json` toggle in `gendoc.yml` controls deploy.sh gzip behavior. `deploy.cloudflare.branch` configures the wrangler deploy branch. Both keys under the existing `deploy.cloudflare` block.
+- [x] **DEPLOY-04**: `gendoc.yml.example` and host `gendoc.yml` document `branch` and `gzip_json` fields in the `deploy.cloudflare` section.
+
 ## v2 Requirements (Deferred)
 
 (None — this is a targeted refactoring. All scope is v1.)
@@ -89,6 +96,10 @@
 | VERIFY-06 | Phase 5 | Pending |
 | VERIFY-07 | Phase 5 | Pending |
 | VERIFY-08 | Phase 5 | Pending |
+| DEPLOY-01 | Phase 7 | Complete |
+| DEPLOY-02 | Phase 7 | Complete |
+| DEPLOY-03 | Phase 7 | Complete |
+| DEPLOY-04 | Phase 7 | Complete |
 
 ## Definition of Done
 

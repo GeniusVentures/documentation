@@ -109,8 +109,8 @@ The documentation site (`docs.gnus.ai`) transitions from embedded build infrastr
 
 Plans:
 - [x] 07-01-PLAN.md — Uniform JSON gzip in deploy.sh, remove _headers and in-place gzip, add gendoc.yml-driven branch and gzip_json config
-- [ ] 07-02-PLAN.md — Shared fetch-gzip.js wrapper (conditionally injected via load-gendoc-config.py) intercepts all .json fetches → .json.gz with transparent decompression
-- [ ] 07-03-PLAN.md — Update gendoc.yml.example and host gendoc.yml with deploy.cloudflare.branch and gzip_json fields
+- [x] 07-02-PLAN.md — Shared fetch-gzip.js wrapper (conditionally injected via load-gendoc-config.py) intercepts all .json fetches → .json.gz with transparent decompression
+- [x] 07-03-PLAN.md — Update gendoc.yml.example and host gendoc.yml with deploy.cloudflare.branch and gzip_json fields
 
 ## Progress
 
@@ -122,4 +122,4 @@ Plans:
 | 4. Ask AI Widget Enablement | 0/TBD | Not started | - |
 | 5. Full Verification | 0/TBD | Not started | - |
 | 6. Theme Loader | 0/TBD | Not started | - |
-| 7. Cloudflare Pages Deploy Fix | 1/3 | In progress | - |
+| 7. Cloudflare Pages Deploy Fix | 3/3 | Complete | 2026-07-13 |
