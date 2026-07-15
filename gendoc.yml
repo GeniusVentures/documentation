@@ -22,7 +22,7 @@ mkdocs:
 
 # ── Theme selection ──────────────────────────────────────────────────────────
 theme:
-  name: "protocol"                            # built-in presets: "default" (original cyan) | "protocol" (new)
+  name: "indigo"                               # themes/<name>.css — any file in themes/; "default" is fallback
 
 # ── Doxygen configuration (required by build.sh, unused for docs-only site) ──
 doxygen:
