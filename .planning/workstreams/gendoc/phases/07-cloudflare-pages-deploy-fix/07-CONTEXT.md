@@ -14,19 +14,20 @@ The gendoc-template deployment pipeline handles Cloudflare Pages' 25 MiB per-fil
 ## Implementation Decisions
 
 ### JSON Gzip Strategy
-- **D-01: Uniform `.json.gz` for all JSON files.** All `.json` files in the site directory are gzipped to `.json.gz` and the raw `.json` is deleted before `wrangler pages deploy`. No in-place gzip, no `_headers` file. Every file follows the same pattern.
+- **D-01: Uniform `.json.gz` for all JSON files — permanently, no restore.** All `.json` files in the site directory are gzipped to `.json.gz` and the raw `.json` is deleted before `wrangler pages deploy`. No in-place gzip, no `_headers` file, no post-deploy restore. The `.json.gz` is the artifact. Works identically in production and local dev — the fetch-gzip.js wrapper handles `.json.gz` transparently regardless of environment.
 - **D-02: Revert in-place gzip + `_headers` for `search_index.json`.** The current deploy.sh gzip-replaces `search_index.json` content in-place and writes a `_headers` file for Cloudflare transparent serving. This is removed — `search_index.json` is handled identically to every other `.json` file.
-- **D-03: `deploy.cloudflare.gzip_json` toggle in gendoc.yml — deploy.sh only.** A boolean (default `true`) that controls whether `deploy.sh` gzips+deletes raw `.json` before upload. When `false`, deploy.sh skips the entire gzip/delete/restore cycle. Consumers (frontend, worker, MkDocs search) do NOT read this flag — they always try `.json.gz` first with magic-byte detection + `.json` fallback. The toggle exists purely for teams that don't use Cloudflare Pages and don't want the gzip overhead.
+- **D-03: `deploy.cloudflare.gzip_json` toggle in gendoc.yml — deploy.sh + fetch wrapper injection.** A boolean (default `true`) that controls two things: (a) whether `deploy.sh` gzips+deletes raw `.json` before upload, and (b) whether `load-gendoc-config.py` injects `fetch-gzip.js` into `extra_javascript`. When `false`: deploy.sh skips the gzip/delete/restore cycle, AND the fetch wrapper is never loaded — zero interception overhead, no 404 round-trips for `.json.gz` URLs that don't exist. Workers (`catalog.ts`, `normalizer.ts`) always try `.json.gz` first regardless of config (they're internal code, not injected).
 
-### MkDocs Search
-- **D-04: Override MkDocs Material search to fetch `.json.gz` via pre-bundle fetch interception.** `search_index.json` is fetched from the main thread (in `bundle.*.min.js`, NOT the search worker). An `extra_javascript` script loaded before the MkDocs bundle intercepts `fetch` — when the URL ends with `search_index.json`, it redirects to `search_index.json.gz` and applies the same gzip magic-byte detection + `DecompressionStream` pattern used by `config.ts`. Falls back to `.json` on 404 for local dev. **Service Worker is rejected** — SWs require HTTPS, breaking `mkdocs serve` on `localhost:8000`. Fetch interception on the main thread works everywhere.
+### Shared Fetch Wrapper (replaces MkDocs-specific shim)
+- **D-04: One shared `fetch-gzip.js` wrapper for ALL `.json` fetches — build-time injection, no runtime fallback.** Instead of a Service Worker (rejected — SWs require HTTPS, breaking `mkdocs serve` on `localhost:8000`) or separate per-consumer gzip logic, a single `extra_javascript` script (`javascripts/fetch-gzip.js`) intercepts `window.fetch` and auto-rewrites any `.json` URL to `.json.gz` with transparent gzip magic-byte detection + `DecompressionStream` decompression. No `.json` fallback — the wrapper rewrites and commits. If `.json.gz` files don't exist, something is misconfigured. `load-gendoc-config.py` injects it at the front of `extra_javascript` only when `deploy.cloudflare.gzip_json` is true — when false, the wrapper never loads, zero overhead, no interception. This handles MkDocs search (`search_index.json`), the Ask AI widget (`ask-config.json`), and any future `.json` consumer — all from one file. **`config.ts` drops its inline gzip logic** — it just does `fetch("/ask-config.json")` and the wrapper handles the rest.
 
 ### Deploy Configuration (gendoc.yml)
 - **D-05: Deploy branch configurable via gendoc.yml.** `deploy.cloudflare.branch` in `gendoc.yml` (default: `"main"`). `deploy.sh` reads this value and passes it to `wrangler pages deploy --branch <value>`. Replaces hardcoded `--branch main`.
 - **D-03 (see above): `deploy.cloudflare.gzip_json`** — deploy.sh-only toggle. Both keys under the existing `deploy.cloudflare` block.
 
 ### Claude's Discretion
-- Naming and placement of the MkDocs search shim JS file (under `javascripts/`, loaded via `extra_javascript` before the MkDocs bundle).
+- Exact implementation of the `fetch-gzip.js` fetch interception pattern (URL matching via `endsWith('.json')`, error handling, edge cases).
+- Whether `config.ts` simplification (dropping inline gzip logic) is part of this plan or deferred to a cleanup task.
 
 </decisions>
 

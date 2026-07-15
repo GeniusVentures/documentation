@@ -75,7 +75,8 @@ source_references:
 # ── Navigation ────────────────────────────────────────────────────────────────
 navigation:
   generate_index: false
-  section_index: true
+  section_index: false
+  navigation_indexes: false
   sections:
     - label: "Documentation"
       source_file: "SUMMARY.md"
@@ -111,6 +112,7 @@ llms:
 
   ask:
     enabled: true
+    title: "Ask AI"
     endpoint: "https://ask.gnus.ai/api/ask"
     allowed_origins:
       - "https://docs.gnus.ai"

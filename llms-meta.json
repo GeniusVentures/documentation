@@ -244,13 +244,14 @@
       "pinned": false
     },
     "docs:technical-information/software-engineering-handbook/README.md": {
-      "hash": "22da2a37c49e3b1f",
+      "hash": "f3249d73b0985565",
       "description": "What are the GNUS.AI coding standards and engineering principles? Covers naming conventions, SOLID principles, testing requirements, and AI tool usage policy.",
       "category": "technical",
       "optional": false,
       "exclude": false,
       "nav_section": "\ud83d\udda5\ufe0f Technical Information",
-      "pinned": true
+      "pinned": true,
+      "stale": true
     },
     "docs:technical-information/software-engineering-handbook/c++-coding-standards.md": {
       "hash": "0ae7911ea7c42594",
@@ -280,13 +281,14 @@
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/README.md": {
-      "hash": "c45ed8b4df0614d4",
+      "hash": "c3fdd20cb20a637a",
       "description": "How does the SuperGenius blockchain work? Patent-based system overview: token contracts, IPFS pub/sub, DAG consensus, RocksDB storage, and processing components.",
       "category": "blockchain",
       "optional": false,
       "exclude": false,
       "nav_section": "\ud83d\udda5\ufe0f Technical Information",
-      "pinned": true
+      "pinned": true,
+      "stale": true
     },
     "docs:technical-information/super-genius-blockchain-technical-details/supergenius-db-layout.md": {
       "hash": "54655df6c46c333e",
@@ -901,7 +903,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:de/da2/classsgns_1_1_blockchain": {
-      "hash": "57e0e97ca7c90911",
+      "hash": "305e9067c8d4160c",
       "description": "Manages genesis/account-creation blocks and consensus integration.",
       "category": "api",
       "optional": true,
@@ -1077,7 +1079,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d5/d01/structsgns_1_1_chain_contract_pair": {
-      "hash": "6668aa3c19de10ba",
+      "hash": "e892c40c55379ae9",
       "description": "Represents a chain name and its GNUS bridge contract address.",
       "category": "api",
       "optional": true,
@@ -1117,7 +1119,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d9/dab/classsgns_1_1_chain_rpc_endpoint_provider": {
-      "hash": "11c3586be8c2a606",
+      "hash": "ca63022a3cadc225",
       "description": "Encapsulates ChainList RPC endpoint loading and validator wiring.",
       "category": "api",
       "optional": true,
@@ -1989,7 +1991,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:dc/d64/classsgns_1_1_genius_account": {
-      "hash": "37628fda509bb7a6",
+      "hash": "69d227f9f4cd417d",
       "description": "GeniusAccount",
       "category": "api",
       "optional": true,
@@ -2013,16 +2015,8 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d1/d00/classsgns_1_1_genius_node": {
-      "hash": "f45bb073eea23fff",
+      "hash": "6add7dbc767963f7",
       "description": "High-level facade that initializes and coordinates account, networking, transaction, blockchain, and processing subsystems.",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d2/d8e/struct_genius_node_config": {
-      "hash": "f19b231fd9894080",
-      "description": "Runtime configuration values used to bootstrap a Genius node instance.",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -2143,22 +2137,6 @@
     "set:supergenius:d4/d33/structstd_1_1hash_3_01sgns_1_1base_1_1_wrapper_3_01_t_00_01_tag_01_4_01_4": {
       "hash": "aea56c9c071eb6fa",
       "description": "Wrapper< T, Tag > >",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:dd/d14/classsgns_1_1crypto_1_1_hasher": {
-      "hash": "988b200532739c54",
-      "description": "Hasher",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:db/db8/classsgns_1_1crypto_1_1_hasher_impl": {
-      "hash": "3aa2f3e0548d3b8f",
-      "description": "HasherImpl",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -3708,16 +3686,8 @@
       "exclude": false,
       "nav_section": "Source Reference"
     },
-    "set:supergenius:dd/d8c/structsgns_1_1_validator_registry_1_1_slot_quorum_result": {
-      "hash": "4b10c712338c4236",
-      "description": "Result of the Phase 6 cumulative slot-quorum tally (D-06).",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
     "set:supergenius:df/d49/structsgns_1_1_consensus_manager_1_1_slot_state": {
-      "hash": "23e0ab423a9e8f02",
+      "hash": "5ee247455600cf93",
       "description": "Runtime slot arbitration state.",
       "category": "api",
       "optional": true,
@@ -3909,7 +3879,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d2/d58/classsgns_1_1_transaction_manager": {
-      "hash": "d6bc56986431891e",
+      "hash": "900da4e15e5f8d14",
       "description": "Coordinates transaction creation, CRDT propagation, verification, and status tracking.",
       "category": "api",
       "optional": true,
@@ -4053,7 +4023,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:dc/db9/classsgns_1_1_validator_registry": {
-      "hash": "b090d810509605dd",
+      "hash": "d4e92db918d56bdd",
       "description": "Maintains validator registry state and applies certificate-driven updates.",
       "category": "api",
       "optional": true,
@@ -4949,7 +4919,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d2/d2b/namespacesgns": {
-      "hash": "b174f622512906ac",
+      "hash": "5ff830a740c72abb",
       "description": "sgns",
       "category": "api",
       "optional": true,
@@ -5044,14 +5014,6 @@
       "exclude": false,
       "nav_section": "Source Reference"
     },
-    "set:supergenius:d7/d6d/namespacesgns_1_1_0d360112027001120322371242270350246074050042204067": {
-      "hash": "set",
-      "description": "@360112027001120322371242270350246074050042204067",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
     "set:supergenius:d5/d76/namespacesgns_1_1_0d366326346277005246122104355103200264351127264243": {
       "hash": "set",
       "description": "@366326346277005246122104355103200264351127264243",
@@ -5109,7 +5071,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:df/d6e/namespacesgns_1_1crypto": {
-      "hash": "3abb4495ff918cce",
+      "hash": "5bc28362e9d974f3",
       "description": "crypto",
       "category": "api",
       "optional": true,
@@ -6677,7 +6639,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:dd/d95/_node_example_8cpp": {
-      "hash": "454e8dddeaa30ac0",
+      "hash": "5c97bf00d4cef380",
       "description": "NodeExample.cpp",
       "category": "api",
       "optional": true,
@@ -7437,7 +7399,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d3/d63/_genius_node_8hpp": {
-      "hash": "37f73d40f9189512",
+      "hash": "8d9ab716c092ca74",
       "description": "Top-level node orchestration API for account, transaction, blockchain, and processing services.",
       "category": "api",
       "optional": true,
@@ -8277,24 +8239,8 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:da/d6b/hasher_8hpp": {
-      "hash": "set",
+      "hash": "de8a93beee011ad6",
       "description": "hasher.hpp",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d3/d84/hasher__impl_8cpp": {
-      "hash": "e9239d215f887266",
-      "description": "hasher_impl.cpp",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d0/d62/hasher__impl_8hpp": {
-      "hash": "set",
-      "description": "hasher_impl.hpp",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -9167,6 +9113,102 @@
     "set:supergenius:d9/da3/messaging__watcher_8hpp": {
       "hash": "set",
       "description": "messaging_watcher.hpp",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:dc/d90/structsgns_1_1_from_mnemonic": {
+      "hash": "a013410b607eb90b",
+      "description": "Restore from a BIP39 mnemonic.",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d2/d53/structsgns_1_1_from_private_key": {
+      "hash": "9fd94f1d318184d4",
+      "description": "Restore from an Ethereum hex private key.",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d6/d1a/structsgns_1_1_from_public_key": {
+      "hash": "cfca010874b80414",
+      "description": "Load from storage by public address (read-only).",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:dd/d27/structsgns_1_1_new_account": {
+      "hash": "aba31ce71fc5e368",
+      "description": "Account-creation source for GeniusNode::New(dev_config, AccountSource).Generate a new identity.",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d1/d21/hasher_8cpp": {
+      "hash": "d1cd6d7d60676339",
+      "description": "hasher.cpp",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:dd/d8c/structsgns_1_1_validator_registry_1_1_slot_quorum_result": {
+      "hash": "4b10c712338c4236",
+      "description": "Result of the Phase 6 cumulative slot-quorum tally (D-06).",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d7/d6d/namespacesgns_1_1_0d360112027001120322371242270350246074050042204067": {
+      "hash": "set",
+      "description": "@360112027001120322371242270350246074050042204067",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d0/d96/classsgns_1_1evmwatcher_1_1_bridge_catchup_watcher": {
+      "hash": "9d61094c365e6505",
+      "description": "Polling watcher that scans bridge chains for historical burn events and forwards them to the node for parsing + minting.",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d9/d04/structsgns_1_1evmwatcher_1_1_bridge_catchup_watcher_1_1_config": {
+      "hash": "6d9fbaba4360a05c",
+      "description": "Configuration for the catch-up scan watcher.",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:de/d39/struct_dev_config": {
+      "hash": "3accc79f59693321",
+      "description": "Runtime configuration values used to bootstrap a Genius node instance.",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:df/d19/bridge__catchup__watcher_8cpp": {
+      "hash": "4bba789824e94cac",
+      "description": "Implementation of the bridge catch-up scan watcher.",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:de/d09/bridge__catchup__watcher_8hpp": {
+      "hash": "3960804cb70081de",
+      "description": "Header file for the bridge catch-up scan watcher.",
       "category": "api",
       "optional": true,
       "exclude": false,
