@@ -1823,7 +1823,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d9/dd9/structnil_1_1crypto3_1_1pubkey_1_1ext__private__key_3_01ecdsa_3_01_curve_type_00_01_padding_00_04592937b2016ef21d2ba9ad8549745c7": {
-      "hash": "244b967f285bd6e1",
+      "hash": "7c7ddc077bdd7f47",
       "description": "Extended private key class with deterministic generator and operator modifications.",
       "category": "api",
       "optional": true,
@@ -2015,7 +2015,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d1/d00/classsgns_1_1_genius_node": {
-      "hash": "6add7dbc767963f7",
+      "hash": "c5f9ef2837827e7d",
       "description": "High-level facade that initializes and coordinates account, networking, transaction, blockchain, and processing subsystems.",
       "category": "api",
       "optional": true,
@@ -3183,7 +3183,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d2/d5b/classsgns_1_1processing_1_1_processing_node": {
-      "hash": "d4de44fc9a4df57b",
+      "hash": "dcd211bbff976ed3",
       "description": "Node for distributed computation.",
       "category": "api",
       "optional": true,
@@ -3215,7 +3215,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:dd/d81/classsgns_1_1processing_1_1_processing_service_impl": {
-      "hash": "7d2f5d6a0e7942ed",
+      "hash": "3785ffafbb08ca6e",
       "description": "ProcessingServiceImpl",
       "category": "api",
       "optional": true,
@@ -3791,7 +3791,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d0/dab/classsgns_1_1processing_1_1_sub_task_queue_accessor_impl": {
-      "hash": "7cfbe9cf93803fc9",
+      "hash": "2e6b94a0bcfe721d",
       "description": "Subtask queue accessor implementation.",
       "category": "api",
       "optional": true,
@@ -3879,7 +3879,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d2/d58/classsgns_1_1_transaction_manager": {
-      "hash": "900da4e15e5f8d14",
+      "hash": "1e72cded13e57ade",
       "description": "Coordinates transaction creation, CRDT propagation, verification, and status tracking.",
       "category": "api",
       "optional": true,
@@ -4217,14 +4217,6 @@
     "set:supergenius:d7/d01/namespace_0d250003006066233167331241210056022363347236067360": {
       "hash": "set",
       "description": "@250003006066233167331241210056022363347236067360",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:db/d86/namespace_0d270364344333361216152215254273032331261112125325": {
-      "hash": "set",
-      "description": "@270364344333361216152215254273032331261112125325",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -4919,7 +4911,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d2/d2b/namespacesgns": {
-      "hash": "5ff830a740c72abb",
+      "hash": "61cc2cf1181f32fd",
       "description": "sgns",
       "category": "api",
       "optional": true,
@@ -4934,25 +4926,9 @@
       "exclude": false,
       "nav_section": "Source Reference"
     },
-    "set:supergenius:da/dbc/namespacesgns_1_1_0d036323263212350005276310067366041276370054164274": {
-      "hash": "set",
-      "description": "@036323263212350005276310067366041276370054164274",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
     "set:supergenius:d0/dda/namespacesgns_1_1_0d040113104052035254355032277000154054247024237160": {
       "hash": "set",
       "description": "@040113104052035254355032277000154054247024237160",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:df/d35/namespacesgns_1_1_0d057073325231130073177105276111143003057140233223": {
-      "hash": "set",
-      "description": "@057073325231130073177105276111143003057140233223",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -4993,22 +4969,6 @@
     "set:supergenius:d2/dd3/namespacesgns_1_1_0d243344244263300000267240276166105272154117315257": {
       "hash": "set",
       "description": "@243344244263300000267240276166105272154117315257",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d6/d57/namespacesgns_1_1_0d270364344333361216152215254273032331261112125325": {
-      "hash": "set",
-      "description": "@270364344333361216152215254273032331261112125325",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d4/d30/namespacesgns_1_1_0d311260214126232350010224151214312051360324242247": {
-      "hash": "set",
-      "description": "@311260214126232350010224151214312051360324242247",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -5111,7 +5071,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:df/d6a/namespacesgns_1_1processing": {
-      "hash": "c52064bbbda1a50b",
+      "hash": "7c7756c83c99c966",
       "description": "processing",
       "category": "api",
       "optional": true,
@@ -7687,7 +7647,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d0/dcc/_transaction_manager_8cpp": {
-      "hash": "a0e37bfc631aac6c",
+      "hash": "ce227dba8a21914f",
       "description": "TransactionManager.cpp",
       "category": "api",
       "optional": true,
@@ -8311,7 +8271,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:dc/dbd/_android_8cpp": {
-      "hash": "03cc045bcf057327",
+      "hash": "9ccecc30b72ee93a",
       "description": "Android.cpp",
       "category": "api",
       "optional": true,
@@ -9191,7 +9151,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:de/d39/struct_dev_config": {
-      "hash": "3accc79f59693321",
+      "hash": "a61852ee7abc731a",
       "description": "Runtime configuration values used to bootstrap a Genius node instance.",
       "category": "api",
       "optional": true,
@@ -9209,6 +9169,62 @@
     "set:supergenius:de/d09/bridge__catchup__watcher_8hpp": {
       "hash": "3960804cb70081de",
       "description": "Header file for the bridge catch-up scan watcher.",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d5/d0e/structsgns_1_1_transaction_manager_1_1_input_validator_selection": {
+      "hash": "0c1eab316085a3bb",
+      "description": "InputValidatorSelection",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d0/d0b/namespace_0d007062134123001164043350055124113222065050136232": {
+      "hash": "set",
+      "description": "@007062134123001164043350055124113222065050136232",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:de/def/namespacesgns_1_1_0d007062134123001164043350055124113222065050136232": {
+      "hash": "set",
+      "description": "@007062134123001164043350055124113222065050136232",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d0/d64/namespacesgns_1_1_0d103122274347063164070313354113352145256201035116": {
+      "hash": "set",
+      "description": "@103122274347063164070313354113352145256201035116",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d4/d8e/namespacesgns_1_1_0d214167044115260347051247243063062263043142364035": {
+      "hash": "set",
+      "description": "@214167044115260347051247243063062263043142364035",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:dc/d8e/namespacesgns_1_1_0d327264117372177374002006362215174026226004027060": {
+      "hash": "set",
+      "description": "@327264117372177374002006362215174026226004027060",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d6/d25/namespacesgns_1_1ipfs__bitswap": {
+      "hash": "6f364a1b560b564d",
+      "description": "ipfs_bitswap",
       "category": "api",
       "optional": true,
       "exclude": false,

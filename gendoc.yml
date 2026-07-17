@@ -112,9 +112,11 @@ llms:
   ask:
     enabled: true
     title: "Ask AI"
+    worker_name: "genius-cognitive-system-docs-ask"  # override worker default name to deploy to
     endpoint: "https://ask.gnus.ai/api/ask"
     allowed_origins:
       - "https://docs.gnus.ai"
+      - "https://gcs.gnus.ai"
     providers: "openrouter,gemini"
     gemini_model: "gemini-2.5-flash"
     openrouter_models: "nvidia/nemotron-3-super-120b-a12b:free,nvidia/nemotron-3-ultra-550b-a55b:free,nvidia/nemotron-3-nano-30b-a3b:free"
