@@ -1,0 +1,23 @@
+name: Add favicon
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/add-favicon.yml
+
+permissions:
+  contents: write
+
+jobs:
+  add-favicon:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Copy exact favicon
+        run: |
+          curl -L --fail --silent --show-error \
+            https://raw.githubusercontent.com/GeniusVentures/gnus-ai-web/main/public/favicon.ico \
+            -o docs/favicon.ico
+          rm .github/workflows/add-favicon.yml
+      -
