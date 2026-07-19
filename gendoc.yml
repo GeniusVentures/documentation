@@ -120,4 +120,3 @@ llms:
     providers: "openrouter,gemini"
     gemini_model: "gemini-2.5-flash"
     openrouter_models: "nvidia/nemotron-3-super-120b-a12b:free,nvidia/nemotron-3-ultra-550b-a55b:free,nvidia/nemotron-3-nano-30b-a3b:free"
-cd
