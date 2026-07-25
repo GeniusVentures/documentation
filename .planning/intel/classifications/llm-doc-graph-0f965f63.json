@@ -1,0 +1,25 @@
+{
+  "source_path": ".planning/workstreams/gendoc/llm-doc-graph.md",
+  "type": "SPEC",
+  "confidence": "medium",
+  "manifest_override": false,
+  "title": "LLM-Generated Metadata System for Documentation Graph",
+  "summary": "Design specification for a three-layer metadata system using LLM analysis with evidence-backed provenance tracking for documentation graph construction and retrieval.",
+  "scope": [
+    "metadata system",
+    "LLM analysis pipeline",
+    "documentation graph construction",
+    "relevance scoring formula",
+    "provenance tracking",
+    "section-level analysis",
+    "incremental reanalysis",
+    "MetadataOrigin enum",
+    "MetadataValue struct"
+  ],
+  "cross_refs": [
+    "llms-meta.json"
+  ],
+  "locked": false,
+  "precedence": null,
+  "notes": "No filename convention or frontmatter signals. Content signals strongly indicate a technical specification: C++ data structures (MetadataOrigin enum, MetadataValue struct), JSON schemas, two-pass pipeline design, composite relevance scoring formula, and incremental reanalysis strategy tied to content hashes. Classified as SPEC rather than DOC because the document defines implementation contracts (schemas, pipelines, formulas) rather than providing general explanatory context. Confidence medium because no path/frontmatter convention confirms the type."
+}

@@ -1,62 +1,49 @@
 ---
-workstream: gendoc
-created: 2026-07-11
+gsd_state_version: 1.0
+milestone: v1.0
+milestone_name: milestone
+current_phase: 07
+current_plan: 3
+status: verifying
+stopped_at: Plan 07-03 complete
+last_updated: "2026-07-13T23:20:08Z"
+last_activity: 2026-07-13
+progress:
+  total_phases: 2
+  completed_phases: 1
+  total_plans: 3
+  completed_plans: 3
+  percent: 50
 ---
 
 # Project State
 
-## Project Reference
-
-See: .planning/PROJECT.md (updated 2026-07-08)
-
-**Core value:** The documentation site must continue to build and deploy identically (same URLs, same appearance, same content) after refactoring to use the `gendoc-template` submodule, PLUS gain the Ask AI widget on all pages.
-**Current focus:** Phase 6 — Theme Loader (complete)
-
 ## Current Position
-**Status:** Complete
-**Current Phase:** 6 - Theme Loader
-**Last Activity:** 2026-07-12
-**Last Activity Description:** Merged phase/06-theme-loader to main, branch deleted. Fixed Ask AI stopword filtering bug in gendoc-template.
+
+Phase: 07 (cloudflare-pages-deploy-fix) — COMPLETE
+Plan: 3 of 3
+**Status:** Phase complete — ready for verification
+**Current Phase:** 07
+**Last Activity:** 2026-07-13
+**Last Activity Description:** Phase 07 execution started
 
 ## Progress
-**Phases Complete:** 6/6
-**Current Plan:** Phase 6 — Theme Loader (implemented, UAT 15/15 PASS, shipped)
 
-## Accumulated Context
-
-### Decisions
-
-Decisions are logged in PROJECT.md Key Decisions table.
-Recent decisions affecting current work:
-
-- [Init]: Hybrid mkdocs.yml pattern — host keeps its own mkdocs.yml for `rewrite_gitbook_paths.py` hook, shared assets come from submodule
-- [Init]: gendoc-template submodule pinned to commit `fc99df9e` (same as GeniusCogntiveSystem)
-- [Init]: `source_references: []` — docs-only site with pre-generated API reference, no inline Doxygen pipeline needed
-- [Init]: Shared Ask AI worker at `https://ask.gnus.ai/api/ask` — no new Cloudflare Worker deployment required
-- [Phase 6]: Theme Loader — load-theme.py hook with default/protocol presets + BYO custom theme support
-
-### Pending Todos
-
-None yet.
-
-### Blockers/Concerns
-
-None yet.
-
-### Quick Tasks Completed
-
-| # | Description | Date | Commit | Directory |
-|---|-------------|------|--------|-----------|
-| 260709-e4k | Make ask worker origin-aware with per-origin caches, reference wrangler-ask.toml from parent repo | 2026-07-09 | 31128b0 | [260709-e4k-make-ask-worker-origin-aware-with-per-or](./quick/260709-e4k-make-ask-worker-origin-aware-with-per-or/) |
-
-## Deferred Items
-
-| Category | Item | Status | Deferred At |
-|----------|------|--------|-------------|
-| *(none)* | | | |
+**Phases Complete:** 0/6
+**Current Plan:** 3
 
 ## Session Continuity
 
-Last session: 2026-07-12
-Stopped at: Phase 6 complete — merged to main, branch deleted. Fixed Ask AI stopword bug.
-Resume file: None
+**Stopped At:** Plan 07-03 complete
+**Resume File:** None
+
+## Decisions
+
+- **D-03**: `gzip_json` field in template schema documents deploy.sh toggle; host inherits default true
+- **D-05**: `branch` field added to both template and host configs; deploy.sh reads via existing YAML pattern
+
+## Accumulated Context
+
+### Roadmap Evolution
+
+- Phase 7 inserted after Phase 6: Fix Cloudflare Pages deployment pipeline — gzip JSON assets for 25 MiB limit, frontend .json.gz handling with decompression fallback, production branch deploys (URGENT)

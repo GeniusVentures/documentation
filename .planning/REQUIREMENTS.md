@@ -50,6 +50,19 @@
 - [x] **DEPLOY-03**: `deploy.cloudflare.gzip_json` toggle in `gendoc.yml` controls deploy.sh gzip behavior. `deploy.cloudflare.branch` configures the wrangler deploy branch. Both keys under the existing `deploy.cloudflare` block.
 - [x] **DEPLOY-04**: `gendoc.yml.example` and host `gendoc.yml` document `branch` and `gzip_json` fields in the `deploy.cloudflare` section.
 
+### LLM Document Graph (LLMGRAPH)
+
+- [ ] **LLMGRAPH-01**: Implement three-layer metadata system in gendoc-template with strict separation: deterministic fields (file type, path, hash, dates, headings, tags) extracted by software, computed fields (BM25, embeddings, similarity, graph centrality) derived algorithmically, and LLM-generated fields (summaries, questions-answered, topics, relationships) produced via semantic analysis. No layer may be confused with another.
+- [ ] **LLMGRAPH-02**: Implement `MetadataOrigin` enum (`SourceDeclared`, `ParserExtracted`, `AlgorithmDerived`, `ModelInferred`, `HumanReviewed`, `HumanAuthored`) and `MetadataValue` struct with value, origin, confidence, model_id, prompt_version, evidence spans, and source_hash. Every inferred value carries provenance.
+- [ ] **LLMGRAPH-03**: Implement section-level-first LLM analysis pipeline: extract sections, analyze each for entities/claims/dependencies, merge section metadata, then analyze whole-document role and relationships with the corpus.
+- [ ] **LLMGRAPH-04**: Implement two-pass LLM strategy: Pass 1 (evidence extraction) extracts only facts with evidence offsets; Pass 2 (interpretation) infers questions-answered, roles, and relationships from extracted facts. Prevents hallucinated relationships.
+- [ ] **LLMGRAPH-05**: Implement composite relevance scoring formula `R(d,q) = w_l*L(d,q) + w_s*S(d,q) + w_m*M(d,q) + w_g*G(d,q) + w_a*A(d) - w_r*D(d,S)` with configurable weights. LLM metadata improves M (metadata-question match), G (graph support), and A (authority/freshness) components. Must not replace lexical or semantic retrieval.
+- [ ] **LLMGRAPH-06**: Implement document role classification (overview, normative_standard, architecture_specification, implementation_reference, tutorial, FAQ, historical_design, roadmap, marketing_comparison, generated_api_reference, test_evidence, deprecated) with authority scores and conflict resolution precedence (normative standard > tutorial, current source > old architecture note, architecture spec > marketing copy).
+- [ ] **LLMGRAPH-07**: Implement `questions_answered` field generation as the primary retrieval enrichment mechanism. User queries match against natural-language questions rather than only titles or raw text. This field receives priority in the LLM analysis pipeline.
+- [ ] **LLMGRAPH-08**: Implement incremental reanalysis tied to content hashes. Unchanged sections reuse existing metadata. Changed sections trigger targeted reanalysis with only affected graph edges revisited. Full corpus reanalysis must never be triggered by a single change.
+- [ ] **LLMGRAPH-09**: Define and implement document graph node schema with id, title, role, authority, freshness, topics[], questions_answered[], entities[], aliases[], and weighted relations[] (type: depends_on/followed_by/related_to/supersedes/possible_conflicts, target, weight, confidence). Graph metadata drives search expansion, graph traversal, candidate ranking, conflict resolution, context ordering, source explanations, and incremental updates.
+- [ ] **LLMGRAPH-10**: Generate initial LLM-produced fields (summary, questions_answered, topics, aliases, document_role, authority_reason, entities, explicit_claims, depends_on, followed_by, related_to, supersedes, possible_conflicts) on the existing documentation corpus. Every value carries confidence, evidence spans, source content hash, model identifier, prompt version, analysis date, and review status.
+
 ## v2 Requirements (Deferred)
 
 (None — this is a targeted refactoring. All scope is v1.)
@@ -100,6 +113,16 @@
 | DEPLOY-02 | Phase 7 | Complete |
 | DEPLOY-03 | Phase 7 | Complete |
 | DEPLOY-04 | Phase 7 | Complete |
+| LLMGRAPH-01 | Phase 8 | Pending |
+| LLMGRAPH-02 | Phase 8 | Pending |
+| LLMGRAPH-03 | Phase 8 | Pending |
+| LLMGRAPH-04 | Phase 8 | Pending |
+| LLMGRAPH-05 | Phase 8 | Pending |
+| LLMGRAPH-06 | Phase 8 | Pending |
+| LLMGRAPH-07 | Phase 8 | Pending |
+| LLMGRAPH-08 | Phase 8 | Pending |
+| LLMGRAPH-09 | Phase 8 | Pending |
+| LLMGRAPH-10 | Phase 8 | Pending |
 
 ## Definition of Done
 
@@ -113,4 +136,4 @@
 8. All verification checks pass
 
 ---
-*Last updated: 2026-07-08 — traceability updated during roadmap creation*
+*Last updated: 2026-07-24 — added LLM Document Graph requirements (LLMGRAPH-01 through LLMGRAPH-10)*

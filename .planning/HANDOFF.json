@@ -1,0 +1,45 @@
+{
+  "version": "1.0",
+  "timestamp": "2026-07-25T01:19:50.798Z",
+  "phase": 8,
+  "phase_name": "llm-document-graph",
+  "phase_dir": ".planning/workstreams/gendoc/phases/08-llm-document-graph",
+  "workstream": "gendoc",
+  "plan": 3,
+  "total_plans": 3,
+  "task": 0,
+  "total_tasks": 0,
+  "status": "paused",
+  "completed_tasks": [],
+  "remaining_tasks": [
+    {"plan": "08-01", "name": "build-graph.py — two-pass LLM pipeline, section-level analysis, incremental reanalysis", "wave": 1, "status": "not_started"},
+    {"plan": "08-02", "name": "Worker TypeScript integration — CatalogEntry graph types, llms-meta.json loading, graph-enhanced scoreEntries", "wave": 1, "status": "not_started"},
+    {"plan": "08-03", "name": "Build pipeline integration — build.sh Step 9, deploy.yml secrets, build.yml graph step", "wave": 2, "status": "not_started", "depends_on": ["08-01"]}
+  ],
+  "blockers": [],
+  "human_actions_pending": [
+    {"action": "Review 3 plans before executing", "context": "Plans cover build-graph.py, worker TypeScript, and CI/CD wiring", "blocking": false}
+  ],
+  "decisions": [
+    {"decision": "D-01: Support both OpenAI + Anthropic, provider-agnostic", "rationale": "User preference — detect from available API key", "phase": "08"},
+    {"decision": "D-02: Prompts inline in build-graph.py", "rationale": "Simple enough for single-script pipeline, pattern matching build-llms.py", "phase": "08"},
+    {"decision": "D-03: Extend llms-meta.json rather than new file", "rationale": "Backward-compatible, single source of truth", "phase": "08"},
+    {"decision": "D-04: Content hashes in llms-meta.json per section", "rationale": "Single file check for incremental reanalysis staleness", "phase": "08"},
+    {"decision": "D-05: All 5 relation types in one phase", "rationale": "User preference — build them all now", "phase": "08"},
+    {"decision": "D-06: CatalogEntry consumes llms-meta.json", "rationale": "Worker fetches enriched metadata alongside catalog", "phase": "08"},
+    {"decision": "D-07: Script gates on API key from .env/env var", "rationale": "Skips silently when absent — same behavior IDE and CI/CD", "phase": "08"},
+    {"decision": "D-08: Invoked from build.sh after build-llms.py", "rationale": "Follows existing build orchestration pattern", "phase": "08"},
+    {"decision": "D-09: CI/CD via reusable workflow pattern", "rationale": "Parent passes secrets through existing deploy.yml workflow_call", "phase": "08"}
+  ],
+  "uncommitted_files": [
+    ".planning/REQUIREMENTS.md",
+    ".planning/ROADMAP.md",
+    ".planning/STATE.md",
+    ".planning/workstreams/gendoc/llm-doc-graph.md",
+    "gendoc-template (submodule pointer)",
+    ".planning/INGEST-CONFLICTS.md",
+    ".planning/intel/"
+  ],
+  "next_action": "Execute Phase 8: /gsd:execute-phase 08 --ws gendoc — starts with build-graph.py (Plan 01) and worker TypeScript integration (Plan 02) in parallel (Wave 1)",
+  "context_notes": "Phase 8 fully planned with 3 executable plans. Wave 1 (08-01 + 08-02) are independent and can run in parallel. Wave 2 (08-03) depends on 08-01 being complete. The U-shaped context ordering improvements were applied to index.ts in a previous turn. All discussion decisions are captured in 08-CONTEXT.md and 08-DISCUSSION-LOG.md. No code has been written yet — only planning artifacts exist."
+}
