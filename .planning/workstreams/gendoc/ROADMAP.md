@@ -25,7 +25,12 @@ The gendoc-template workstream for GNUS.AI Documentation. Phase 8 adds an LLM-po
   8. Incremental reanalysis is tied to content hashes: unchanged sections reuse metadata, changed sections trigger targeted reanalysis, only affected graph edges are revisited — full corpus reanalysis is never triggered by a single change
   9. Document graph node schema is defined with id, title, role, authority, freshness, topics, questions_answered, entities, aliases, and weighted relations (depends_on, followed_by, related_to, supersedes, possible_conflicts)
   10. Initial LLM-produced fields (summary, questions_answered, topics, aliases, document_role, authority_reason, entities, explicit_claims, depends_on, followed_by, related_to, supersedes, possible_conflicts) are generated on the existing corpus and stored with confidence, evidence spans, source content hash, model identifier, prompt version, analysis date, and review status on every value
-**Plans**: TBD (to be created during phase execution)
+**Plans**: 3 plans
+
+Plans:
+- [ ] 08-01-PLAN.md — build-graph.py: two-pass LLM pipeline, section-level analysis, incremental reanalysis, provider-agnostic API key detection
+- [ ] 08-02-PLAN.md — Worker TypeScript integration: CatalogEntry graph types, llms-meta.json loading, graph-enhanced scoreEntries
+- [ ] 08-03-PLAN.md — Build pipeline integration: build.sh Step 9, deploy.yml secrets, build.yml graph step
 **UI hint**: no
 
 ## Progress
@@ -33,4 +38,4 @@ The gendoc-template workstream for GNUS.AI Documentation. Phase 8 adds an LLM-po
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 7. Cloudflare Pages Deploy Fix | 3/3 | Complete | 2026-07-13 |
-| 8. LLM Document Graph | 0/TBD | Not started | - |
+| 8. LLM Document Graph | 0/3 | Not started | - |
