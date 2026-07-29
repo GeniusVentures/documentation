@@ -6,7 +6,7 @@
       "category": "product",
       "optional": false,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": true
     },
     "docs:about-gnus.ai/why-gnus.ai/README.md": {
@@ -15,7 +15,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/why-gnus.ai/works-everywhere.md": {
@@ -24,7 +24,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/why-gnus.ai/customizable.md": {
@@ -33,7 +33,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/why-gnus.ai/fast.md": {
@@ -42,7 +42,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/why-gnus.ai/secure/README.md": {
@@ -51,7 +51,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/why-gnus.ai/secure/secure-2fa-with-totp-and-zk-snarks.md": {
@@ -60,7 +60,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/README.md": {
@@ -69,7 +69,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/scale-and-cost-efficiency.md": {
@@ -78,7 +78,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/README.md": {
@@ -87,7 +87,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/1.-executive-summary.md": {
@@ -96,7 +96,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/2.-introduction.md": {
@@ -105,7 +105,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/3.-understanding-the-gnus.ai-decentralized-network.md": {
@@ -114,7 +114,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/4.-the-centralized-xai-100k-cluster-explained.md": {
@@ -123,7 +123,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/5.-comparing-capex-and-opex.md": {
@@ -132,7 +132,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/6.-payout-structure-and-profitability.md": {
@@ -141,7 +141,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/7.-the-deflationary-token-mechanism.md": {
@@ -150,7 +150,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/8.-projected-token-price-appreciation.md": {
@@ -159,7 +159,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/9.-summary-comparison-tables.md": {
@@ -168,7 +168,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/10.-conclusion-and-next-steps.md": {
@@ -177,7 +177,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/final-thoughts.md": {
@@ -186,7 +186,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/tokenomics.md": {
@@ -195,7 +195,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/public-roadmap.md": {
@@ -204,7 +204,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/how-does-it-work/README.md": {
@@ -213,7 +213,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/how-does-it-work/idle-central-processing-gpu.md": {
@@ -222,7 +222,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/how-does-it-work/distributed-computation.md": {
@@ -231,7 +231,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/how-does-it-work/dynamically-adjusted-resource-allocation.md": {
@@ -240,18 +240,17 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "🧠 About GNUS.AI",
+      "nav_section": "\ud83e\udde0 About GNUS.AI",
       "pinned": false
     },
     "docs:technical-information/software-engineering-handbook/README.md": {
-      "hash": "f3249d73b0985565",
-      "description": "What are the GNUS.AI coding standards and engineering principles? Covers naming conventions, SOLID principles, testing requirements, and AI tool usage policy.",
+      "hash": "3721588be4c5be1f",
+      "description": "What engineering principles does GNUS.AI follow? Language-agnostic standards: SOLID, data-driven design, unit testing, AI tool usage with human oversight.",
       "category": "technical",
       "optional": false,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
-      "pinned": true,
-      "stale": true
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": true
     },
     "docs:technical-information/software-engineering-handbook/c++-coding-standards.md": {
       "hash": "0ae7911ea7c42594",
@@ -259,7 +258,7 @@
       "category": "technical",
       "optional": false,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": true
     },
     "docs:technical-information/software-engineering-handbook/smart-contract-projects.md": {
@@ -268,7 +267,7 @@
       "category": "technical",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/software-engineering-handbook/recommended-pattern-for-llm-usage-in-team-gpt.md": {
@@ -277,7 +276,7 @@
       "category": "technical",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/README.md": {
@@ -286,9 +285,8 @@
       "category": "blockchain",
       "optional": false,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
-      "pinned": true,
-      "stale": true
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "pinned": true
     },
     "docs:technical-information/super-genius-blockchain-technical-details/supergenius-db-layout.md": {
       "hash": "54655df6c46c333e",
@@ -296,7 +294,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/ai-data-blocks.md": {
@@ -305,7 +303,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/slicing-data-for-macro-microjobs.md": {
@@ -314,7 +312,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/verification-and-hash-results-from-processing.md": {
@@ -323,7 +321,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/diagram-of-the-internal-blockchain-blocks-and-processing-functionality.md": {
@@ -332,7 +330,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/ipfs-pub-sub.md": {
@@ -341,7 +339,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/sg-consensus-algorithm-implementation.md": {
@@ -350,7 +348,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/account-creation-with-ecsda-and-el-gamal.md": {
@@ -359,7 +357,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/key-derivation-function.md": {
@@ -368,7 +366,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/el-gamal-encryption.md": {
@@ -377,7 +375,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/prover-specification.md": {
@@ -386,7 +384,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/supergenius-processing-component-information/README.md": {
@@ -395,7 +393,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/supergenius-processing-component-information/processing-worker-app-workflow.md": {
@@ -404,7 +402,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/supergenius-processing-component-information/job-processing-flow.md": {
@@ -413,7 +411,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/super-genius-dag-blockchain.md": {
@@ -422,7 +420,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/minimal-proof-mountain.md": {
@@ -431,7 +429,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/cross-chain-bridging-to-supergenius/README.md": {
@@ -440,7 +438,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/cross-chain-bridging-to-supergenius/overview.md": {
@@ -449,7 +447,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/cross-chain-bridging-to-supergenius/message-creation-leader-election.md": {
@@ -458,7 +456,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/cross-chain-bridging-to-supergenius/verification-channel-creation.md": {
@@ -467,7 +465,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/cross-chain-bridging-to-supergenius/node-verification-voting.md": {
@@ -476,7 +474,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/cross-chain-bridging-to-supergenius/signature-collection-aggregation.md": {
@@ -485,7 +483,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/cross-chain-bridging-to-supergenius/destination-chain-submission-validation.md": {
@@ -494,7 +492,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/hybrid-smart-contract/README.md": {
@@ -503,7 +501,7 @@
       "category": "technical",
       "optional": false,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": true
     },
     "docs:technical-information/hybrid-smart-contract/gnus.ai-ecosystem-a-unified-network-of-intelligence.md": {
@@ -512,7 +510,7 @@
       "category": "technical",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/hybrid-smart-contract/structure/README.md": {
@@ -521,7 +519,7 @@
       "category": "technical",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/hybrid-smart-contract/structure/structure-details.md": {
@@ -530,7 +528,7 @@
       "category": "technical",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/hybrid-smart-contract/encoded-ids.md": {
@@ -539,7 +537,7 @@
       "category": "technical",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/our-smart-contract-testing-philosophy.md": {
@@ -548,7 +546,7 @@
       "category": "technical",
       "optional": false,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/ai-systems/README.md": {
@@ -557,7 +555,7 @@
       "category": "architecture",
       "optional": false,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/ai-systems/overview.md": {
@@ -566,7 +564,7 @@
       "category": "architecture",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/ai-systems/query-workflow.md": {
@@ -575,7 +573,7 @@
       "category": "architecture",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/ai-systems/data-storage.md": {
@@ -584,7 +582,7 @@
       "category": "architecture",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/ai-systems/pub-sub-communication.md": {
@@ -593,7 +591,7 @@
       "category": "architecture",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/ai-systems/retraining-mechanism.md": {
@@ -602,7 +600,7 @@
       "category": "architecture",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/zero-knowledge-proofs/README.md": {
@@ -611,7 +609,7 @@
       "category": "technical",
       "optional": false,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:technical-information/zero-knowledge-proofs/proof-schemes-and-elliptical-curves.md": {
@@ -620,7 +618,7 @@
       "category": "technical",
       "optional": true,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
       "pinned": false
     },
     "docs:resources/contact-us.md": {
@@ -703,7 +701,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d5/d74/classsgns_1_1_account_messenger": {
-      "hash": "2b521a50abc3b7b2",
+      "hash": "a5a7a988e4e82fbb",
       "description": "AccountMessenger",
       "category": "api",
       "optional": true,
@@ -728,7 +726,7 @@
     },
     "set:supergenius:da/d2f/structrlpx_1_1_aes_block": {
       "hash": "cce6e1e4e05c82a6",
-      "description": "RLPx wire structs — sizes are derived via sizeof() rather than magic numbers.",
+      "description": "RLPx wire structs \u2014 sizes are derived via sizeof() rather than magic numbers.",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -767,7 +765,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d8/da6/classsgns_1_1crdt_1_1_atomic_transaction": {
-      "hash": "fc3f3f52af174253",
+      "hash": "97a3602ea7fd22dd",
       "description": "AtomicTransaction provides atomic multi-key operations for CRDT datastore All operations within a transaction are combined into a single delta and published atomically to ensure consistency.",
       "category": "api",
       "optional": true,
@@ -903,7 +901,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:de/da2/classsgns_1_1_blockchain": {
-      "hash": "305e9067c8d4160c",
+      "hash": "99f3b0867c68c067",
       "description": "Manages genesis/account-creation blocks and consensus integration.",
       "category": "api",
       "optional": true,
@@ -1017,14 +1015,6 @@
     "set:supergenius:d9/de2/classsgns_1_1crdt_1_1_broadcaster": {
       "hash": "b07e197689c4eb5b",
       "description": "A Broadcaster provides a way to send (notify) an opaque payload to all replicas and to retrieve payloads broadcasted.",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d5/d2a/class_buffer": {
-      "hash": "eb102b96ed4ae051",
-      "description": "Class represents arbitrary (including empty) byte buffer.",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -1167,7 +1157,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d9/da9/classsgns_1_1_coin_gecko_price_retriever": {
-      "hash": "e9b3fa82ff514991",
+      "hash": "9557ab48096f2277",
       "description": "CoinGeckoPriceRetriever",
       "category": "api",
       "optional": true,
@@ -1191,7 +1181,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d3/d68/structsgns_1_1evmwatcher_1_1_bridge_rpc_watcher_1_1_config": {
-      "hash": "07b229d78883f695",
+      "hash": "44dba08ca673b4a3",
       "description": "Configuration structure for BridgeRpcWatcher.",
       "category": "api",
       "optional": true,
@@ -1295,7 +1285,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d1/d14/classsgns_1_1storage_1_1rocksdb_1_1_cursor": {
-      "hash": "0e03c7230cbd0eb0",
+      "hash": "295b711021460f8d",
       "description": "Instance of cursor can be used as bidirectional iterator over key-value bindings of the Map.",
       "category": "api",
       "optional": true,
@@ -1344,7 +1334,7 @@
     },
     "set:supergenius:db/dc2/structdiscv4_1_1_dial_scheduler": {
       "hash": "194ec70176a7c70c",
-      "description": "Per-chain dial scheduler mirroring go-ethereum's dialScheduler. Maintains up to pool->max_per_chain concurrent dial coroutines, respecting the global pool->max_total cap across all chains. All methods run on the single io_context thread — no mutex needed.",
+      "description": "Per-chain dial scheduler mirroring go-ethereum's dialScheduler. Maintains up to pool->max_per_chain concurrent dial coroutines, respecting the global pool->max_total cap across all chains. All methods run on the single io_context thread \u2014 no mutex needed.",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -1384,7 +1374,7 @@
     },
     "set:supergenius:d2/d8f/structdiscv4_1_1discv4__enr__request": {
       "hash": "4ddadb20b192f754",
-      "description": "ENRRequest packet — discv4 wire type 0x05 (EIP-868).",
+      "description": "ENRRequest packet \u2014 discv4 wire type 0x05 (EIP-868).",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -1392,7 +1382,7 @@
     },
     "set:supergenius:d6/db4/structdiscv4_1_1discv4__enr__response": {
       "hash": "3daa41627900e050",
-      "description": "Parsed ENRResponse — discv4 wire type 0x06 (EIP-868).",
+      "description": "Parsed ENRResponse \u2014 discv4 wire type 0x06 (EIP-868).",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -1448,7 +1438,7 @@
     },
     "set:supergenius:db/d16/classdiscv5_1_1discv5__crawler": {
       "hash": "7300158f7a52c2f2",
-      "description": "Discv5 peer crawler: seed → FINDNODE loop → ValidatedPeer emission.",
+      "description": "Discv5 peer crawler: seed \u2192 FINDNODE loop \u2192 ValidatedPeer emission.",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -1495,7 +1485,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:de/d81/class_e_c_d_s_a_public_key": {
-      "hash": "3a5c34d5233c1394",
+      "hash": "72ec0bee2b6f77c8",
       "description": "Base class to organize public key values of ECDSA.",
       "category": "api",
       "optional": true,
@@ -1639,7 +1629,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:dc/dc0/classethereum_1_1_ethereum_key_generator": {
-      "hash": "9420c02eed19e233",
+      "hash": "2e8273fe70f44c79",
       "description": "Creates a pair of ECDSA keys and a ethereum address.",
       "category": "api",
       "optional": true,
@@ -1870,14 +1860,6 @@
       "exclude": false,
       "nav_section": "Source Reference"
     },
-    "set:supergenius:d6/d13/structdiscv5_1_1_fork_id": {
-      "hash": "e9429568187ed408",
-      "description": "Ethereum EIP-2124 fork identifier used for chain-correctness filtering.",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
     "set:supergenius:dd/d93/structeth_1_1_fork_id": {
       "hash": "3a7823e949f8d2be",
       "description": "ForkId",
@@ -2015,7 +1997,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d1/d00/classsgns_1_1_genius_node": {
-      "hash": "c5f9ef2837827e7d",
+      "hash": "d2ba6da748abc3e8",
       "description": "High-level facade that initializes and coordinates account, networking, transaction, blockchain, and processing subsystems.",
       "category": "api",
       "optional": true,
@@ -2159,8 +2141,8 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d6/dfe/classsgns_1_1crdt_1_1_hierarchical_key": {
-      "hash": "10d4cee4822f4108",
-      "description": "A Key represents the unique identifier of an object, inspired by file systems and Google App Engine key model. Keys are meant to be unique across a system. Keys are hierarchical, incorporating more and more specific namespaces. Thus keys can be deemed 'children' or 'ancestors' of other keys:: Key(\"/Comedy\") Key(\"/Comedy/MontyPython\") Also, every namespace can be parametrized to embed relevant object information. For example, the Key name (most specific namespace) could include the object type:: Key(\"/Comedy/MontyPython/Actor:JohnCleese\") Key(\"/Comedy/MontyPython/Sketch:CheeseShop\") Key(\"/Comedy/MontyPython/Sketch:CheeseShop/Character:Mousebender\").",
+      "hash": "69b96fde83ac0f17",
+      "description": "A Key represents the unique identifier of an object, inspired by file systems and Google App Engine key model. Keys are meant to be unique across a system. Keys are hierarchical, incorporating more and more specific namespaces. Thus keys can be deemed 'children' or 'ancestors' of other keys:: Key(\"/Comedy\") Key(\"/Comedy/MontyPython\") Also, every namespace can be parametrized to embed relevant object information. For example, the Key name (most specific namespace) could include the object type:: Key(\"/Comedy/MontyPython/Actor:JohnCleese\") Key(\"/Comedy/MontyPython/Sketch:CheeseShop\") Key(\"/Comedy/MontyPython/Sketch:CheeseShop/Character:Mousebender\")",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -2263,7 +2245,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:dd/d3e/structsgns_1_1_account_messenger_1_1_interface_methods": {
-      "hash": "92d5290718660018",
+      "hash": "5d8bbe35963eaacc",
       "description": "Interface methods the user needs to define.",
       "category": "api",
       "optional": true,
@@ -2535,7 +2517,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:da/d2f/structeth_1_1_matched_event": {
-      "hash": "a56fb36938073f72",
+      "hash": "90853c9d6759d714",
       "description": "A matched event: the original log decorated with block context.",
       "category": "api",
       "optional": true,
@@ -2544,7 +2526,7 @@
     },
     "set:supergenius:d0/d0d/classsgns_1_1_memory_secure_storage": {
       "hash": "57458f3cc0a6735d",
-      "description": "In-memory JSON backend for tests. Stores data in a map — no OS keychain access, no password prompts, no cleanup needed.",
+      "description": "In-memory JSON backend for tests. Stores data in a map \u2014 no OS keychain access, no password prompts, no cleanup needed.",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -2679,7 +2661,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:db/d6b/classsgns_1_1_mint_transaction_v2": {
-      "hash": "40d3d1419f66195f",
+      "hash": "1892486bfb9fd64b",
       "description": "Implements a Mint Version 2 transaction.",
       "category": "api",
       "optional": true,
@@ -3207,7 +3189,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:db/dbc/structsgns_1_1sgprocessing_1_1_processing_result": {
-      "hash": "960409e5e11a501f",
+      "hash": "897e5ac0303a027b",
       "description": "ProcessingResult",
       "category": "api",
       "optional": true,
@@ -3270,14 +3252,6 @@
       "exclude": false,
       "nav_section": "Source Reference"
     },
-    "set:supergenius:d6/d7f/classsgns_1_1_processing_transaction": {
-      "hash": "0a9be2649dd9a6ff",
-      "description": "ProcessingTransaction",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
     "set:supergenius:d0/d2c/classsgns_1_1processing_1_1_processing_validation_core": {
       "hash": "5c75db99c4cfec65",
       "description": "ProcessingValidationCore",
@@ -3321,14 +3295,6 @@
     "set:supergenius:d5/dd7/struct_public_key": {
       "hash": "2ae43d3bf85fa2d3",
       "description": "PublicKey",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d7/df4/classsgns_1_1crdt_1_1_pub_sub_broadcaster": {
-      "hash": "ef37d2fb58ba0982",
-      "description": "PubSubBroadcaster",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -3679,7 +3645,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d0/d9a/structsha3__context__": {
-      "hash": "d18c4c30e028f9d6",
+      "hash": "2793f8a63449cf95",
       "description": "sha3_context_",
       "category": "api",
       "optional": true,
@@ -3703,7 +3669,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:de/d6c/structdiscv5_1_1_static_header_wire": {
-      "hash": "745f026657e87467",
+      "hash": "22f35751ae8d5d5a",
       "description": "discv5 static packet header, as defined by the EIP-8020 spec.",
       "category": "api",
       "optional": true,
@@ -3839,7 +3805,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:dd/dd7/classsgns_1_1_token_amount": {
-      "hash": "e1000b250ecb616a",
+      "hash": "cbad2c80dd59b0cf",
       "description": "Utility for GNUS token fixed-point parsing, formatting and cost calculation.",
       "category": "api",
       "optional": true,
@@ -3879,7 +3845,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d2/d58/classsgns_1_1_transaction_manager": {
-      "hash": "1e72cded13e57ade",
+      "hash": "dadc814530a6939e",
       "description": "Coordinates transaction creation, CRDT propagation, verification, and status tracking.",
       "category": "api",
       "optional": true,
@@ -3919,7 +3885,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d9/db9/structintx_1_1uint_3_01128_01_4": {
-      "hash": "e0a949bd39780c29",
+      "hash": "e006fa08e8b4d727",
       "description": "uint< 128 >",
       "category": "api",
       "optional": true,
@@ -3975,7 +3941,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d0/dac/classsgns_1_1_u_t_x_o_manager": {
-      "hash": "e3d2fb85c7ce02b7",
+      "hash": "ae642e7df01fe858",
       "description": "Owns the local UTXO set, supports coin selection, validation, persistence, reservations, and deterministic snapshot hashing.",
       "category": "api",
       "optional": true,
@@ -3991,7 +3957,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d1/d90/structdiscovery_1_1_validated_peer": {
-      "hash": "0ad08960fdd12409",
+      "hash": "c32eb8cbed05a6ae",
       "description": "Minimal peer descriptor produced by both discv4 and discv5 crawlers.",
       "category": "api",
       "optional": true,
@@ -4001,14 +3967,6 @@
     "set:supergenius:d9/d3b/structdiscv4_1_1_validated_peer": {
       "hash": "2f3662b9243008a1",
       "description": "A discovered peer whose public key has already been validated.",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:da/d2c/structdiscv5_1_1_validated_peer": {
-      "hash": "0ad08960fdd12409",
-      "description": "Minimal peer descriptor produced by both discv4 and discv5 crawlers.",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -4095,7 +4053,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:da/dc7/structdiscv5_1_1_whoareyou_auth_data_wire": {
-      "hash": "1762b5fe8784a853",
+      "hash": "d61f3a14e10efb3b",
       "description": "WHOAREYOU auth-data layout: id-nonce + highest ENR sequence.",
       "category": "api",
       "optional": true,
@@ -4137,134 +4095,6 @@
     "set:supergenius:d2/d26/classsgns_1_1api_1_1_ws_client_impl": {
       "hash": "92e3f4c94c306839",
       "description": "WsClientImpl",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:db/df1/namespace_0d007372013122324270155264206164021216314025206224": {
-      "hash": "set",
-      "description": "@007372013122324270155264206164021216314025206224",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d1/da0/namespace_0d012132113305064163332155221057271255223115026201": {
-      "hash": "set",
-      "description": "@012132113305064163332155221057271255223115026201",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:da/d8f/namespace_0d012146066217017371157176230173154266154340010356": {
-      "hash": "set",
-      "description": "@012146066217017371157176230173154266154340010356",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d0/d6e/namespace_0d025377102127147227351350252254204073121002320051": {
-      "hash": "3bea0e3fc4245571",
-      "description": "@025377102127147227351350252254204073121002320051",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d3/d96/namespace_0d066307231075257224305032264011214367217375261372": {
-      "hash": "set",
-      "description": "@066307231075257224305032264011214367217375261372",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d6/d0d/namespace_0d066317171103375301335200247104070375137124030232": {
-      "hash": "set",
-      "description": "@066317171103375301335200247104070375137124030232",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d1/da9/namespace_0d133277247257161102144240231322027372305335250006": {
-      "hash": "set",
-      "description": "@133277247257161102144240231322027372305335250006",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d4/d3c/namespace_0d136345355151044134013251217354157273375313023367": {
-      "hash": "set",
-      "description": "@136345355151044134013251217354157273375313023367",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d1/d53/namespace_0d143266203113044143260340276163072010066023357147": {
-      "hash": "set",
-      "description": "@143266203113044143260340276163072010066023357147",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d7/d01/namespace_0d250003006066233167331241210056022363347236067360": {
-      "hash": "set",
-      "description": "@250003006066233167331241210056022363347236067360",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:dc/d7d/namespace_0d277354241376251244065017145017076270162252237244": {
-      "hash": "set",
-      "description": "@277354241376251244065017145017076270162252237244",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:dd/d81/namespace_0d323175260265171204166000136160111337116255025024": {
-      "hash": "set",
-      "description": "@323175260265171204166000136160111337116255025024",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d4/db3/namespace_0d337375357044214234221246371176203175264022267042": {
-      "hash": "set",
-      "description": "@337375357044214234221246371176203175264022267042",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d4/dcf/namespace_0d340202323216125153306135334332353114357011243023": {
-      "hash": "set",
-      "description": "@340202323216125153306135334332353114357011243023",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d4/d22/namespace_0d340342061224321171106105317313110377147244210042": {
-      "hash": "set",
-      "description": "@340342061224321171106105317313110377147244210042",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d6/dfa/namespace_0d343366145167066306225256230155144053275137222123": {
-      "hash": "set",
-      "description": "@343366145167066306225256230155144053275137222123",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -4327,7 +4157,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d6/dcc/namespacediscv4": {
-      "hash": "8ed8f9f587f32c7a",
+      "hash": "09940e1f9dea939c",
       "description": "discv4",
       "category": "api",
       "optional": true,
@@ -4335,32 +4165,8 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d0/dec/namespacediscv5": {
-      "hash": "6dd23f8b905d4df3",
+      "hash": "fe711f3b28d95684",
       "description": "discv5",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:df/d17/namespacediscv5_1_1_0d210322351317342063246126163042153134003221373253": {
-      "hash": "set",
-      "description": "@210322351317342063246126163042153134003221373253",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:da/d9f/namespacediscv5_1_1_0d241024146116124165061146240326361266045121127064": {
-      "hash": "set",
-      "description": "@241024146116124165061146240326361266045121127064",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:df/d28/namespacediscv5_1_1_0d260311020276362372072067047314072155324237044310": {
-      "hash": "set",
-      "description": "@260311020276362372072067047314072155324237044310",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -4383,40 +4189,8 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:da/ddf/namespaceeth": {
-      "hash": "597348c8e30b1379",
+      "hash": "c9c6e6fbae4cb810",
       "description": "eth",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:db/da3/namespaceeth_1_1_0d012177354065351353243117013366201005131226105333": {
-      "hash": "set",
-      "description": "@012177354065351353243117013366201005131226105333",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:df/dcf/namespaceeth_1_1_0d214041252101072200314127277227117253332320363147": {
-      "hash": "set",
-      "description": "@214041252101072200314127277227117253332320363147",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:da/d71/namespaceeth_1_1_0d215247176311207217302274260270025120267232101076": {
-      "hash": "set",
-      "description": "@215247176311207217302274260270025120267232101076",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d2/dcd/namespaceeth_1_1_0d265321167132214110256131052337220165262054234250": {
-      "hash": "set",
-      "description": "@265321167132214110256131052337220165262054234250",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -4425,14 +4199,6 @@
     "set:supergenius:d7/d56/namespaceeth_1_1abi": {
       "hash": "5c926318fbee743f",
       "description": "abi",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:df/da6/namespaceeth_1_1abi_1_1_0d140332341020054035315026121044003320363024324121": {
-      "hash": "set",
-      "description": "@140332341020054035315026121044003320363024324121",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -4454,14 +4220,6 @@
       "exclude": false,
       "nav_section": "Source Reference"
     },
-    "set:supergenius:df/da6/namespaceeth_1_1codec_1_1_0d340047101057063377006370153243135161325330150173": {
-      "hash": "set",
-      "description": "@340047101057063377006370153243135161325330150173",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
     "set:supergenius:df/dfe/namespaceeth_1_1protocol": {
       "hash": "6639a69204d8d122",
       "description": "protocol",
@@ -4470,65 +4228,9 @@
       "exclude": false,
       "nav_section": "Source Reference"
     },
-    "set:supergenius:dd/dd1/namespaceeth_1_1protocol_1_1_0d252247272121374111015162305264336011317347263251": {
-      "hash": "set",
-      "description": "@252247272121374111015162305264336011317347263251",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
     "set:supergenius:d8/d41/namespaceeth_1_1rpc": {
       "hash": "b70405515d63a78b",
       "description": "rpc",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:dc/de5/namespaceeth_1_1rpc_1_1_0d020077313241362214161023076232116223073246155115": {
-      "hash": "set",
-      "description": "@020077313241362214161023076232116223073246155115",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:de/d96/namespaceeth_1_1rpc_1_1_0d055066015214323112273372170126232126256165324356": {
-      "hash": "set",
-      "description": "@055066015214323112273372170126232126256165324356",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:da/db8/namespaceeth_1_1rpc_1_1_0d112314207327341313146170257061076274206144071053": {
-      "hash": "set",
-      "description": "@112314207327341313146170257061076274206144071053",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d0/d54/namespaceeth_1_1rpc_1_1_0d213071201176151043121126115016223034045202221366": {
-      "hash": "set",
-      "description": "@213071201176151043121126115016223034045202221366",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d9/df9/namespaceeth_1_1rpc_1_1_0d254230326327070152142343314243204364223366232371": {
-      "hash": "set",
-      "description": "@254230326327070152142343314243204364223366232371",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:dd/d2c/namespaceeth_1_1rpc_1_1_0d350215244120152071216007357326263276203067144136": {
-      "hash": "set",
-      "description": "@350215244120152071216007357326263276203067144136",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -4734,30 +4436,6 @@
       "exclude": false,
       "nav_section": "Source Reference"
     },
-    "set:supergenius:d4/d64/namespacerlp_1_1_0d211114163165141270307027246157112337162167376332": {
-      "hash": "set",
-      "description": "@211114163165141270307027246157112337162167376332",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:dd/d45/namespacerlp_1_1_0d213340053246062335374042006355363201007020050132": {
-      "hash": "set",
-      "description": "@213340053246062335374042006355363201007020050132",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:da/d92/namespacerlp_1_1_0d262366025331121230343165213067235107137251060143": {
-      "hash": "set",
-      "description": "@262366025331121230343165213067235107137251060143",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
     "set:supergenius:d0/dc4/namespacerlp_1_1base": {
       "hash": "0854b1b0c5cbe9d2",
       "description": "base",
@@ -4782,25 +4460,9 @@
       "exclude": false,
       "nav_section": "Source Reference"
     },
-    "set:supergenius:dd/dfa/namespacerlp_1_1base_1_1json_1_1_0d377125041351123315140161371167132144104223142106": {
-      "hash": "set",
-      "description": "@377125041351123315140161371167132144104223142106",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
     "set:supergenius:d9/dc2/namespacerlp_1_1base_1_1parse": {
       "hash": "c33878c4b0b3df29",
       "description": "parse",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d3/dfe/namespacerlp_1_1base_1_1parse_1_1_0d377224374075346325367111061362112032044352144026": {
-      "hash": "set",
-      "description": "@377224374075346325367111061362112032044352144026",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -4822,14 +4484,6 @@
       "exclude": false,
       "nav_section": "Source Reference"
     },
-    "set:supergenius:da/d07/namespacerlpx_1_1_0d126274124263226255160070220335205045074075062072": {
-      "hash": "set",
-      "description": "@126274124263226255160070220335205045074075062072",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
     "set:supergenius:d7/df1/namespacerlpx_1_1auth": {
       "hash": "888f0595934c304c",
       "description": "auth",
@@ -4838,33 +4492,9 @@
       "exclude": false,
       "nav_section": "Source Reference"
     },
-    "set:supergenius:df/df9/namespacerlpx_1_1auth_1_1_0d222225303225156303135336130111116225135330360354": {
-      "hash": "set",
-      "description": "@222225303225156303135336130111116225135330360354",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:dd/dad/namespacerlpx_1_1auth_1_1_0d355232114063372151043364131013315336100047347100": {
-      "hash": "set",
-      "description": "@355232114063372151043364131013315336100047347100",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
     "set:supergenius:d4/daa/namespacerlpx_1_1crypto": {
       "hash": "set",
       "description": "crypto",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d8/db5/namespacerlpx_1_1crypto_1_1_0d075171031337032036124110075301052014317232250164": {
-      "hash": "set",
-      "description": "@075171031337032036124110075301052014317232250164",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -4881,14 +4511,6 @@
     "set:supergenius:d9/d6c/namespacerlpx_1_1framing": {
       "hash": "set",
       "description": "framing",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d0/da4/namespacerlpx_1_1framing_1_1_0d136013364362265331133154326154310203342052143064": {
-      "hash": "set",
-      "description": "@136013364362265331133154326154310203342052143064",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -4911,80 +4533,8 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d2/d2b/namespacesgns": {
-      "hash": "61cc2cf1181f32fd",
+      "hash": "f33ea609fa05e681",
       "description": "sgns",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d0/ded/namespacesgns_1_1_0d012005177337222274100276220334213110220257115102": {
-      "hash": "set",
-      "description": "@012005177337222274100276220334213110220257115102",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d0/dda/namespacesgns_1_1_0d040113104052035254355032277000154054247024237160": {
-      "hash": "set",
-      "description": "@040113104052035254355032277000154054247024237160",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d5/dcc/namespacesgns_1_1_0d067046211065044164252234245041027241252226235304": {
-      "hash": "set",
-      "description": "@067046211065044164252234245041027241252226235304",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d1/d71/namespacesgns_1_1_0d100154105214054046356250303063224327201044373161": {
-      "hash": "set",
-      "description": "@100154105214054046356250303063224327201044373161",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:db/d98/namespacesgns_1_1_0d145011002122270103312325145050066246007152203271": {
-      "hash": "set",
-      "description": "@145011002122270103312325145050066246007152203271",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d5/d17/namespacesgns_1_1_0d221244103353263031155135374077014303055302051321": {
-      "hash": "set",
-      "description": "@221244103353263031155135374077014303055302051321",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d2/dd3/namespacesgns_1_1_0d243344244263300000267240276166105272154117315257": {
-      "hash": "set",
-      "description": "@243344244263300000267240276166105272154117315257",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d5/d76/namespacesgns_1_1_0d366326346277005246122104355103200264351127264243": {
-      "hash": "set",
-      "description": "@366326346277005246122104355103200264351127264243",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d2/dbf/namespacesgns_1_1_0d377231054306003014147042231174227233222327044122": {
-      "hash": "set",
-      "description": "@377231054306003014147042231174227233222327044122",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -5009,22 +4559,6 @@
     "set:supergenius:d4/dd0/namespacesgns_1_1crdt": {
       "hash": "3e2cacd5265abaa6",
       "description": "crdt",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d2/ddd/namespacesgns_1_1crdt_1_1_0d032104006314062067364270046372353120033022051074": {
-      "hash": "set",
-      "description": "@032104006314062067364270046372353120033022051074",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:da/d24/namespacesgns_1_1crdt_1_1_0d060030352055351115142216016112337363333237123164": {
-      "hash": "set",
-      "description": "@060030352055351115142216016112337363333237123164",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -5086,134 +4620,6 @@
       "exclude": false,
       "nav_section": "Source Reference"
     },
-    "set:supergenius:d8/d0c/namespacesgns_1_1sgprocessing_1_1_0d012323133170152064075124102077127120375014156075": {
-      "hash": "set",
-      "description": "@012323133170152064075124102077127120375014156075",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:de/d25/namespacesgns_1_1sgprocessing_1_1_0d046141026002077313210331010051116076116254261176": {
-      "hash": "d709df9300132b05",
-      "description": "@046141026002077313210331010051116076116254261176",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d5/def/namespacesgns_1_1sgprocessing_1_1_0d047261006016075017024274302161126325054201265060": {
-      "hash": "set",
-      "description": "@047261006016075017024274302161126325054201265060",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d6/d6c/namespacesgns_1_1sgprocessing_1_1_0d130317063275031247142313170204001367152007354346": {
-      "hash": "set",
-      "description": "@130317063275031247142313170204001367152007354346",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d0/d3b/namespacesgns_1_1sgprocessing_1_1_0d143165126143056316204074327326135232163044262365": {
-      "hash": "set",
-      "description": "@143165126143056316204074327326135232163044262365",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:df/d2a/namespacesgns_1_1sgprocessing_1_1_0d150230276072062242353146232255076053336252171176": {
-      "hash": "set",
-      "description": "@150230276072062242353146232255076053336252171176",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:da/d89/namespacesgns_1_1sgprocessing_1_1_0d153023051125317333051213052245316314273154106200": {
-      "hash": "set",
-      "description": "@153023051125317333051213052245316314273154106200",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d0/d5e/namespacesgns_1_1sgprocessing_1_1_0d164256073043114354035033025323154036065152362131": {
-      "hash": "set",
-      "description": "@164256073043114354035033025323154036065152362131",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d1/d76/namespacesgns_1_1sgprocessing_1_1_0d174107311312215220165116306070007036117017156364": {
-      "hash": "set",
-      "description": "@174107311312215220165116306070007036117017156364",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:df/d01/namespacesgns_1_1sgprocessing_1_1_0d176071143171307032161057124111074055153146141105": {
-      "hash": "7708e524169b87cc",
-      "description": "@176071143171307032161057124111074055153146141105",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d4/dc0/namespacesgns_1_1sgprocessing_1_1_0d223105305317045305345040027212065335162311262255": {
-      "hash": "set",
-      "description": "@223105305317045305345040027212065335162311262255",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d7/d2e/namespacesgns_1_1sgprocessing_1_1_0d234241304006345342055346325304012037260161371245": {
-      "hash": "set",
-      "description": "@234241304006345342055346325304012037260161371245",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d6/d1d/namespacesgns_1_1sgprocessing_1_1_0d273010303170005116071351255277216262313042075046": {
-      "hash": "set",
-      "description": "@273010303170005116071351255277216262313042075046",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d3/d72/namespacesgns_1_1sgprocessing_1_1_0d277041171021160322326103276146355066045074363043": {
-      "hash": "d709df9300132b05",
-      "description": "@277041171021160322326103276146355066045074363043",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d1/d59/namespacesgns_1_1sgprocessing_1_1_0d371105327260021302134153026163374057136362054223": {
-      "hash": "set",
-      "description": "@371105327260021302134153026163374057136362054223",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d0/d1a/namespacesgns_1_1sgprocessing_1_1_0d376267135147022120167261006156246355377133263076": {
-      "hash": "set",
-      "description": "@376267135147022120167261006156246355377133263076",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
     "set:supergenius:d6/ded/namespacesgns_1_1sgprocmanager": {
       "hash": "79095b4bbf159937",
       "description": "sgprocmanager",
@@ -5255,7 +4661,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:dd/de2/namespacesgns_1_1utxo__address": {
-      "hash": "491163f75cc9119f",
+      "hash": "f2d6ee430b33e957",
       "description": "utxo_address",
       "category": "api",
       "optional": true,
@@ -5303,7 +4709,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:de/d47/chain__config_8hpp": {
-      "hash": "a9becd08783673ff",
+      "hash": "f2e2b6dfab542dbe",
       "description": "chain_config.hpp",
       "category": "api",
       "optional": true,
@@ -5447,7 +4853,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:db/d6a/discv4__client_8hpp": {
-      "hash": "bf358592688e2e1f",
+      "hash": "5c6483058567b308",
       "description": "discv4_client.hpp",
       "category": "api",
       "optional": true,
@@ -5455,7 +4861,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d2/dfa/discv4__constants_8hpp": {
-      "hash": "887512560364a363",
+      "hash": "5aef07f4e8787d86",
       "description": "discv4_constants.hpp",
       "category": "api",
       "optional": true,
@@ -5487,7 +4893,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:dc/dea/discv4__packet_8hpp": {
-      "hash": "set",
+      "hash": "fba673ce0ec516cc",
       "description": "discv4_packet.hpp",
       "category": "api",
       "optional": true,
@@ -5511,7 +4917,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d3/d8c/packet__factory_8hpp": {
-      "hash": "90795c979cd61120",
+      "hash": "6c5b0dab61c3c073",
       "description": "packet_factory.hpp",
       "category": "api",
       "optional": true,
@@ -5519,7 +4925,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d4/db4/discv5__client_8hpp": {
-      "hash": "341be3698f738f6a",
+      "hash": "fba673ce0ec516cc",
       "description": "discv5_client.hpp",
       "category": "api",
       "optional": true,
@@ -5559,7 +4965,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d3/d65/discv5__types_8hpp": {
-      "hash": "226cc9a5251487ff",
+      "hash": "422d5d3658d98aa3",
       "description": "discv5_types.hpp",
       "category": "api",
       "optional": true,
@@ -5615,7 +5021,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:dc/d57/eth__constants_8hpp": {
-      "hash": "4052353b0b66a109",
+      "hash": "b5a4fb3e93da7928",
       "description": "eth_constants.hpp",
       "category": "api",
       "optional": true,
@@ -6511,7 +5917,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d2/db7/evm__messaging__dapp_8cpp": {
-      "hash": "66ad989f5479e0c9",
+      "hash": "0955ae46aaa7b00b",
       "description": "evm_messaging_dapp.cpp",
       "category": "api",
       "optional": true,
@@ -7256,7 +6662,7 @@
     },
     "set:supergenius:d6/de2/_bridge_event_types_8hpp": {
       "hash": "a1e59eb607ff220f",
-      "description": "Lightweight bridge event types and signature constants. No heavy dependencies — safe to include from tests and watchers.",
+      "description": "Lightweight bridge event types and signature constants. No heavy dependencies \u2014 safe to include from tests and watchers.",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -7335,7 +6741,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:dd/dce/_genius_input_validator_8cpp": {
-      "hash": "93969e2fbd65fa03",
+      "hash": "7a97f982f007dc02",
       "description": "Input validation strategy for native Genius-chain transactions.",
       "category": "api",
       "optional": true,
@@ -7590,22 +6996,6 @@
       "exclude": false,
       "nav_section": "Source Reference"
     },
-    "set:supergenius:d2/d15/_processing_transaction_8cpp": {
-      "hash": "35d8a4c25c931c1f",
-      "description": "ProcessingTransaction.cpp",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d4/dec/_processing_transaction_8hpp": {
-      "hash": "ad25ba7540ab707a",
-      "description": "Transaction of processing data.",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
     "set:supergenius:dd/d91/_public_chain_input_validator_8cpp": {
       "hash": "3097da038d685918",
       "description": "Input validation strategy for public-chain source proofs.",
@@ -7647,7 +7037,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d0/dcc/_transaction_manager_8cpp": {
-      "hash": "ce227dba8a21914f",
+      "hash": "179c1cda56b97cde",
       "description": "TransactionManager.cpp",
       "category": "api",
       "optional": true,
@@ -7711,7 +7101,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d1/dd1/_u_t_x_o_structs_8hpp": {
-      "hash": "814df877bc0fbc09",
+      "hash": "254adb01f2e0a486",
       "description": "Shared UTXO transaction input and output data structures.",
       "category": "api",
       "optional": true,
@@ -7823,8 +7213,8 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:dc/d4f/_scaled_integer_8cpp": {
-      "hash": "607ea1e84f6f2f70",
-      "description": "Fixed-point arithmetic utilities (Implementation file).",
+      "hash": "f7fc991decbb9c88",
+      "description": "Fixed-point arithmetic utilities (Implementation file)",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -8073,22 +7463,6 @@
     "set:supergenius:d1/d13/keypair__file__storage_8hpp": {
       "hash": "set",
       "description": "keypair_file_storage.hpp",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d2/d86/pubsub__broadcaster_8cpp": {
-      "hash": "set",
-      "description": "pubsub_broadcaster.cpp",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d8/dfe/pubsub__broadcaster_8hpp": {
-      "hash": "set",
-      "description": "pubsub_broadcaster.hpp",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -8360,7 +7734,7 @@
     },
     "set:supergenius:d6/db5/_memory_secure_storage_8hpp": {
       "hash": "dfea2222d89fec40",
-      "description": "In-memory JSON backend for testing — no keychain access.",
+      "description": "In-memory JSON backend for testing \u2014 no keychain access.",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -8839,7 +8213,7 @@
       "nav_section": "Source Reference"
     },
     "set:supergenius:d3/d91/_singleton_8hpp": {
-      "hash": "72df2988fd48912e",
+      "hash": "667ac53d1feeb89b",
       "description": "Singleton.hpp",
       "category": "api",
       "optional": true,
@@ -9126,14 +8500,6 @@
       "exclude": false,
       "nav_section": "Source Reference"
     },
-    "set:supergenius:d7/d6d/namespacesgns_1_1_0d360112027001120322371242270350246074050042204067": {
-      "hash": "set",
-      "description": "@360112027001120322371242270350246074050042204067",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
     "set:supergenius:d0/d96/classsgns_1_1evmwatcher_1_1_bridge_catchup_watcher": {
       "hash": "9d61094c365e6505",
       "description": "Polling watcher that scans bridge chains for historical burn events and forwards them to the node for parsing + minting.",
@@ -9182,46 +8548,6 @@
       "exclude": false,
       "nav_section": "Source Reference"
     },
-    "set:supergenius:d0/d0b/namespace_0d007062134123001164043350055124113222065050136232": {
-      "hash": "set",
-      "description": "@007062134123001164043350055124113222065050136232",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:de/def/namespacesgns_1_1_0d007062134123001164043350055124113222065050136232": {
-      "hash": "set",
-      "description": "@007062134123001164043350055124113222065050136232",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d0/d64/namespacesgns_1_1_0d103122274347063164070313354113352145256201035116": {
-      "hash": "set",
-      "description": "@103122274347063164070313354113352145256201035116",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:d4/d8e/namespacesgns_1_1_0d214167044115260347051247243063062263043142364035": {
-      "hash": "set",
-      "description": "@214167044115260347051247243063062263043142364035",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
-    "set:supergenius:dc/d8e/namespacesgns_1_1_0d327264117372177374002006362215174026226004027060": {
-      "hash": "set",
-      "description": "@327264117372177374002006362215174026226004027060",
-      "category": "api",
-      "optional": true,
-      "exclude": false,
-      "nav_section": "Source Reference"
-    },
     "set:supergenius:d6/d25/namespacesgns_1_1ipfs__bitswap": {
       "hash": "6f364a1b560b564d",
       "description": "ipfs_bitswap",
@@ -9230,14 +8556,637 @@
       "exclude": false,
       "nav_section": "Source Reference"
     },
-    "docs:MASTER_ARCHITECTURE.md": {
+    "docs:technical-information/MASTER_ARCHITECTURE.md": {
       "hash": "5f290ea68ebba9a7",
-      "description": "How do the GNUS.ai repositories, runtime, SDKs, wallet, Unity integration, cognitive system, contracts, proofs, dependencies, and sample applications fit together, and which repository owns each type of change?",
+      "description": "How do the GNUS.ai repositories fit together? Canonical platform map: ownership rules, reuse-before-creating norms, and where each subsystem lives.",
       "category": "architecture",
       "optional": false,
       "exclude": false,
-      "nav_section": "🖥️ Technical Information",
-      "pinned": true
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information"
+    },
+    "docs:technical-information/app-howto.md": {
+      "hash": "9c279c4eef626d42",
+      "description": "How do I build a new native app on GNUS/SuperGenius? Recipe covering workspace layout, CMake pattern, repo skeleton, and FFI boundary.",
+      "category": "technical",
+      "optional": false,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information"
+    },
+    "docs:technical-information/software-engineering-handbook/python-coding-standards.md": {
+      "hash": "6a5ce4a4ad3430b0",
+      "description": "What Python style rules must SuperGenius tooling follow? Required/recommended rules for naming, layout, docstrings, enforced by ruff + mypy.",
+      "category": "technical",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information"
+    },
+    "docs:technical-information/software-engineering-handbook/typescript-coding-standards.md": {
+      "hash": "f523266e12118cc0",
+      "description": "What TypeScript style rules must SuperGenius frontends follow? Required/recommended rules adapted from the C++ standard, enforced by eslint + prettier.",
+      "category": "technical",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "\ud83d\udda5\ufe0f Technical Information"
+    },
+    "set:supergenius:de/d04/namespace_0d10": {
+      "hash": "set",
+      "description": "@10",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d4/d62/namespace_0d100": {
+      "hash": "set",
+      "description": "@100",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:db/d20/namespace_0d110": {
+      "hash": "set",
+      "description": "@110",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d8/d90/namespace_0d128": {
+      "hash": "set",
+      "description": "@128",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:df/deb/namespace_0d14": {
+      "hash": "set",
+      "description": "@14",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:de/d7e/namespace_0d229": {
+      "hash": "set",
+      "description": "@229",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d8/d47/namespace_0d234": {
+      "hash": "set",
+      "description": "@234",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d5/dc7/namespace_0d240": {
+      "hash": "set",
+      "description": "@240",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d5/d94/namespace_0d318": {
+      "hash": "set",
+      "description": "@318",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d9/d6f/namespace_0d324": {
+      "hash": "set",
+      "description": "@324",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d0/d73/namespace_0d326": {
+      "hash": "set",
+      "description": "@326",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:df/dc2/namespace_0d348": {
+      "hash": "set",
+      "description": "@348",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:dc/dec/namespace_0d464": {
+      "hash": "set",
+      "description": "@464",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d4/dab/namespace_0d467": {
+      "hash": "3bea0e3fc4245571",
+      "description": "@467",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d1/d6b/namespace_0d468": {
+      "hash": "set",
+      "description": "@468",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:da/def/namespace_0d469": {
+      "hash": "set",
+      "description": "@469",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d8/d08/namespace_0d55": {
+      "hash": "set",
+      "description": "@55",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d1/d75/namespacediscv5_1_1_0d335": {
+      "hash": "set",
+      "description": "@335",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d1/d0a/namespacediscv5_1_1_0d337": {
+      "hash": "set",
+      "description": "@337",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d5/d92/namespacediscv5_1_1_0d339": {
+      "hash": "set",
+      "description": "@339",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d5/d4c/namespaceeth_1_1_0d342": {
+      "hash": "set",
+      "description": "@342",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d3/d74/namespaceeth_1_1_0d352": {
+      "hash": "set",
+      "description": "@352",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d7/d82/namespaceeth_1_1_0d354": {
+      "hash": "set",
+      "description": "@354",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:df/db3/namespaceeth_1_1_0d364": {
+      "hash": "set",
+      "description": "@364",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d7/d73/namespaceeth_1_1abi_1_1_0d340": {
+      "hash": "set",
+      "description": "@340",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d8/d68/namespaceeth_1_1codec_1_1_0d357": {
+      "hash": "set",
+      "description": "@357",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:df/d26/namespaceeth_1_1protocol_1_1_0d356": {
+      "hash": "set",
+      "description": "@356",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d8/d32/namespaceeth_1_1rpc_1_1_0d344": {
+      "hash": "set",
+      "description": "@344",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:dc/d49/namespaceeth_1_1rpc_1_1_0d355": {
+      "hash": "set",
+      "description": "@355",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:db/d20/namespaceeth_1_1rpc_1_1_0d358": {
+      "hash": "set",
+      "description": "@358",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:df/d97/namespaceeth_1_1rpc_1_1_0d359": {
+      "hash": "set",
+      "description": "@359",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:dd/da5/namespaceeth_1_1rpc_1_1_0d360": {
+      "hash": "set",
+      "description": "@360",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d7/d77/namespaceeth_1_1rpc_1_1_0d361": {
+      "hash": "set",
+      "description": "@361",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d2/d19/namespacerlp_1_1_0d367": {
+      "hash": "set",
+      "description": "@367",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d0/d30/namespacerlp_1_1_0d368": {
+      "hash": "set",
+      "description": "@368",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d1/d61/namespacerlp_1_1_0d369": {
+      "hash": "set",
+      "description": "@369",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:df/d3e/namespacerlp_1_1base_1_1json_1_1_0d322": {
+      "hash": "set",
+      "description": "@322",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:df/def/namespacerlp_1_1base_1_1parse_1_1_0d323": {
+      "hash": "set",
+      "description": "@323",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d5/d57/namespacerlpx_1_1_0d380": {
+      "hash": "set",
+      "description": "@380",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:df/d89/namespacerlpx_1_1auth_1_1_0d370": {
+      "hash": "set",
+      "description": "@370",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d4/dfa/namespacerlpx_1_1auth_1_1_0d371": {
+      "hash": "set",
+      "description": "@371",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d4/d37/namespacerlpx_1_1crypto_1_1_0d373": {
+      "hash": "set",
+      "description": "@373",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d1/d5b/namespacerlpx_1_1framing_1_1_0d376": {
+      "hash": "set",
+      "description": "@376",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d5/d1f/namespacesgns_1_1_0d12": {
+      "hash": "set",
+      "description": "@12",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d6/d3c/namespacesgns_1_1_0d128": {
+      "hash": "set",
+      "description": "@128",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d0/df0/namespacesgns_1_1_0d130": {
+      "hash": "set",
+      "description": "@130",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d0/de5/namespacesgns_1_1_0d132": {
+      "hash": "set",
+      "description": "@132",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:df/dff/namespacesgns_1_1_0d136": {
+      "hash": "set",
+      "description": "@136",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d1/d69/namespacesgns_1_1_0d21": {
+      "hash": "set",
+      "description": "@21",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d0/dff/namespacesgns_1_1_0d23": {
+      "hash": "set",
+      "description": "@23",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:da/d73/namespacesgns_1_1_0d3": {
+      "hash": "set",
+      "description": "@3",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d4/dba/namespacesgns_1_1_0d31": {
+      "hash": "set",
+      "description": "@31",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:de/d0f/namespacesgns_1_1_0d36": {
+      "hash": "set",
+      "description": "@36",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:da/dfa/namespacesgns_1_1_0d40": {
+      "hash": "set",
+      "description": "@40",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d8/de1/namespacesgns_1_1_0d67": {
+      "hash": "set",
+      "description": "@67",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:db/dd1/namespacesgns_1_1_0d70": {
+      "hash": "set",
+      "description": "@70",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d2/d7d/namespacesgns_1_1_0d71": {
+      "hash": "set",
+      "description": "@71",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d8/d92/namespacesgns_1_1crdt_1_1_0d89": {
+      "hash": "set",
+      "description": "@89",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d6/d6e/namespacesgns_1_1crdt_1_1_0d98": {
+      "hash": "set",
+      "description": "@98",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d3/dcf/namespacesgns_1_1sgprocessing_1_1_0d298": {
+      "hash": "set",
+      "description": "@298",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:df/d16/namespacesgns_1_1sgprocessing_1_1_0d300": {
+      "hash": "set",
+      "description": "@300",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d0/d75/namespacesgns_1_1sgprocessing_1_1_0d301": {
+      "hash": "set",
+      "description": "@301",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d6/da9/namespacesgns_1_1sgprocessing_1_1_0d302": {
+      "hash": "set",
+      "description": "@302",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:da/db7/namespacesgns_1_1sgprocessing_1_1_0d304": {
+      "hash": "set",
+      "description": "@304",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:dc/dd5/namespacesgns_1_1sgprocessing_1_1_0d305": {
+      "hash": "set",
+      "description": "@305",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:de/dfc/namespacesgns_1_1sgprocessing_1_1_0d306": {
+      "hash": "set",
+      "description": "@306",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d7/d3d/namespacesgns_1_1sgprocessing_1_1_0d307": {
+      "hash": "set",
+      "description": "@307",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:df/d49/namespacesgns_1_1sgprocessing_1_1_0d309": {
+      "hash": "set",
+      "description": "@309",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d3/d60/namespacesgns_1_1sgprocessing_1_1_0d310": {
+      "hash": "set",
+      "description": "@310",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d3/d7f/namespacesgns_1_1sgprocessing_1_1_0d311": {
+      "hash": "d709df9300132b05",
+      "description": "@311",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d2/da6/namespacesgns_1_1sgprocessing_1_1_0d312": {
+      "hash": "7708e524169b87cc",
+      "description": "@312",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d9/d01/namespacesgns_1_1sgprocessing_1_1_0d313": {
+      "hash": "set",
+      "description": "@313",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:df/d4d/namespacesgns_1_1sgprocessing_1_1_0d314": {
+      "hash": "set",
+      "description": "@314",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:d3/dce/namespacesgns_1_1sgprocessing_1_1_0d315": {
+      "hash": "set",
+      "description": "@315",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
+    },
+    "set:supergenius:dd/d81/namespacesgns_1_1sgprocessing_1_1_0d316": {
+      "hash": "d709df9300132b05",
+      "description": "@316",
+      "category": "api",
+      "optional": true,
+      "exclude": false,
+      "nav_section": "Source Reference"
     }
   }
 }
