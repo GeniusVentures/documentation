@@ -72,6 +72,13 @@ source_references:
     output_subdir: "SuperGenius"
     base_url: "/SuperGenius/"
 
+# ── External Markdown documents ─────────────────────────────────────────────
+external_docs:
+  sources:
+    - label: "master-platform-architecture"
+      paths:
+        - "MASTER_ARCHITECTURE.md"
+
 # ── Navigation ────────────────────────────────────────────────────────────────
 navigation:
   generate_index: false
@@ -82,6 +89,9 @@ navigation:
       source_file: "SUMMARY.md"
       extract_heading: ""
       gitbook: true
+  nav_inserts:
+    - source: "master-platform-architecture"
+      before: "Software Engineering Handbook"
 
 # ── Deploy (Cloudflare Pages via Wrangler) ──────────────────────────────────
 deploy:
