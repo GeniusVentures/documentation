@@ -6,7 +6,7 @@
       "category": "product",
       "optional": false,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": true
     },
     "docs:about-gnus.ai/why-gnus.ai/README.md": {
@@ -15,7 +15,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/why-gnus.ai/works-everywhere.md": {
@@ -24,7 +24,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/why-gnus.ai/customizable.md": {
@@ -33,7 +33,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/why-gnus.ai/fast.md": {
@@ -42,7 +42,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/why-gnus.ai/secure/README.md": {
@@ -51,7 +51,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/why-gnus.ai/secure/secure-2fa-with-totp-and-zk-snarks.md": {
@@ -60,7 +60,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/README.md": {
@@ -69,7 +69,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/scale-and-cost-efficiency.md": {
@@ -78,7 +78,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/README.md": {
@@ -87,7 +87,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/1.-executive-summary.md": {
@@ -96,7 +96,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/2.-introduction.md": {
@@ -105,7 +105,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/3.-understanding-the-gnus.ai-decentralized-network.md": {
@@ -114,7 +114,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/4.-the-centralized-xai-100k-cluster-explained.md": {
@@ -123,7 +123,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/5.-comparing-capex-and-opex.md": {
@@ -132,7 +132,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/6.-payout-structure-and-profitability.md": {
@@ -141,7 +141,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/7.-the-deflationary-token-mechanism.md": {
@@ -150,7 +150,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/8.-projected-token-price-appreciation.md": {
@@ -159,7 +159,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/9.-summary-comparison-tables.md": {
@@ -168,7 +168,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/10.-conclusion-and-next-steps.md": {
@@ -177,7 +177,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/gnus.ai-network-vs.-centralized-xai-100k-cluster/final-thoughts.md": {
@@ -186,7 +186,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/tokenomics.md": {
@@ -195,7 +195,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/public-roadmap.md": {
@@ -204,7 +204,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/how-does-it-work/README.md": {
@@ -213,7 +213,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/how-does-it-work/idle-central-processing-gpu.md": {
@@ -222,7 +222,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/how-does-it-work/distributed-computation.md": {
@@ -231,7 +231,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:about-gnus.ai/how-does-it-work/dynamically-adjusted-resource-allocation.md": {
@@ -240,7 +240,7 @@
       "category": "product",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83e\udde0 About GNUS.AI",
+      "nav_section": "🧠 About GNUS.AI",
       "pinned": false
     },
     "docs:technical-information/software-engineering-handbook/README.md": {
@@ -249,7 +249,7 @@
       "category": "technical",
       "optional": false,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": true,
       "stale": true
     },
@@ -259,7 +259,7 @@
       "category": "technical",
       "optional": false,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": true
     },
     "docs:technical-information/software-engineering-handbook/smart-contract-projects.md": {
@@ -268,7 +268,7 @@
       "category": "technical",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/software-engineering-handbook/recommended-pattern-for-llm-usage-in-team-gpt.md": {
@@ -277,7 +277,7 @@
       "category": "technical",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/README.md": {
@@ -286,7 +286,7 @@
       "category": "blockchain",
       "optional": false,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": true,
       "stale": true
     },
@@ -296,7 +296,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/ai-data-blocks.md": {
@@ -305,7 +305,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/slicing-data-for-macro-microjobs.md": {
@@ -314,7 +314,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/verification-and-hash-results-from-processing.md": {
@@ -323,7 +323,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/diagram-of-the-internal-blockchain-blocks-and-processing-functionality.md": {
@@ -332,7 +332,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/ipfs-pub-sub.md": {
@@ -341,7 +341,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/sg-consensus-algorithm-implementation.md": {
@@ -350,7 +350,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/account-creation-with-ecsda-and-el-gamal.md": {
@@ -359,7 +359,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/key-derivation-function.md": {
@@ -368,7 +368,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/el-gamal-encryption.md": {
@@ -377,7 +377,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/prover-specification.md": {
@@ -386,7 +386,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/supergenius-processing-component-information/README.md": {
@@ -395,7 +395,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/supergenius-processing-component-information/processing-worker-app-workflow.md": {
@@ -404,7 +404,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/supergenius-processing-component-information/job-processing-flow.md": {
@@ -413,7 +413,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/super-genius-dag-blockchain.md": {
@@ -422,7 +422,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/minimal-proof-mountain.md": {
@@ -431,7 +431,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/cross-chain-bridging-to-supergenius/README.md": {
@@ -440,7 +440,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/cross-chain-bridging-to-supergenius/overview.md": {
@@ -449,7 +449,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/cross-chain-bridging-to-supergenius/message-creation-leader-election.md": {
@@ -458,7 +458,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/cross-chain-bridging-to-supergenius/verification-channel-creation.md": {
@@ -467,7 +467,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/cross-chain-bridging-to-supergenius/node-verification-voting.md": {
@@ -476,7 +476,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/cross-chain-bridging-to-supergenius/signature-collection-aggregation.md": {
@@ -485,7 +485,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/super-genius-blockchain-technical-details/cross-chain-bridging-to-supergenius/destination-chain-submission-validation.md": {
@@ -494,7 +494,7 @@
       "category": "blockchain",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/hybrid-smart-contract/README.md": {
@@ -503,7 +503,7 @@
       "category": "technical",
       "optional": false,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": true
     },
     "docs:technical-information/hybrid-smart-contract/gnus.ai-ecosystem-a-unified-network-of-intelligence.md": {
@@ -512,7 +512,7 @@
       "category": "technical",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/hybrid-smart-contract/structure/README.md": {
@@ -521,7 +521,7 @@
       "category": "technical",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/hybrid-smart-contract/structure/structure-details.md": {
@@ -530,7 +530,7 @@
       "category": "technical",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/hybrid-smart-contract/encoded-ids.md": {
@@ -539,7 +539,7 @@
       "category": "technical",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/our-smart-contract-testing-philosophy.md": {
@@ -548,7 +548,7 @@
       "category": "technical",
       "optional": false,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/ai-systems/README.md": {
@@ -557,7 +557,7 @@
       "category": "architecture",
       "optional": false,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/ai-systems/overview.md": {
@@ -566,7 +566,7 @@
       "category": "architecture",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/ai-systems/query-workflow.md": {
@@ -575,7 +575,7 @@
       "category": "architecture",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/ai-systems/data-storage.md": {
@@ -584,7 +584,7 @@
       "category": "architecture",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/ai-systems/pub-sub-communication.md": {
@@ -593,7 +593,7 @@
       "category": "architecture",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/ai-systems/retraining-mechanism.md": {
@@ -602,7 +602,7 @@
       "category": "architecture",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/zero-knowledge-proofs/README.md": {
@@ -611,7 +611,7 @@
       "category": "technical",
       "optional": false,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:technical-information/zero-knowledge-proofs/proof-schemes-and-elliptical-curves.md": {
@@ -620,7 +620,7 @@
       "category": "technical",
       "optional": true,
       "exclude": false,
-      "nav_section": "\ud83d\udda5\ufe0f Technical Information",
+      "nav_section": "🖥️ Technical Information",
       "pinned": false
     },
     "docs:resources/contact-us.md": {
@@ -728,7 +728,7 @@
     },
     "set:supergenius:da/d2f/structrlpx_1_1_aes_block": {
       "hash": "cce6e1e4e05c82a6",
-      "description": "RLPx wire structs \u2014 sizes are derived via sizeof() rather than magic numbers.",
+      "description": "RLPx wire structs — sizes are derived via sizeof() rather than magic numbers.",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -1344,7 +1344,7 @@
     },
     "set:supergenius:db/dc2/structdiscv4_1_1_dial_scheduler": {
       "hash": "194ec70176a7c70c",
-      "description": "Per-chain dial scheduler mirroring go-ethereum's dialScheduler. Maintains up to pool->max_per_chain concurrent dial coroutines, respecting the global pool->max_total cap across all chains. All methods run on the single io_context thread \u2014 no mutex needed.",
+      "description": "Per-chain dial scheduler mirroring go-ethereum's dialScheduler. Maintains up to pool->max_per_chain concurrent dial coroutines, respecting the global pool->max_total cap across all chains. All methods run on the single io_context thread — no mutex needed.",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -1384,7 +1384,7 @@
     },
     "set:supergenius:d2/d8f/structdiscv4_1_1discv4__enr__request": {
       "hash": "4ddadb20b192f754",
-      "description": "ENRRequest packet \u2014 discv4 wire type 0x05 (EIP-868).",
+      "description": "ENRRequest packet — discv4 wire type 0x05 (EIP-868).",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -1392,7 +1392,7 @@
     },
     "set:supergenius:d6/db4/structdiscv4_1_1discv4__enr__response": {
       "hash": "3daa41627900e050",
-      "description": "Parsed ENRResponse \u2014 discv4 wire type 0x06 (EIP-868).",
+      "description": "Parsed ENRResponse — discv4 wire type 0x06 (EIP-868).",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -1448,7 +1448,7 @@
     },
     "set:supergenius:db/d16/classdiscv5_1_1discv5__crawler": {
       "hash": "7300158f7a52c2f2",
-      "description": "Discv5 peer crawler: seed \u2192 FINDNODE loop \u2192 ValidatedPeer emission.",
+      "description": "Discv5 peer crawler: seed → FINDNODE loop → ValidatedPeer emission.",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -2544,7 +2544,7 @@
     },
     "set:supergenius:d0/d0d/classsgns_1_1_memory_secure_storage": {
       "hash": "57458f3cc0a6735d",
-      "description": "In-memory JSON backend for tests. Stores data in a map \u2014 no OS keychain access, no password prompts, no cleanup needed.",
+      "description": "In-memory JSON backend for tests. Stores data in a map — no OS keychain access, no password prompts, no cleanup needed.",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -7256,7 +7256,7 @@
     },
     "set:supergenius:d6/de2/_bridge_event_types_8hpp": {
       "hash": "a1e59eb607ff220f",
-      "description": "Lightweight bridge event types and signature constants. No heavy dependencies \u2014 safe to include from tests and watchers.",
+      "description": "Lightweight bridge event types and signature constants. No heavy dependencies — safe to include from tests and watchers.",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -8360,7 +8360,7 @@
     },
     "set:supergenius:d6/db5/_memory_secure_storage_8hpp": {
       "hash": "dfea2222d89fec40",
-      "description": "In-memory JSON backend for testing \u2014 no keychain access.",
+      "description": "In-memory JSON backend for testing — no keychain access.",
       "category": "api",
       "optional": true,
       "exclude": false,
@@ -9229,6 +9229,15 @@
       "optional": true,
       "exclude": false,
       "nav_section": "Source Reference"
+    },
+    "docs:MASTER_ARCHITECTURE.md": {
+      "hash": "5f290ea68ebba9a7",
+      "description": "How do the GNUS.ai repositories, runtime, SDKs, wallet, Unity integration, cognitive system, contracts, proofs, dependencies, and sample applications fit together, and which repository owns each type of change?",
+      "category": "architecture",
+      "optional": false,
+      "exclude": false,
+      "nav_section": "🖥️ Technical Information",
+      "pinned": true
     }
   }
 }
