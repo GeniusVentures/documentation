@@ -7,6 +7,15 @@ on:
     paths:
       - MASTER_ARCHITECTURE.md
       - .github/workflows/update-master-architecture-meta.yml
+  pull_request:
+    branches:
+      - main
+    types: [opened, synchronize, reopened]
+    paths:
+      - MASTER_ARCHITECTURE.md
+      - gendoc.yml
+      - llms-meta.json
+      - .github/workflows/update-master-architecture-meta.yml
 
 permissions:
   contents: write
@@ -49,7 +58,6 @@ jobs:
               encoding="utf-8",
           )
 
-          # Parse the serialized result again so malformed output fails the job.
           json.loads(metadata.read_text(encoding="utf-8"))
           PY
 
