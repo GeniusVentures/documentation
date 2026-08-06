@@ -12,8 +12,9 @@ project:
 # ── Paths (relative to this file's location — the host project root) ──
 paths:
   handwritten_docs: "docs"
-  exclude_patterns:
-    - "*/supergenius/*"
+  # NOTE: do not add "*/supergenius/*" here — doxygen matches EXCLUDE_PATTERNS
+  # case-insensitively on macOS/Windows, which would exclude every source file
+  # under the SuperGenius/ sibling checkout.
 
 # ── MkDocs configuration ────────────────────────────────────────────────────
 mkdocs:
