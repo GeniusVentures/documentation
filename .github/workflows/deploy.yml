@@ -10,6 +10,7 @@ jobs:
     uses: GeniusVentures/gendoc-template/.github/workflows/deploy.yml@develop
     with:
       template-path: gendoc-template
+      siblings: "GeniusVentures/SuperGenius:SuperGenius@main"
     secrets:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
