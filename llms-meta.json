@@ -64,7 +64,7 @@
       "pinned": false
     },
     "docs:about-gnus.ai/features-and-benefits/README.md": {
-      "hash": "2a230f6d4ce8a0b9",
+      "hash": "a131d138f5b4594f",
       "description": "Explains GNUS infrastructure and GCS use cases, qualifying native-network reward and platform-readiness claims.",
       "category": "product",
       "optional": true,
@@ -9203,7 +9203,7 @@
       "nav_section": "Source Reference"
     },
     "docs:about-gnus.ai/features-and-benefits/pricing-methodology.md": {
-      "hash": "deb3146c029a70ab",
+      "hash": "47635d294653c5d6",
       "description": "Distinguishes the provisional ELM-hour rate, historical node-hour figures, and TFLOPS-per-dollar formulas without calling them live prices.",
       "category": "pricing",
       "optional": false,
