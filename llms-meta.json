@@ -9203,8 +9203,8 @@
       "nav_section": "Source Reference"
     },
     "docs:about-gnus.ai/features-and-benefits/pricing-methodology.md": {
-      "hash": "669fe7cc15490410",
-      "description": "Explains the implemented market-priced GNUS escrow cost estimate, its block_len unit caveat, historical node rates, and ELM planning prices.",
+      "hash": "3a732a5d20ce82a3",
+      "description": "Explains native market-quoted GNUS escrow, owner-set planned ELM processing-hour funding, and historic compute cost comparisons.",
       "category": "pricing",
       "optional": false,
       "exclude": false,
