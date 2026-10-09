@@ -9203,8 +9203,8 @@
       "nav_section": "Source Reference"
     },
     "docs:about-gnus.ai/features-and-benefits/pricing-methodology.md": {
-      "hash": "47635d294653c5d6",
-      "description": "Distinguishes the provisional ELM-hour rate, historical node-hour figures, and TFLOPS-per-dollar formulas without calling them live prices.",
+      "hash": "669fe7cc15490410",
+      "description": "Explains the implemented market-priced GNUS escrow cost estimate, its block_len unit caveat, historical node rates, and ELM planning prices.",
       "category": "pricing",
       "optional": false,
       "exclude": false,
