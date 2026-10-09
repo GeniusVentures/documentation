@@ -663,9 +663,9 @@
       "pinned": false
     },
     "docs:resources/faqs/technical-deep-dive-how-gnus.ai-works.md": {
-      "hash": "d784373aec6e7239",
-      "description": "How does GNUS.ai work? Technical deep dive into system architecture for developers.",
-      "category": "sales",
+      "hash": "540b57da84b0c70a",
+      "description": "How GNUS processing, GCS, consensus, rewards, audits and security differ from historical network claims.",
+      "category": "technical",
       "optional": true,
       "exclude": false,
       "nav_section": "Resources",
