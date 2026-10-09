@@ -74,8 +74,8 @@
       "stale": false
     },
     "docs:about-gnus.ai/features-and-benefits/scale-and-cost-efficiency.md": {
-      "hash": "95866e1fba469019",
-      "description": "Historical compute-cost scenarios and why old GNUS node-hour rates cannot establish current savings or a GCS API tariff.",
+      "hash": "0bc9423dbc12cc59",
+      "description": "Explains historical GNUS node-hour comparisons, planned ELM-job funded hours, and why modeled compute savings are not verified.",
       "category": "pricing",
       "optional": false,
       "exclude": false,
@@ -9203,7 +9203,7 @@
       "nav_section": "Source Reference"
     },
     "docs:about-gnus.ai/features-and-benefits/pricing-methodology.md": {
-      "hash": "3a732a5d20ce82a3",
+      "hash": "212831ff367bb37e",
       "description": "Explains native market-quoted GNUS escrow, owner-set planned ELM processing-hour funding, and historic compute cost comparisons.",
       "category": "pricing",
       "optional": false,
