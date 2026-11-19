@@ -275,6 +275,14 @@
       "nav_section": "🖥️ Technical Information",
       "pinned": true
     },
+    "docs:technical-information/software-engineering-handbook/dart-coding-standards.md": {
+      "description": "Dart and Flutter coding rules: Cubit state management, immutable views, reusable interfaces, and reproducible generated bindings.",
+      "category": "technical",
+      "optional": false,
+      "exclude": false,
+      "nav_section": "🖥️ Technical Information",
+      "pinned": false
+    },
     "docs:technical-information/software-engineering-handbook/smart-contract-projects.md": {
       "hash": "c4e13889e7bf7609",
       "description": "How should GNUS.AI smart contract projects be structured? Standards and best practices for Solidity development.",
