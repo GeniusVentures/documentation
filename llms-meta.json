@@ -258,7 +258,7 @@
       "pinned": false
     },
     "docs:technical-information/software-engineering-handbook/README.md": {
-      "hash": "da5b779d33be9a77",
+      "hash": "0f71fad61bf9e461",
       "description": "GNUS engineering standards: SOLID, loose coupling, platform-neutral code, shared cmaketemplate, generated-code ownership and tests.",
       "category": "technical",
       "optional": false,
@@ -267,7 +267,7 @@
       "pinned": true
     },
     "docs:technical-information/software-engineering-handbook/c++-coding-standards.md": {
-      "hash": "9b677a681f59eb15",
+      "hash": "f40f93688eb0a2e8",
       "description": "C++17 coding rules, including one platform header per build target, project-owned CMake, binary-tree codegen, and source isolation.",
       "category": "technical",
       "optional": false,
@@ -8588,7 +8588,7 @@
       "nav_section": "🖥️ Technical Information"
     },
     "docs:technical-information/app-howto.md": {
-      "hash": "a6604823c3abb004",
+      "hash": "1e0fbf2e458d196f",
       "description": "Native GNUS app setup with the cmaketemplate build/ submodule, per-platform builds, project CMake, source isolation and FFI.",
       "category": "technical",
       "optional": false,
