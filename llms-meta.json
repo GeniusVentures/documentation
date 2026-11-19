@@ -259,7 +259,7 @@
     },
     "docs:technical-information/software-engineering-handbook/README.md": {
       "hash": "3721588be4c5be1f",
-      "description": "What engineering principles does GNUS.AI follow? Language-agnostic standards: SOLID, data-driven design, unit testing, AI tool usage with human oversight.",
+      "description": "GNUS engineering standards: SOLID, loose coupling, platform-neutral code, shared cmaketemplate, generated-code ownership and tests.",
       "category": "technical",
       "optional": false,
       "exclude": false,
@@ -268,7 +268,7 @@
     },
     "docs:technical-information/software-engineering-handbook/c++-coding-standards.md": {
       "hash": "0ae7911ea7c42594",
-      "description": "What C++17 coding rules must SuperGenius developers follow? Required/recommended classifications covering naming, bracing, Doxygen headers, and clang-tidy enforcement.",
+      "description": "C++17 coding rules, including one platform header per build target, project-owned CMake, binary-tree codegen, and source isolation.",
       "category": "technical",
       "optional": false,
       "exclude": false,
@@ -8580,7 +8580,7 @@
     },
     "docs:technical-information/app-howto.md": {
       "hash": "9c279c4eef626d42",
-      "description": "How do I build a new native app on GNUS/SuperGenius? Recipe covering workspace layout, CMake pattern, repo skeleton, and FFI boundary.",
+      "description": "Native GNUS app setup with the cmaketemplate build/ submodule, per-platform builds, project CMake, source isolation and FFI.",
       "category": "technical",
       "optional": false,
       "exclude": false,
